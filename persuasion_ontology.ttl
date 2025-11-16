@@ -1,0 +1,265 @@
+@prefix : <http://example.org/persuasion#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+# Ontology Metadata
+: a owl:Ontology ;
+    dc:title "Persuasion-Aware Social Media Ontology" ;
+    dc:description "An ontology for modeling persuasion techniques and misinformation in social media posts" ;
+    dc:creator "Semantic Web Project" ;
+    dcterms:created "2025-01-03"^^xsd:date ;
+    owl:versionInfo "2.0" .
+
+# ========================================
+# CORE CLASSES
+# ========================================
+
+:Post a owl:Class ;
+    rdfs:label "Social Media Post" ;
+    rdfs:comment "A social media post that may contain claims and persuasion techniques" .
+
+:Claim a owl:Class ;
+    rdfs:label "Claim" ;
+    rdfs:comment "A factual assertion made in a post that can be verified" .
+
+:Evidence a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Source or proof supporting or refuting a claim" .
+
+:Entity a owl:Class ;
+    rdfs:label "Entity" ;
+    rdfs:comment "A real-world entity (person, organization, location, etc.) mentioned in a post" .
+
+:Correction a owl:Class ;
+    rdfs:label "Correction" ;
+    rdfs:comment "A structured correction of misinformation in a post" .
+
+# ========================================
+# PERSUASION TECHNIQUE CLASSES
+# ========================================
+
+:PersuasionTechnique a owl:Class ;
+    rdfs:label "Persuasion Technique" ;
+    rdfs:comment "A strategy used to influence opinion through manipulation" .
+
+:FearAppeal a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Fear Appeal" ;
+    rdfs:comment "Technique that uses fear to influence behavior or beliefs" .
+
+:LoadedLanguage a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Loaded Language" ;
+    rdfs:comment "Use of emotionally charged words to influence opinion" .
+
+:AppealToAuthority a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Appeal to Authority" ;
+    rdfs:comment "Citing authority figures to lend credibility without proper evidence" .
+
+:Scapegoating a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Scapegoating" ;
+    rdfs:comment "Blaming a person or group for problems they didn't cause" .
+
+:Exaggeration a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Exaggeration/Minimization" ;
+    rdfs:comment "Overstating or understating facts to manipulate perception" .
+
+# ========================================
+# VERIFICATION STATUS
+# ========================================
+
+:VerificationStatus a owl:Class ;
+    rdfs:label "Verification Status" ;
+    rdfs:comment "Status of claim verification" .
+
+:True a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "True" .
+
+:False a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "False" .
+
+:MostlyTrue a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "Mostly True" .
+
+:MostlyFalse a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "Mostly False" .
+
+:Unverified a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "Unverified" .
+
+:Misleading a owl:Class ;
+    rdfs:subClassOf :VerificationStatus ;
+    rdfs:label "Misleading" .
+
+# ========================================
+# OBJECT PROPERTIES
+# ========================================
+
+:containsClaim a owl:ObjectProperty ;
+    rdfs:label "contains claim" ;
+    rdfs:domain :Post ;
+    rdfs:range :Claim .
+
+:usesTechnique a owl:ObjectProperty ;
+    rdfs:label "uses technique" ;
+    rdfs:domain :Claim ;
+    rdfs:range :PersuasionTechnique ;
+    rdfs:comment "Links a claim to the persuasion technique it employs" .
+
+:targetsEntity a owl:ObjectProperty ;
+    rdfs:label "targets entity" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Entity ;
+    rdfs:comment "Identifies the entity that is the subject of manipulation" .
+
+:supportedBy a owl:ObjectProperty ;
+    rdfs:label "supported by" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Evidence ;
+    rdfs:comment "Links a claim to supporting or refuting evidence" .
+
+:refutedBy a owl:ObjectProperty ;
+    rdfs:label "refuted by" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Evidence .
+
+:hasVerificationStatus a owl:ObjectProperty ;
+    rdfs:label "has verification status" ;
+    rdfs:domain :Claim ;
+    rdfs:range :VerificationStatus .
+
+:hasCorrection a owl:ObjectProperty ;
+    rdfs:label "has correction" ;
+    rdfs:domain :Post ;
+    rdfs:range :Correction .
+
+:correctsClaim a owl:ObjectProperty ;
+    rdfs:label "corrects claim" ;
+    rdfs:domain :Correction ;
+    rdfs:range :Claim .
+
+:mentions a owl:ObjectProperty ;
+    rdfs:label "mentions" ;
+    rdfs:domain :Post ;
+    rdfs:range :Entity .
+
+:linkedToWikidata a owl:ObjectProperty ;
+    rdfs:label "linked to Wikidata" ;
+    rdfs:domain :Entity ;
+    rdfs:comment "Links entity to its Wikidata identifier" .
+
+# ========================================
+# DATA PROPERTIES
+# ========================================
+
+:postId a owl:DatatypeProperty ;
+    rdfs:label "post ID" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:textContent a owl:DatatypeProperty ;
+    rdfs:label "text content" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:claimText a owl:DatatypeProperty ;
+    rdfs:label "claim text" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:string .
+
+:evidenceText a owl:DatatypeProperty ;
+    rdfs:label "evidence text" ;
+    rdfs:domain :Evidence ;
+    rdfs:range xsd:string .
+
+:evidenceSource a owl:DatatypeProperty ;
+    rdfs:label "evidence source" ;
+    rdfs:domain :Evidence ;
+    rdfs:range xsd:anyURI .
+
+:entityName a owl:DatatypeProperty ;
+    rdfs:label "entity name" ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string .
+
+:wikidataId a owl:DatatypeProperty ;
+    rdfs:label "Wikidata ID" ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string .
+
+:correctionText a owl:DatatypeProperty ;
+    rdfs:label "correction text" ;
+    rdfs:domain :Correction ;
+    rdfs:range xsd:string .
+
+:confidenceScore a owl:DatatypeProperty ;
+    rdfs:label "confidence score" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:float ;
+    rdfs:comment "LLM confidence in technique detection (0-1)" .
+
+:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp" ;
+    rdfs:range xsd:dateTime .
+
+:author a owl:DatatypeProperty ;
+    rdfs:label "author" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:platform a owl:DatatypeProperty ;
+    rdfs:label "platform" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Social media platform (e.g., Twitter, Facebook)" .
+
+:fragmentStart a owl:DatatypeProperty ;
+    rdfs:label "fragment start" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Start position of claim text fragment" .
+
+:fragmentEnd a owl:DatatypeProperty ;
+    rdfs:label "fragment end" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "End position of claim text fragment" .
+
+# ========================================
+# PROVENANCE (PROV-O)
+# ========================================
+
+:wasGeneratedBy a owl:ObjectProperty ;
+    rdfs:label "was generated by" ;
+    rdfs:comment "Links data to the process/agent that generated it" ;
+    owl:equivalentProperty prov:wasGeneratedBy .
+
+:LLMAgent a owl:Class ;
+    rdfs:label "LLM Agent" ;
+    rdfs:subClassOf prov:Agent ;
+    rdfs:comment "An AI agent (e.g., GPT-4, MUSE) that performs annotation" .
+
+:modelName a owl:DatatypeProperty ;
+    rdfs:label "model name" ;
+    rdfs:domain :LLMAgent ;
+    rdfs:range xsd:string .
+
+:modelVersion a owl:DatatypeProperty ;
+    rdfs:label "model version" ;
+    rdfs:domain :LLMAgent ;
+    rdfs:range xsd:string .
