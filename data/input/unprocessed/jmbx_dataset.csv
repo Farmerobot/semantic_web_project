@@ -1,0 +1,1878 @@
+ID,Number of Likes(favor),Retweet Count,Is retweeted,bias,label,slc_label
+1509248953258328068,0,0,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1549528678882852868,0,75,False,right,['Loaded language'],propaganda
+1547252941748424705,2839,184,False,lean left,['Loaded language'],propaganda
+1428431895977725954,7,1,False,lean left,['Loaded language'],propaganda
+1553129514317889541,0,28,False,right,"['Exaggeration or minimization', ' Thought-terminating cliche', ' Slogans']",propaganda
+1470973735263944704,68,4,False,right,"['Bandwagon', ' Exaggeration or minimization']",propaganda
+1576244302207803392,2,0,False,left,['Exaggeration or minimization'],propaganda
+1575082670073446407,2128,160,False,lean left,"['Loaded language', ' Exaggeration']",propaganda
+1565459464551108610,10,0,False,lean right,['Exaggeration or minimization'],propaganda
+1505674106410315778,10,2,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1576648947220840449,16,2,False,lean right,['Exaggeration or minimization'],propaganda
+1576603607138443265,7,2,False,lean right,['Exaggeration or minimization'],propaganda
+1538271803700875266,24,2,False,lean left,['Loaded language'],propaganda
+644104590921756672,0,0,False,left,['Exaggeration or minimization'],propaganda
+1549091588512563205,28,4,False,lean right,['Exaggeration or minimization'],propaganda
+1566791570489311234,2,1,False,lean right,['Loaded language'],propaganda
+614909361194967040,0,0,False,left,['Appeal to authority'],propaganda
+1576131073968308225,30,6,False,center,['Loaded language'],propaganda
+1567167634839404546,153,10,False,lean left,non propaganda,non propaganda
+1570378859555557376,40,6,False,left,['Loaded language'],propaganda
+1565800685039489024,448,49,False,left,['Appeal to authority'],propaganda
+1504116217711411211,1,0,False,lean left,['Loaded language'],propaganda
+1570476801847066627,60,9,False,left,"['Appeal to authority', ' Loaded language']",propaganda
+1570507787201052672,0,1755,False,right,"['Exaggeration or minimization', ' Slogans']",propaganda
+1569758134394327045,22,4,False,left,"['Causal Oversimplification', ' Exaggeration or minimization']",propaganda
+1487490121997819909,58,4,False,right,['Loaded language'],propaganda
+1576323606946189315,33,8,False,center,['Exaggeration or minimization'],propaganda
+1550973891442614272,8,0,False,right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1360694734394695680,3,0,False,lean left,"['Appeal to authority', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1527415505094594600,82,25,False,lean right,non propaganda,non propaganda
+1526235895627665408,3,1,False,lean left,"['Flag-waving', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1551614149020602370,0,15106,False,lean left,['Exaggeration or minimization'],propaganda
+1571951180968005632,0,4,False,right,['Loaded language'],propaganda
+1523272239881519104,1229,73,False,lean left,['Exaggeration or minimization'],propaganda
+1378003298033238017,1,1,False,lean left,['Exaggeration or minimization'],propaganda
+1562166009225744385,1,0,False,lean right,['Name calling or labeling'],propaganda
+989124900941123586,0,0,False,lean right,['Exaggeration or minimization'],propaganda
+1565505686510895105,0,0,False,left,['Exaggeration or minimization'],propaganda
+826573895046221824,224,89,False,left,['Loaded langauge'],propaganda
+1512474982013710336,11,3,False,lean left,['Exaggeration or minimization'],propaganda
+1528857146850516994,128,45,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1552015555519021058,34,1,False,right,"['Loaded language', ' Exaggeration or minimization', ' Red Herring']",propaganda
+1515108102982582278,390,58,False,right,"['Repetition', ' Appeal to fear/prejudice', ' Loaded language', ' Bandwagon']",propaganda
+1570425665396023296,95,5,False,left,"['Appeal to authority', ' Exaggeration or minimization']",propaganda
+1575928307136200705,27,4,False,lean right,"['Appeal to authority', ' Exaggeration or minimization']",propaganda
+1570858342758895616,85,5,False,left,['Exaggeration or minimization'],propaganda
+1489074533449539591,0,860,False,left,['Exaggeration or minimization'],propaganda
+1575591752333131776,6,4,False,lean right,['Exaggeration or minimization'],propaganda
+1495946192177573895,0,2,False,left,"['Loaded language', ' Bandwagon']",propaganda
+1575570653193080833,12,6,False,lean right,['Exaggeration or minimization'],propaganda
+1546507524806959106,2725,389,False,lean left,['Exaggeration or minimization'],propaganda
+1518602662995976195,5,1,False,left,"['Bandwagon', ' Exaggeration or minimization']",propaganda
+1374351381352607744,103,3,False,left,['Loaded language'],propaganda
+1575938291899170828,15,5,False,center,['Exaggeration or minimization'],propaganda
+1565563365539192833,115,13,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1575937305994461207,28,3,False,center,['Exaggeration or minimization'],propaganda
+1575930896858873857,9,4,False,center,['Exaggeration or minimization'],propaganda
+1568685526353383428,1956,121,False,right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1575871673739448320,14,2,False,center,['Exaggeration or minimization'],propaganda
+1411036793210818562,37,3,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1576636882800152576,0,238,False,right,"['Loaded language', ' Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1575924722390401031,28,10,False,center,['Exaggeration or minimization'],propaganda
+1531832713434611712,13,0,False,right,['Name calling or labeling'],propaganda
+1564396450557165571,0,5,False,right,['Exaggeration or minimization'],propaganda
+1440455617974456334,20,0,False,left,['Loaded language'],propaganda
+1413258201726865416,24,0,False,left,['Exaggeration or minimization'],propaganda
+1521894809602035714,10,0,False,lean left,['Loaded language'],propaganda
+1575961949120040960,20,4,False,center,['Exaggeration or minimization'],propaganda
+1526655250249170945,37,4,False,left,"['Bandwagon', ' Exaggeration or minimization']",propaganda
+1575852467035770880,10,4,False,lean right,"['Exaggeration or minimization', ' Appeal to authority']",propaganda
+1332039542166183939,75,13,False,right,['Exaggeration or minimization'],propaganda
+1575917625296797709,9,5,False,lean right,['Exaggeration or minimization'],propaganda
+1471580643050106890,14642,1990,False,left,['Exaggeration or minimization'],propaganda
+1535658777420120065,0,13,False,left,['Loaded language'],propaganda
+1576037441676402693,34,8,False,center,['Exaggeration or minimization'],propaganda
+1464613381445496844,0,0,False,lean left,['Exaggeration or minimization'],propaganda
+1576022114682945537,13,2,False,center,['Exaggeration or minimization'],propaganda
+1517115193637154816,1,0,False,lean left,['Exaggeration or minimization'],propaganda
+1245738226066866182,12,11,False,lean left,"['Appeal to authority', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1521131107156123650,2,0,False,lean left,['Exaggeration or minimization'],propaganda
+1539646180669345792,0,0,False,right,['Name calling or labeling'],propaganda
+1435081732856893442,41,4,False,right,"['Loaded langauge', ' Bandwagon']",propaganda
+1555317682299609088,60,1,False,lean left,['Exaggeration or minimization'],propaganda
+1507113423087222809,9382,2720,False,left,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1575992157420523522,26,8,False,center,['Exaggeration or minimization'],propaganda
+1575622184545841152,9,0,False,lean right,non propaganda,non propaganda
+1521659980033757184,8,1,False,lean left,non propaganda,non propaganda
+1568088752643346433,101,1,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1399419256798912515,58,3,False,right,['Exaggeration or minimization'],propaganda
+1087754770960580608,410,29,False,lean right,['Exaggeration or minimization'],propaganda
+1572264465894363137,3,2,False,lean left,['Causal Oversimplification'],propaganda
+1552698771145908230,21,2,False,right,['Exaggeration or minimization'],propaganda
+1573478054055256071,1,0,False,right,['Loaded language'],propaganda
+1548036073955004416,0,3,False,lean left,"['Loaded language', ' Appeal to authority']",propaganda
+1539886708476592128,73,4,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1504821759538868224,2125,176,False,left,['Loaded language'],propaganda
+1572973622167470082,38,9,False,lean right,['Exaggeration or minimization'],propaganda
+1575140071602282496,31,4,False,center,['Exaggeration or minimization'],propaganda
+1312366518013956096,6,4,False,lean left,['Exaggeration or minimization'],propaganda
+1087706472329474048,18,1,False,lean right,['Loaded language'],propaganda
+1514542799332560905,1357,176,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1514544429834674177,5899,844,False,lean left,['Loaded language'],propaganda
+1575169871272361986,57,10,False,center,['Loaded language'],propaganda
+1099867035297824769,16,0,False,lean right,['Exaggeration or minimization'],propaganda
+1107683614270070786,11,0,False,lean right,['Exaggeration or minimization'],propaganda
+1549118400512802818,3,3,False,lean left,"['Appeal to authority', ' Flag-waving']",propaganda
+1410206523662417920,5,7,False,lean left,non propaganda,non propaganda
+1565101444436574211,3,0,False,left,['Loaded language'],propaganda
+1529063641328324609,4,0,False,lean left,['Loaded language'],propaganda
+1105483536973418496,66,7,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1517536405404196868,197,32,False,lean left,non propaganda,non propaganda
+1240275235154399233,4,2,False,lean left,non propaganda,non propaganda
+1576444387705364481,109,22,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1533524434279178243,0,10,False,left,['Exaggeration or minimization'],propaganda
+1572348639208476672,332,101,False,lean right,['Loaded language'],propaganda
+1527766719372075011,165,25,False,lean left,['Loaded language'],propaganda
+1496673335224188928,174,18,False,right,"['Appeal to fear/prejudice', ' Flag-waving', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1369018242774175746,0,48,False,right,['Exaggeration or minimization'],propaganda
+1496333603235631107,85,4,False,left,['Exaggeration or minimization'],propaganda
+1275526544111415296,4,1,False,lean left,['Exaggeration or minimization'],propaganda
+1557164259649503233,353,33,False,left,['Doubt'],propaganda
+1559223349246660612,0,2426,False,left,non propaganda,non propaganda
+1557159544907776002,172,28,False,left,['Exaggeration or minimization'],propaganda
+1287007268161060864,0,0,False,lean left,['Exaggeration or minimization'],propaganda
+1573693535198580740,13,0,False,lean left,['Exaggeration or minimization'],propaganda
+1551820259203489792,109,15,False,left,['Loaded language'],propaganda
+1106559731441623041,0,0,False,lean right,['Exaggeration or minimization'],propaganda
+1569494295224221702,272,4,False,left,['Exaggeration or minimization'],propaganda
+1549517333248577538,81,5,False,left,['Loaded language'],propaganda
+1572240350093123585,727,159,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1567410972658376704,16,1,False,right,"['Red herring', ' Exaggeration or minimization']",propaganda
+1573389595303186432,4,0,False,lean left,['Exaggeration or minimization'],propaganda
+1575304485626339328,0,71,False,left,"['Appeal to authority', ' Exaggeration or minimization', ' Loaded language']",propaganda
+826265604827004929,341,171,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1528672110452817920,2215,260,False,lean left,['Loaded language'],propaganda
+1335572340214820865,4,1,False,lean left,['Exaggeration or minimization'],propaganda
+1540113590392438784,1393,527,False,right,"['Exaggeration or minimization', ' Repetition', ' Doubt']",propaganda
+1527777676874121216,372,148,False,lean left,"['Exaggeration or minimization', ' Loaded language', ' Repetition', ' Doubt']",propaganda
+1543276262768214019,0,146,False,right,['Loaded language'],propaganda
+1572923778241265665,0,584,False,left,['Loaded language'],propaganda
+1452631832047013891,11,1,False,lean left,['Loaded language'],propaganda
+1316075231262339072,13,1,False,right,['Loaded language'],propaganda
+1575552646231908353,184,38,False,left,"['Loaded language', ' Doubt']",propaganda
+1488517367969861642,1,0,False,left,['Loaded language'],propaganda
+1103045766602547201,112,7,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1569473545570516994,29,0,False,left,['Loaded language'],propaganda
+1564315760427769856,2,0,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1557012333523877899,6,1,False,left,['Loaded language'],propaganda
+1524111141336666112,765,80,False,lean left,['Loaded language'],propaganda
+1543621593372434434,23,2,False,lean left,['Loaded language'],propaganda
+1574132313427959809,10,1,False,left,['Loaded language'],propaganda
+1576115320049340416,13,4,False,lean right,['Loaded language'],propaganda
+1100797433582362631,60,2,False,lean right,['Loaded language'],propaganda
+1380465453831704578,390,100,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1558260180911067138,3,0,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1556669232762568704,31,3,False,left,['Loaded language'],propaganda
+1524502995215560707,2757,621,False,lean left,"['Exaggeration or minimization', ' Loaded language', ' Doubt']",propaganda
+1532542685529219072,106,37,False,left,"['Appeal to authority', ' Loaded language']",propaganda
+1367553718862897153,41,3,False,left,['Loaded language'],propaganda
+1552382002363613185,40,4,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1572401945457086465,2,0,False,left,"['Obfuscation', ' intentional vagueness', ' confusion', ' Loaded language']",propaganda
+1397293152440967173,21,1,False,right,['Loaded language'],propaganda
+1222915133158100993,3,2,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1556807271375683584,0,21,False,left,['Loaded language'],propaganda
+1552509565413081090,1,0,False,left,['Loaded language'],propaganda
+1471525940471734274,40,5,False,right,['Exaggeration or minimization'],propaganda
+1575538455077068800,52,13,False,left,['Loaded language'],propaganda
+1540235941268398081,11215,1290,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1530169076705796096,139,51,False,lean right,['Loaded language'],propaganda
+1546966978098864128,335,78,False,left,"['Appeal to authority', ' Loaded language']",propaganda
+1538636293336227840,0,37,False,right,['Loaded language'],propaganda
+1508985453927673857,19,2,False,lean left,['Loaded language'],propaganda
+1534613326222741505,13,3,False,lean left,['Loaded language'],propaganda
+1550610316890935296,70,9,False,left,['Loaded language'],propaganda
+1526558165801877507,573,134,False,left,"['Loaded language', ' Name calling or labeling']",propaganda
+1518615805474353153,3099,886,False,left,"['Loaded language', ' Bandwagon']",propaganda
+1538350781899882496,356,25,False,right,['Exaggeration or minimization'],propaganda
+930602906994331648,111,17,False,left,['Exaggeration or minimization'],propaganda
+1563288392510554113,20,3,False,left,['Loaded language'],propaganda
+1509660088780439552,1,0,False,lean left,['Loaded language'],propaganda
+1574746054675017728,0,7,False,right,non propaganda,non propaganda
+1576440610831175680,46,6,False,center,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1087711862228221953,72,1,False,lean right,['Name calling or labeling'],propaganda
+1571877849644113920,0,45,False,right,"['Loaded language', ' Flag-waving']",propaganda
+1493972416703389698,210,32,False,left,['Loaded language'],propaganda
+1562439931724632067,1,0,False,lean left,"['Loaded language', ' Repetition']",propaganda
+1542160454704848897,0,0,False,right,['Loaded language'],propaganda
+1516771587420217348,2,1,False,left,['Loaded language'],propaganda
+1537853560137850881,3,0,False,lean left,"['Appeal to authority', ' Loaded language', ' Flag-waving']",propaganda
+1575581291424010240,0,13,False,left,['Loaded language'],propaganda
+1576278537207795712,272,90,False,left,['Loaded language'],propaganda
+1561446871779999748,0,0,False,lean right,"['Loaded language', ' Doubt']",propaganda
+1573397854445600777,1,0,False,lean right,"['Exaggeration', ' Loaded language']",propaganda
+1377598715758792707,0,1840,False,left,['Loaded language'],propaganda
+1576605113002491905,87,15,False,center,non propaganda,non propaganda
+1564606911500124163,60,22,False,right,['Loaded language'],propaganda
+1537020289359437824,4,2,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1536893621630287873,65,1,False,right,non propaganda,non propaganda
+1550832730191036417,15,0,False,left,['Loaded language'],propaganda
+1539295465325350915,30,5,False,lean left,"['Appeal to authority', ' Slogans']",propaganda
+1538212341891883008,0,0,False,right,['Loaded language'],propaganda
+1568993913347936258,35,23,False,right,"['Black-and-white Fallacy', ' Dictatorship', ' Loaded language']",propaganda
+1379051818018291717,284,4,False,left,non propaganda,non propaganda
+1540862371513630721,3,0,False,left,non propaganda,non propaganda
+1574049999545057280,90,5,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1539649352033251329,0,0,False,right,non propaganda,non propaganda
+1541963023451029507,8,3,False,lean left,['Appeal to authority'],propaganda
+1536144561843609602,60,0,False,right,non propaganda,non propaganda
+1489626471714988033,130,35,False,left,non propaganda,non propaganda
+1549696133252845570,91,28,False,left,['Loaded language'],propaganda
+1497284161555603460,2766,1170,False,left,['Loaded language'],propaganda
+1533845340478119936,37,5,False,lean left,['Appeal to authority'],propaganda
+1497716634416562176,0,135,False,left,non propaganda,non propaganda
+1574117712560799745,33,8,False,lean right,"['Loaded language', ' Flag-waving']",propaganda
+1558045987943452674,5,0,False,left,['Loaded language'],propaganda
+1425126630771593219,15,11,False,lean left,non propaganda,non propaganda
+1522399328945463296,10,0,False,left,['Loaded language'],propaganda
+1520183045214523392,36,5,False,left,['Loaded language'],propaganda
+1521525259526197248,199,39,False,left,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1516544059820621832,10,1,False,lean left,non propaganda,non propaganda
+1440788054357069832,8,3,False,lean left,['Loaded language'],propaganda
+706850711904976896,0,0,False,left,['Loaded language'],propaganda
+1567129485996171264,1,0,False,lean left,non propaganda,non propaganda
+1568688998331351040,0,0,False,lean left,non propaganda,non propaganda
+1329840416368316417,422,167,False,left,"['Loaded language', ' Name calling or labeling']",propaganda
+1275614303106879491,140,3,False,left,['Loaded language'],propaganda
+1513920809064144902,7344,779,False,lean left,['Loaded language'],propaganda
+1558524275618979840,8,0,False,right,non propaganda,non propaganda
+1512137910681849864,247,25,False,right,"['Exaggeration or minimization', ' Bandwagon']",propaganda
+1558430674687770624,63,11,False,lean right,"['Loaded language', ' Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1559188991936811014,17,0,False,lean right,['Loaded language'],propaganda
+1550272790687010817,1508,163,False,left,non propaganda,non propaganda
+1570393155127623680,24,7,False,lean left,['Loaded language'],propaganda
+1550206458138185728,2,1,False,right,['Bandwagon'],propaganda
+1557798557528236032,27,0,False,right,['Loaded language'],propaganda
+1545391815641235459,114,26,False,left,['Loaded language'],propaganda
+925461839827357698,100,47,False,left,['Loaded language'],propaganda
+1485446611614695428,228,39,False,right,['Exaggeration or minimization'],propaganda
+1576564204869648385,5,1,False,lean left,non propaganda,non propaganda
+943245226843475969,100,48,False,left,['Loaded language'],propaganda
+1570462023280111616,42,21,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+955463583248343040,75,10,False,left,['Loaded language'],propaganda
+954061532178075650,1,0,False,left,['Loaded language'],propaganda
+652166976366731266,23,24,False,left,['Loaded language'],propaganda
+1404193286932271105,35,0,False,left,non propaganda,non propaganda
+1572626153931960322,17,0,False,lean right,non propaganda,non propaganda
+1566421925248880642,1,0,False,lean right,non propaganda,non propaganda
+1572621711903789056,106,14,False,left,"['Appeal to authority', ' Loaded language']",propaganda
+1535373503272210434,75,17,False,left,['Loaded language'],propaganda
+1539783847440703488,0,0,False,right,non propaganda,non propaganda
+1539787072474595331,0,0,False,right,['Loaded language'],propaganda
+1568068576615055360,7,2,False,right,non propaganda,non propaganda
+1555272393794387970,6,2,False,lean left,non propaganda,non propaganda
+1555502780118450182,191,18,False,left,"['Causal oversimplification', ' Loaded language']",propaganda
+1522265138258227202,6375,793,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1572304090423599111,29,5,False,lean right,['Loaded language'],propaganda
+1519904707505836032,14,1,False,left,non propaganda,non propaganda
+1545527093097861123,8,0,False,left,['Loaded language'],propaganda
+1541081845508591617,0,0,False,right,non propaganda,non propaganda
+1451575234205818885,42,3,False,right,['Loaded language'],propaganda
+1571490481091088394,0,0,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1567909327955976192,71,6,False,left,['Loaded language'],propaganda
+1561012644898869248,3,1,False,lean left,['Doubt'],propaganda
+1570737221074046976,12,1,False,lean right,non propaganda,non propaganda
+1455687594315075589,66,1,False,right,['Exaggeration or minimization'],propaganda
+1562251595085410304,8,3,False,lean left,non propaganda,non propaganda
+1569849552513146882,0,0,False,lean right,['Loaded language'],propaganda
+1458439564847157253,54,9,False,right,non propaganda,non propaganda
+1572637259480076297,0,402,False,left,"['Loaded language', ' Doubt']",propaganda
+1559718443276029952,51584,5457,False,left,['Loaded language'],propaganda
+1559562710446137345,54,21,False,left,non propaganda,non propaganda
+628535258938535936,1,0,False,left,['Loaded language'],propaganda
+1482200127276294150,0,388,False,lean left,['Bandwagon'],propaganda
+1575833201960009732,134,25,False,lean right,['Loaded language'],propaganda
+1575320710003986432,22,2,False,lean right,['Loaded language'],propaganda
+1463903010493501446,548,18,False,left,['Flag-waving'],propaganda
+1570846324991598592,155,11,False,right,non propaganda,non propaganda
+1566646556136202241,280,4,False,left,['Loaded language'],propaganda
+1345429268940120066,2289,384,False,lean right,non propaganda,non propaganda
+1350061912747352067,0,30,False,lean right,non propaganda,non propaganda
+1550523263280824321,24,5,False,left,['Loaded language'],propaganda
+1569755580184817669,945,142,False,right,['Loaded language'],propaganda
+1570944750068584448,2,0,False,left,non propaganda,non propaganda
+1573985869660360705,3,3,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1547218706245246982,0,46,False,left,['Exaggeration or minimization'],propaganda
+1537174325190660097,3,0,False,lean left,"['Flag-waving', ' Loaded language']",propaganda
+1573556955938971649,14,11,False,lean left,"['Appeal to fear/prejudice', ' Loaded language', ' Name calling or labeling']",propaganda
+1549382720664608774,702,234,False,right,non propaganda,non propaganda
+1572634100195811329,0,109,False,lean right,['Loaded language'],propaganda
+1548037088955621381,0,2,False,lean left,"['Appeal to fear/prejudice', ' Bandwagon', ' Loaded language']",propaganda
+1572512021668659201,9,8,False,lean left,['Bandwagon'],propaganda
+1107971334749986816,231,9,False,lean right,non propaganda,non propaganda
+1107813825804423168,149,45,False,lean right,"['Name calling or labeling', ' Doubt', ' Reductio ad Hitlerum']",propaganda
+1570928983231037440,432,148,False,right,"['Exaggeration or minimization', ' Causal oversimplification']",propaganda
+1565517226521890817,0,17,False,left,non propaganda,non propaganda
+1576099948587880448,0,1,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1575012280940437505,147,38,False,right,"['Loaded language', ' Doubt']",propaganda
+1572245779103760389,4,0,False,left,non propaganda,non propaganda
+1525440113605414913,2,0,False,lean left,['Loaded language'],propaganda
+1509586857281081354,1,0,False,lean left,['Loaded language'],propaganda
+1576931516952739840,109,49,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1555756270593908738,1,0,False,left,"['Loaded language', ' Bandwagon']",propaganda
+1512472001344155654,3,0,False,lean left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+963774494203695104,0,9,False,lean right,non propaganda,non propaganda
+1573322250228584449,193,57,False,right,non propaganda,non propaganda
+1563336468764164101,2,0,False,left,['Loaded language'],propaganda
+1562175004829224964,2,0,False,left,non propaganda,non propaganda
+985892419567841280,0,9,False,lean right,non propaganda,non propaganda
+991093120115802112,0,7,False,lean right,['Loaded language'],propaganda
+1572333574757715968,301,36,False,right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1576743854715305986,8,4,False,lean left,non propaganda,non propaganda
+1571679859113598978,37,10,False,right,['Loaded language'],propaganda
+1563030853516951554,5,0,False,left,['Loaded language'],propaganda
+1463869391146262530,939,25,False,left,['Loaded language'],propaganda
+1107684787215613953,21,0,False,lean right,['Loaded language'],propaganda
+1437454372464640013,1,1,False,left,['Loaded language'],propaganda
+1574068769160306691,0,1327,False,lean right,"['Loaded language', ' Exaggeration or minimization', ' Doubt']",propaganda
+1103995507180036096,4,0,False,lean right,non propaganda,non propaganda
+1560099288742563845,0,1673,False,lean left,non propaganda,non propaganda
+1571844749254098945,0,136,False,right,non propaganda,non propaganda
+1556828317512519685,35,6,False,left,"['Loaded language', ' Flag-waving', ' Appeal to authority']",propaganda
+1103405136511201287,2,0,False,lean right,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1103284492297555969,41,2,False,lean right,non propaganda,non propaganda
+1559724559401721858,20,6,False,left,['Loaded language'],propaganda
+1569679314161135616,7,1,False,lean left,non propaganda,non propaganda
+1569667863069298689,6,2,False,lean left,['Doubt'],propaganda
+1102939294266806273,0,0,False,lean right,non propaganda,non propaganda
+1102711822401110016,33,1,False,lean right,['Causal oversimplification'],propaganda
+1569326298199105536,17,7,False,lean left,non propaganda,non propaganda
+1562516574065414146,32,5,False,right,"['Obfuscation', ' Intentional vagueness', ' Confusion']",propaganda
+1535060362302980096,31,2,False,left,non propaganda,non propaganda
+1100834136347025408,74,7,False,lean right,['Doubt'],propaganda
+1517320528280928263,37,6,False,left,['Bandwagon'],propaganda
+1523306224745598979,136,12,False,left,non propaganda,non propaganda
+1087706241944686597,11,0,False,lean right,"['Appeal to authority', ' Repetition', ' Thought-terminating cliche']",propaganda
+1104013773050970113,1,0,False,lean right,['Exaggeration or minimization'],propaganda
+1576645053518589952,6391,1148,False,lean right,"['Loaded language', ' Bandwagon']",propaganda
+1571749703296884738,50,39,False,lean left,['Loaded language'],propaganda
+1570089718083207172,45,6,False,left,['Loaded language'],propaganda
+1572302421254377473,9,7,False,lean left,"['Appeal to fear/prejudice', ' Doubt']",propaganda
+1107624193053655042,1,0,False,lean right,['Loaded language'],propaganda
+1572170124223725569,8,3,False,lean left,"['Loaded language', ' Causal oversimplification', ' Doubt']",propaganda
+1572101102387986437,3,2,False,lean left,non propaganda,non propaganda
+1481999240591290380,41,9,False,left,non propaganda,non propaganda
+1567295218315132928,17,0,False,left,['Exaggeration or minimization'],propaganda
+1564708386742194176,559,136,False,left,"['Flag-waving', ' Name calling or labeling']",propaganda
+1553454564896129026,57,15,False,right,non propaganda,non propaganda
+1564662087741329411,2,0,False,left,non propaganda,non propaganda
+1551626408048435200,2,1,False,lean left,"['Appeal to authority', ' Bandwagon', ' Loaded language']",propaganda
+1571156182160621569,10,3,False,lean left,non propaganda,non propaganda
+1487433888775524356,463,47,False,left,['Loaded language'],propaganda
+1552008025384394753,2,0,False,lean left,"['Loaded language', ' Appeal to authority', ' Flag-waving']",propaganda
+1552014925492588545,5,0,False,lean left,"['Slogans', ' Appeal to fear/prejudice', ' Loaded language', ' Flag-waving', ' Repetition']",propaganda
+1105484725177729024,46,8,False,lean right,"['Slogans', ' Loaded language']",propaganda
+1509247058041053194,0,1,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1576797545413726209,16,3,False,lean right,"['Loaded language', ' Exaggeration or Minimization']",propaganda
+1576264562923667456,0,0,False,left,['Loaded language'],propaganda
+1529952578661916672,56,7,False,lean right,['Loaded language'],propaganda
+1346955960204447747,936,126,False,left,"['Loaded language', ' Flag-waving', ' Exaggeration or minimization']",propaganda
+1526610996374257664,2,0,False,left,non propaganda,non propaganda
+1521806669453434880,5,1,False,lean left,non propaganda,non propaganda
+1521656532206821377,6,1,False,lean left,non propaganda,non propaganda
+1521651376790847488,0,0,False,lean left,['Loaded language'],propaganda
+1528229183410798615,1,0,False,right,['Loaded language'],propaganda
+1316926516899598336,0,406,False,left,non propaganda,non propaganda
+1535325805986856960,9,1,False,left,['Loaded language'],propaganda
+1570444879905558528,0,2,False,right,['Loaded language'],propaganda
+1308047159913308162,243,13,False,left,['Loaded language'],propaganda
+1575698054002491392,395,97,False,lean right,non propaganda,non propaganda
+1541834369978990592,74,23,False,left,['Loaded language'],propaganda
+1547769379776892928,756,162,False,left,['Loaded language'],propaganda
+1297938723108196359,89,7,False,left,non propaganda,non propaganda
+1554972504938401793,0,20,False,lean left,non propaganda,non propaganda
+1573018227596304384,1,0,False,lean left,['Loaded language'],propaganda
+1573265536292900864,0,593,False,right,non propaganda,non propaganda
+1525606208962428928,393,132,False,left,['Loaded language'],propaganda
+1567513203655016450,48,16,False,right,['Appeal to fear/prejudice'],propaganda
+1526703866238095363,62,13,False,lean left,['Appeal to authority'],propaganda
+1529267425769885697,8,6,False,lean left,['Appeal to authority'],propaganda
+1395092277383602176,46,5,False,right,"['Loaded language', ' Name calling or labeling', ' Doubt']",propaganda
+1506737358368133124,69,8,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1513527355301584902,126,7,False,left,non propaganda,non propaganda
+1566034518565322757,0,200,False,right,non propaganda,non propaganda
+1532854907199377408,0,17,False,left,non propaganda,non propaganda
+1531799161934336003,28,1,False,right,['Bandwagon'],propaganda
+1529785049515704320,0,1,False,lean left,non propaganda,non propaganda
+1529257427102728193,32,6,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1518943289117978626,0,4,False,left,['Loaded language'],propaganda
+1529248765227454464,31,14,False,lean left,['Appeal to authority'],propaganda
+1528780351547514886,2,1,False,lean left,['Loaded language'],propaganda
+1566901200494157824,0,47,False,right,non propaganda,non propaganda
+1360699652572610560,565,141,False,left,"['Loaded language', ' Straw man']",propaganda
+1509371988204216321,19,0,False,left,non propaganda,non propaganda
+1526741911184220161,4,0,False,lean left,['Appeal to authority'],propaganda
+1526727906176774145,43,10,False,lean left,non propaganda,non propaganda
+1557073470336516096,0,201,False,left,non propaganda,non propaganda
+1568229835440377856,91,6,False,left,non propaganda,non propaganda
+1571818730346233856,7,0,False,right,"['Black-and-white fallacy', ' Loaded language', ' Slogans']",propaganda
+1570072704979705856,7,1,False,left,['Loaded language'],propaganda
+1524505388623831040,4208,452,False,right,"['Slogans', ' Loaded language', ' Exaggeration or minimization', ' Name calling or labeling']",propaganda
+1562474561257410562,114,20,False,left,"['Appeal to authority', ' Loaded language']",propaganda
+1524506216004730881,91,32,False,right,['Slogans'],propaganda
+1564727946555924483,0,12,False,left,['Loaded language'],propaganda
+1565761652359892994,0,50,False,left,['Loaded language'],propaganda
+1568714698207465472,9,1,False,left,['Loaded language'],propaganda
+1570785096566992896,52,21,False,left,"['Black-and-white fallacy', ' Appeal to authority']",propaganda
+1532120945199964160,403,60,False,lean left,['Loaded language'],propaganda
+1558129878129643520,40,4,False,left,non propaganda,non propaganda
+1529301249988136960,2923,221,False,lean left,['Loaded language'],propaganda
+1556709245269278720,115,10,False,left,['Loaded language'],propaganda
+1527920425455390720,627,29,False,lean left,non propaganda,non propaganda
+1527493948675334144,45,13,False,lean left,non propaganda,non propaganda
+1526686927705227264,824,148,False,lean left,['Loaded language'],propaganda
+1555239197916729348,0,2,False,right,non propaganda,non propaganda
+1576199680664522752,7,2,False,lean right,non propaganda,non propaganda
+1575318600252112902,0,2,False,left,non propaganda,non propaganda
+1569380835765243904,13,1,False,left,['Loaded language'],propaganda
+1575927104444694529,1,0,False,left,['Loaded language'],propaganda
+1573255963632713728,337,18,False,left,['Loaded language'],propaganda
+1571943739852988422,42,7,False,right,non propaganda,non propaganda
+1571887994763706371,307,68,False,right,"['Causal Oversimplification', ' Loaded language']",propaganda
+1575927185952604160,46,15,False,lean right,non propaganda,non propaganda
+1559226143080796160,58,17,False,lean right,non propaganda,non propaganda
+1575438376601362432,1,0,False,right,['Loaded language'],propaganda
+1576022825235726336,0,224,False,right,non propaganda,non propaganda
+1576195446074183681,41,13,False,lean right,non propaganda,non propaganda
+1576701115697356801,36,1,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1563166149269159936,0,28,False,right,"['Reductio ad Hitlerum', ' Name calling or labeling', ' Obfuscation', ' intentional vagueness', ' confusion']",propaganda
+1533349299844952065,273,34,False,lean left,non propaganda,non propaganda
+1560022200815702017,48,20,False,left,non propaganda,non propaganda
+1564657880183279620,23,1,False,left,['Appeal to fear/prejudice'],propaganda
+1564650735454797824,154,33,False,left,['Appeal to authority'],propaganda
+1531746738926673922,7617,524,False,lean left,['Loaded language'],propaganda
+1566842894509563906,5,0,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1574224802063290368,2,1,False,center,['Loaded language'],propaganda
+1504423600941678592,10,0,False,lean left,['Loaded language'],propaganda
+1326944606219624448,2,0,False,lean left,['Appeal to authority'],propaganda
+1573388428561055745,6402,1128,False,lean left,['Slogans'],propaganda
+1547705227947585536,2833,191,False,lean left,['Loaded language'],propaganda
+1323806581591592960,0,9,False,right,non propaganda,non propaganda
+1573318015755632640,722,212,False,lean left,['Loaded language'],propaganda
+1576953217388118017,344,29,False,lean left,['Loaded language'],propaganda
+1571921621283377154,945,121,False,lean left,['Flag-waving'],propaganda
+1575141853426585603,125,27,False,left,"['Name calling or labeling', ' Loaded language']",propaganda
+1347224420935462914,11635,686,False,right,non propaganda,non propaganda
+1325845422624165888,1,0,False,lean left,"['Appeal to authority', ' Thought-terminating cliche']",propaganda
+1567532681327525888,117,31,False,left,['Loaded language'],propaganda
+1414637768160993292,0,121,False,right,['Loaded language'],propaganda
+1564913332867448834,21,0,False,lean left,non propaganda,non propaganda
+1544584868541210624,208,4,False,lean left,non propaganda,non propaganda
+1532416675546537984,24,2,False,right,"['Slogans', ' Whataboutism']",propaganda
+1563561180165476354,1,1,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1232747418380361732,1,0,False,lean left,"['Appeal to authority', ' Doubt']",propaganda
+1575932246913056770,25,7,False,center,non propaganda,non propaganda
+1548377246309658632,0,904,False,right,"['Loaded language', ' Doubt']",propaganda
+1297952437479919618,375,67,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1283399658820206592,0,0,False,lean left,non propaganda,non propaganda
+1429987637310365717,138,6,False,right,non propaganda,non propaganda
+1570495513325146113,0,0,False,center,['Flag-waving'],propaganda
+1575581215524286464,37,8,False,center,non propaganda,non propaganda
+1568345111246897152,397,16,False,lean left,"['Loaded language', ' Flag-waving']",propaganda
+1574167610677141507,5165,640,False,lean left,non propaganda,non propaganda
+1549091168058744833,7,0,False,right,"['Loaded language', ' Appeal to authority']",propaganda
+1540634199706767360,1341,143,False,lean left,['Loaded language'],propaganda
+1326283833390542851,1,1,False,lean left,non propaganda,non propaganda
+1395578207886221316,0,4,False,right,['Loaded language'],propaganda
+1576350016607817729,53,19,False,center,non propaganda,non propaganda
+1555006877276246017,3,0,False,lean left,['Loaded language'],propaganda
+1313318528997453825,0,897,False,right,non propaganda,non propaganda
+1576882357482803200,1,0,False,center,non propaganda,non propaganda
+1315472847096229888,1,1,False,lean left,non propaganda,non propaganda
+1527611321595871232,0,135,False,right,['Loaded language'],propaganda
+1572609642999566340,3,2,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1565521749722091520,98,32,False,right,"['Slogans', ' Flag-waving']",propaganda
+1569604404117897217,1,0,False,center,non propaganda,non propaganda
+1525104663820963846,0,5,False,right,"['Causal Oversimplification', ' Doubt']",propaganda
+1525140681135738880,15,5,False,lean left,non propaganda,non propaganda
+1530601850382209024,0,12,False,right,['Loaded language'],propaganda
+1539696928258232323,65,21,False,left,['Loaded language'],propaganda
+1575085586108616704,0,0,False,center,non propaganda,non propaganda
+1355339354676187139,81,9,False,right,"['Slogans', ' Thought-terminating cliché']",propaganda
+1316464835652091906,1,0,False,lean left,non propaganda,non propaganda
+1575478040347480064,18,4,False,center,non propaganda,non propaganda
+1524014792876437504,2,0,False,lean left,['Bandwagon'],propaganda
+1571688123238604800,0,0,False,center,non propaganda,non propaganda
+1541625692940558347,15,2,False,right,"['Appeal to authority', ' Loaded language']",propaganda
+1548035859953291267,4,2,False,lean left,['Exaggeration or minimization'],propaganda
+1575991410683265025,15,3,False,center,['Exaggeration or minimization'],propaganda
+1575850620921483264,247,24,False,lean right,non propaganda,non propaganda
+1415884048069799939,0,106,False,right,"['Appeal to authority', ' Loaded language']",propaganda
+1576043144164282368,62,6,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1531017782858588160,0,50,False,right,['Exaggeration or minimization'],propaganda
+1542500568144510976,15,10,False,right,"['Appeal to authority', ' Loaded language', ' Exaggeration or minimization', ' Flag-waving']",propaganda
+1571548347902660611,0,0,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1576957492722106370,17,4,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1440699201499713545,2,0,False,lean left,non propaganda,non propaganda
+1559196226968555520,13,0,False,left,non propaganda,non propaganda
+1267054590404571136,147,126,False,lean left,['Appeal to authority'],propaganda
+1535299753042493442,43,4,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1364980568346222599,86,4,False,left,['Loaded language'],propaganda
+1563520792242970625,480,81,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1574538263204835329,146,15,False,lean right,['Loaded language'],propaganda
+1088287201316679681,14,1,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1099869657627004928,93,10,False,lean right,non propaganda,non propaganda
+1461379193778978823,301,16,False,right,['Loaded language'],propaganda
+1536431341776125958,555,49,False,lean left,['Doubt'],propaganda
+1554842447502606337,19,4,False,left,['Loaded language'],propaganda
+1560114224793374721,387,5,False,left,['Loaded language'],propaganda
+1575877160371355649,5,1,False,lean right,['Loaded language'],propaganda
+1576383987618091008,46,20,False,center,non propaganda,non propaganda
+1502422401988050948,2,0,False,left,['Loaded language'],propaganda
+1488514018314698760,3,0,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1551999120369410048,13,5,False,right,['Loaded language'],propaganda
+1571131792916377604,2,0,False,right,['Loaded language'],propaganda
+1571909149461561345,2433,84,False,left,['Loaded language'],propaganda
+1546568918352928769,1330,278,False,left,"['Exaggeration or minimization', ' Loaded language', ' Name calling or labeling']",propaganda
+1537092396520988675,5,0,False,left,['Loaded language'],propaganda
+1239178875667730434,3,2,False,lean left,non propaganda,non propaganda
+1529561237176066049,9,0,False,right,['Loaded language'],propaganda
+1554249879119183875,20,4,False,right,"['Appeal to authority', ' Loaded language', ' Flag-waving']",propaganda
+1576451973351723008,35,7,False,center,['Exaggeration or minimization'],propaganda
+1554223321784393728,0,2654,False,right,non propaganda,non propaganda
+1225160739385757698,533,72,False,lean left,"['Appeal to authority', ' Flag-waving', ' Loaded language']",propaganda
+1535831876597821440,309,53,False,left,['Loaded language'],propaganda
+1551611837229170688,0,1,False,lean left,"['Loaded language', ' Repetition']",propaganda
+1517424911169593344,4841,706,False,lean left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1561357767297884160,0,1,False,lean right,['Exaggeration or minimization'],propaganda
+1575488079040720896,31,3,False,center,['Exaggeration or minimization'],propaganda
+1572211544037150721,25,1,False,right,non propaganda,non propaganda
+1571472709418373122,49,11,False,left,non propaganda,non propaganda
+1564357416887672834,41,2,False,left,['Loaded language'],propaganda
+1565783700138254336,95,29,False,left,['Loaded language'],propaganda
+1197312695009185794,99,25,False,lean left,['Loaded language'],propaganda
+1540862594784845825,22,3,False,right,['Loaded language'],propaganda
+1576599152649273345,58,11,False,center,['Exaggeration or minimization'],propaganda
+1569384781682720769,190,41,False,right,"['Loaded language', ' Exaggeration or minimization', ' Doubt']",propaganda
+1260962685912584194,5,4,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1537431700451471360,12,7,False,right,"['Obfuscation', ' intentional vagueness', ' confusion', ' Repetition']",propaganda
+921803672949989376,1,1,False,left,non propaganda,non propaganda
+1570899530778021889,4,0,False,left,['Loaded language'],propaganda
+1575512076881117187,112,15,False,lean right,['Loaded language'],propaganda
+656529414222692354,3,0,False,left,['Exaggeration or Minimization'],propaganda
+1575511007417475072,0,0,False,center,non propaganda,non propaganda
+1374831314138959887,37,3,False,left,non propaganda,non propaganda
+1565576471896158208,39,2,False,right,non propaganda,non propaganda
+1556837527549612038,0,36,False,left,non propaganda,non propaganda
+1569791066303512578,0,5,False,right,['Loaded language'],propaganda
+1569507822379085824,105,4,False,left,"['Loaded language', ' Name calling or labeling']",propaganda
+1574997447310548992,3,0,False,center,['Appeal to authority'],propaganda
+1523614358323875840,22,1,False,lean left,non propaganda,non propaganda
+1560631893594460162,1,0,False,left,non propaganda,non propaganda
+1534681823216803840,5,0,False,left,non propaganda,non propaganda
+1576327468763746304,0,4,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1569510755627843585,6,0,False,left,['Loaded language'],propaganda
+1564679433109250054,36,4,False,lean right,['Causal oversimplification'],propaganda
+1575499313274269697,205,48,False,lean right,['Exaggeration or minimization'],propaganda
+1546497839618031617,104,1,False,left,non propaganda,non propaganda
+1571514159489253376,0,510,False,right,"['Slogans', ' Loaded language']",propaganda
+1317623313041162241,87,9,False,left,non propaganda,non propaganda
+1570025899730391040,0,5511,False,right,['Loaded language'],propaganda
+1537871113908273153,2,1,False,lean left,['Loaded language'],propaganda
+1562940853106028545,281,128,False,right,non propaganda,non propaganda
+1572966628043677696,0,27,False,lean right,non propaganda,non propaganda
+1569523852543422465,25,0,False,left,non propaganda,non propaganda
+1531484464282492928,72,9,False,right,non propaganda,non propaganda
+1569764995684081664,0,41,False,left,non propaganda,non propaganda
+1534216288687489025,27,5,False,left,non propaganda,non propaganda
+1569725630593253376,0,1,False,left,['Loaded language'],propaganda
+760943912689082368,1,0,False,left,non propaganda,non propaganda
+1575513729835352065,22,7,False,lean right,['Loaded language'],propaganda
+1238242494279802888,6,1,False,lean left,['Loaded language'],propaganda
+1564264282472304642,26,3,False,lean right,non propaganda,non propaganda
+1535740300957728768,0,161,False,left,non propaganda,non propaganda
+1508125005296680967,113,1,False,left,non propaganda,non propaganda
+1528801230025379843,6,2,False,left,non propaganda,non propaganda
+1565564600359141376,0,137,False,right,['Loaded language'],propaganda
+1543174933638946818,4701,670,False,lean left,['Loaded language'],propaganda
+1535320216229511169,14,3,False,right,['Slogans'],propaganda
+1572034629695115270,8,0,False,left,non propaganda,non propaganda
+1575453520463003648,0,140,False,lean right,non propaganda,non propaganda
+1548033820288438272,31,9,False,right,['Appeal to authority'],propaganda
+1542153354415046661,75,16,False,right,non propaganda,non propaganda
+1572408384372064257,0,0,False,left,non propaganda,non propaganda
+1105575349415481347,2,0,False,lean right,['Loaded language'],propaganda
+1526726646941859840,4,2,False,lean left,non propaganda,non propaganda
+1497610356247744513,0,20,False,left,non propaganda,non propaganda
+1105575597412139008,25,0,False,lean right,['Exaggeration or minimization'],propaganda
+1572744150495404033,0,0,False,left,non propaganda,non propaganda
+1576943219711283200,98,24,False,right,non propaganda,non propaganda
+1410027696290156545,14,0,False,left,non propaganda,non propaganda
+1512591026157936645,0,3146,False,lean left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1551959924971823106,3,3,False,lean left,['Loaded language'],propaganda
+1525262084400889857,0,438,False,left,non propaganda,non propaganda
+1528913038643908609,465,71,False,lean left,['Appeal to authority'],propaganda
+1541467003260751877,0,0,False,right,non propaganda,non propaganda
+1530201457835888642,10,2,False,right,non propaganda,non propaganda
+1567657075706105856,0,11,False,right,non propaganda,non propaganda
+1555911661890015232,208,63,False,left,['Loaded language'],propaganda
+1563533347720396804,1,0,False,left,non propaganda,non propaganda
+1569405968709992449,24,2,False,left,non propaganda,non propaganda
+1191408705566363649,2,4,False,lean left,non propaganda,non propaganda
+1558500450449739778,6,0,False,left,['Causal oversimplification'],propaganda
+1564994830396260353,506,63,False,left,non propaganda,non propaganda
+1552014622206660609,3,2,False,lean left,"['Appeal to authority', ' Loaded language']",propaganda
+1574387030544490498,15,1,False,lean right,['Loaded language'],propaganda
+1556305945990496256,46,4,False,left,non propaganda,non propaganda
+1575553798541549569,34,6,False,lean right,non propaganda,non propaganda
+1440422322209366021,0,12,False,left,non propaganda,non propaganda
+1546924998295691265,0,0,False,right,"['Loaded language', ' Straw man', ' Name calling or labeling']",propaganda
+1528236767249309696,2,0,False,right,non propaganda,non propaganda
+1217478464267149313,19,21,False,lean left,non propaganda,non propaganda
+1575070403256524801,1,0,False,center,['Appeal to authority'],propaganda
+1238224044849274880,0,0,False,lean left,non propaganda,non propaganda
+1528245387470987265,0,0,False,right,non propaganda,non propaganda
+1528414357230583815,113,6,False,right,['Exaggeration or minimization'],propaganda
+1524063926832537601,30,10,False,right,['Straw man'],propaganda
+1527988424367644675,0,151,False,right,['Doubt'],propaganda
+1574829206340603910,2,0,False,center,non propaganda,non propaganda
+1544854060725145600,80,6,False,right,non propaganda,non propaganda
+1567274787877302272,117,26,False,right,['Causal oversimplification'],propaganda
+1574137907476107266,8,7,False,lean left,['Loaded language'],propaganda
+1461419781794451470,2,1,False,lean right,non propaganda,non propaganda
+1504913576670253065,1,0,False,lean left,['Loaded language'],propaganda
+1530296555193892866,59,15,False,lean right,['Loaded language'],propaganda
+1563350952366596096,20,1,False,right,"['Bandwagon', ' Obfuscation', ' intentional vagueness', ' confusion', ' Loaded language']",propaganda
+1408120087773655045,92,10,False,right,non propaganda,non propaganda
+1102594184224129024,150,22,False,lean right,"['Loaded language', ' Doubt']",propaganda
+1100139417275191296,26,4,False,lean right,['Appeal to authority'],propaganda
+1423740621425106947,3,0,False,lean left,non propaganda,non propaganda
+1567575402700328960,12,0,False,right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1575546008288825347,17,3,False,center,non propaganda,non propaganda
+1574935451848376326,52,9,False,center,non propaganda,non propaganda
+1484994043436224522,4,0,False,lean left,non propaganda,non propaganda
+1513965468679299078,15,0,False,lean left,['Exaggeration or minimization'],propaganda
+1558688115652546560,8,0,False,right,['Name calling or labeling'],propaganda
+1530192392271306753,271,86,False,lean right,"['Name calling or labeling', ' Loaded language']",propaganda
+1538943562766761991,6,0,False,right,non propaganda,non propaganda
+1569184979057352705,4,2,False,lean left,non propaganda,non propaganda
+1532674758059380737,3062,189,False,lean left,non propaganda,non propaganda
+1575431942723575808,0,35,False,right,non propaganda,non propaganda
+1575991348523565056,48,12,False,lean right,['Loaded language'],propaganda
+1101564104878239747,2,0,False,lean right,non propaganda,non propaganda
+1549455908119494657,20,3,False,lean left,non propaganda,non propaganda
+995775854599901185,0,13,False,lean right,non propaganda,non propaganda
+1576575254209728512,30,11,False,center,"['Exaggeration or minimization', ' Appeal to authority']",propaganda
+1574817193044414466,2,0,False,lean left,"['Exaggeration or minimization', ' Straw man', ' Loaded language']",propaganda
+1541585909443088384,795,98,False,lean left,['Loaded language'],propaganda
+1568242953088544771,41,9,False,right,['Flag-waving'],propaganda
+1569205594875203584,3,1,False,lean left,non propaganda,non propaganda
+1402361217986043908,1393,100,False,right,['Flag-waving'],propaganda
+1544472247167242240,4698,443,False,lean left,['Loaded language'],propaganda
+1540041273091948544,32,2,False,right,['Loaded language'],propaganda
+1100836371319660545,72,7,False,lean right,non propaganda,non propaganda
+1522402320641843201,32,5,False,right,"['Loaded language', ' Flag-waving', ' Exaggeration or Minimization']",propaganda
+1551286458211778566,43,0,False,right,non propaganda,non propaganda
+1481699442168594433,15,10,False,lean left,non propaganda,non propaganda
+1561471436371464196,12,0,False,lean right,non propaganda,non propaganda
+1506393404632096771,311,25,False,lean left,['Appeal to authority'],propaganda
+1570525040613158912,0,314,False,right,non propaganda,non propaganda
+1535987489374191617,1,0,False,lean left,non propaganda,non propaganda
+1088596672681332736,64,11,False,lean right,non propaganda,non propaganda
+1554787098259234817,1494,241,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1537855695114076161,593,87,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1554971370811162624,102,15,False,lean left,non propaganda,non propaganda
+1561723152589357057,7,0,False,lean right,['Loaded language'],propaganda
+1575556014400802816,13,5,False,lean right,non propaganda,non propaganda
+1575795693167513603,1,1,False,lean left,non propaganda,non propaganda
+1558236695405170688,13,0,False,lean left,non propaganda,non propaganda
+1088204840017297408,0,0,False,lean right,non propaganda,non propaganda
+1537861832660197376,11,0,False,right,non propaganda,non propaganda
+1103647036585455617,41,8,False,lean right,non propaganda,non propaganda
+1107352785245356036,1,0,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1572610932735619072,4,4,False,right,"['Loaded language', ' Flag-waving']",propaganda
+1574558310199480320,9,0,False,lean left,['Loaded language'],propaganda
+1575618006264283139,13,2,False,lean right,['Exaggeration or minimization'],propaganda
+1575806424491368452,36,9,False,center,non propaganda,non propaganda
+1103844120836169734,55,4,False,lean right,['Exaggeration or minimization'],propaganda
+1104126362498072576,19,1,False,lean right,non propaganda,non propaganda
+1398312747952185348,110,11,False,right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1557151390123933696,6,3,False,lean left,non propaganda,non propaganda
+1532005974558613504,7,8,False,right,non propaganda,non propaganda
+1539797295914520576,0,0,False,right,['Loaded language'],propaganda
+1516864591678033927,2,0,False,lean left,['Loaded language'],propaganda
+1530186550704848899,8,2,False,lean left,['Loaded language'],propaganda
+1563883008654036998,8,0,False,lean left,['Loaded language'],propaganda
+1559183635529572352,22,3,False,right,['Loaded language'],propaganda
+1560969553663909892,23,3,False,lean right,"['Loaded language', ' Slogans']",propaganda
+1540036083903340544,1,0,False,right,['Loaded language'],propaganda
+1571697758486265857,30,2,False,right,['Loaded language'],propaganda
+1576145001062760449,2,0,False,right,['Loaded language'],propaganda
+1519727617741627392,0,0,False,lean left,non propaganda,non propaganda
+1526777626693713920,8,5,False,right,"['Loaded language', ' Bandwagon']",propaganda
+1540037010177626112,0,3123,False,right,non propaganda,non propaganda
+1300611862522769413,161,21,False,right,['Bandwagon'],propaganda
+1537821174054502400,0,0,False,lean left,"['Loaded language', ' Flag-waving']",propaganda
+1575185220579442688,109,32,False,right,['Loaded language'],propaganda
+1525741192574603265,3,0,False,lean left,['Loaded language'],propaganda
+1549512734173175808,314,27,False,right,non propaganda,non propaganda
+1542575227330240513,0,0,False,lean left,non propaganda,non propaganda
+1575640331604967426,34,4,False,lean right,"['Loaded language', ' Exaggeration or Minimization']",propaganda
+1576221737934635009,26,5,False,lean right,['Loaded language'],propaganda
+1574384954099712000,0,0,False,lean left,non propaganda,non propaganda
+1575680692641566721,35,4,False,lean right,non propaganda,non propaganda
+1573418121024897024,0,2043,False,lean right,['Doubt'],propaganda
+1538697504211865600,403,14,False,right,non propaganda,non propaganda
+1530683636374286341,917,128,False,right,"['Name calling or labeling', ' Loaded language']",propaganda
+1562519037237534720,9,2,False,right,"['Loaded language', ' Whatabaoutism']",propaganda
+1536392156901957632,11,0,False,right,['Loaded language'],propaganda
+1540104544633425925,4,1,False,lean left,['Loaded language'],propaganda
+1575567338933551117,28,4,False,center,['Exaggeration or minimization'],propaganda
+1576213268359745540,5,2,False,lean right,"['Appeal to authority', ' Exaggeration or minimization']",propaganda
+1551981037055623168,0,0,False,lean left,['Loaded language'],propaganda
+1100106889310990336,5,1,False,lean right,['Exaggeration or minimization'],propaganda
+1576187734426898432,27,8,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1452628071417327628,0,29,False,lean left,['Loaded language'],propaganda
+1562913642709782530,10,0,False,right,['Loaded language'],propaganda
+1575562847467307017,8,5,False,lean right,['Exaggeration or Minimisation'],propaganda
+1221817973272449025,0,0,False,lean left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1554639899789238272,7,3,False,lean left,['Loaded language'],propaganda
+1569115141932982273,32,2,False,right,['Loaded language'],propaganda
+1087703321102684160,12,2,False,lean right,['Exaggeration or minimization'],propaganda
+1576878506872655875,29,5,False,center,['Appeal to authority'],propaganda
+1551990370224988160,47,7,False,right,['Exaggeration or Minimisation'],propaganda
+1336742030563749888,4,2,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1487152787075047427,8,1,False,right,"['Loaded language', ' Name calling or labeling', ' Black-and-white fallacy', ' Appeal to fear/prejudice']",propaganda
+1572346036148113408,0,0,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1530586115853455361,1,0,False,lean left,"['Loaded language', ' Appeal to authority', ' Flag-waving']",propaganda
+1575148374701006851,39,13,False,center,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1570082482388701184,48,16,False,right,['Loaded language'],propaganda
+1307127739036717058,1,2,False,lean left,non propaganda,non propaganda
+1575340148967063554,38,9,False,lean right,non propaganda,non propaganda
+1528030610354278410,3,0,False,lean left,['Loaded language'],propaganda
+1562228339481448448,23,8,False,lean left,non propaganda,non propaganda
+1544422830514782212,3942,419,False,lean left,['Loaded language'],propaganda
+1575592318614196227,5,2,False,lean right,['Loaded language'],propaganda
+1521666246512726020,12,9,False,lean left,non propaganda,non propaganda
+1558087872066068487,67,2,False,right,"['Loaded language', ' Appeal to authority', ' Flag-waving']",propaganda
+1512860702423326720,4049,547,False,lean left,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1519736871512911873,809,160,False,lean left,['Loaded language'],propaganda
+1524794417844228096,0,2,False,lean left,['Loaded language'],propaganda
+1571541957691719681,0,0,False,lean right,['Loaded language'],propaganda
+1575983602680139790,5,1,False,lean right,non propaganda,non propaganda
+1571609332109742081,0,4,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1576695496168480768,1,0,False,right,['Loaded language'],propaganda
+1567121405011001344,391,41,False,right,['Appeal to authority'],propaganda
+1572236629322104837,55,7,False,right,"['Doubt', ' Loaded language', ' Appeal to fear/prejudice']",propaganda
+1576948352788594688,3,1,False,lean right,['Loaded language'],propaganda
+1573744073936076809,81,19,False,lean right,['Appeal to authority'],propaganda
+1527304107739885571,143,47,False,lean right,"['Appeal to authority', ' Repetition', ' Name calling or labeling']",propaganda
+1562081060468531202,72,9,False,right,['Loaded language'],propaganda
+1533560230973521924,0,0,False,right,non propaganda,non propaganda
+1573590593346965505,0,0,False,center,['Loaded language'],propaganda
+1575576785298677760,30,10,False,lean right,['Loaded language'],propaganda
+1575585718025752576,18,5,False,lean right,['Loaded language'],propaganda
+1534035148911566848,1,0,False,right,non propaganda,non propaganda
+1486048693123837954,0,7,False,right,non propaganda,non propaganda
+1530715658023059458,0,0,False,right,non propaganda,non propaganda
+1570603464564289538,5,1,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1397577110932398081,98,8,False,right,['Appeal to authority'],propaganda
+1576212863743676417,18,6,False,center,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1566091971583672320,0,0,False,lean right,"['Name calling or labeling', ' Loaded language']",propaganda
+1565595371509714944,198,46,False,right,"['Name calling or labeling', ' Bandwagon', ' Slogans']",propaganda
+1379561850321313793,0,29,False,right,"['Loaded language', ' Appeal to fear/prejudice', ' Exaggeration or minimization', ' Reductio ad Hitlerum']",propaganda
+1565050314302046210,0,2,False,lean right,['Exaggeration or minimization'],propaganda
+1087704860609429505,1,0,False,lean right,"['Obfuscation', ' Intentional vagueness', ' Confusion']",propaganda
+1538982490194513922,1,0,False,right,non propaganda,non propaganda
+1549452246177533952,32,1,False,right,"['Loaded language', ' Exaggeration or minimization', ' Appeal to fear/prejudice/ Causal oversimplification']",propaganda
+1563510641695961089,17,2,False,lean right,"['Appeal to authority', ' Loaded language']",propaganda
+1538979229483802627,0,0,False,right,non propaganda,non propaganda
+1529235281873870855,0,4,False,right,"['Loaded language', ' Doubt', ' Repetition']",propaganda
+1562538683542040578,0,1848,False,right,non propaganda,non propaganda
+1453087780830171136,5583,475,False,right,['Doubt'],propaganda
+1570113183469441024,423,18,False,lean right,['Name calling or labeling'],propaganda
+1572623740806070274,0,3,False,lean right,['Loaded language'],propaganda
+1576006510899077120,31,6,False,center,['Loaded language'],propaganda
+1551260631248019464,51,21,False,right,"['Loaded language', ' Causal oversimplification', ' Thought-terminating cliche']",propaganda
+1549544545158823936,1,0,False,right,['Loaded language'],propaganda
+1102958891355262977,48,7,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1558160655710035972,55,6,False,lean right,"['Appeal to authority', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1099881555760242688,236,17,False,lean right,['Exaggeration or minimization'],propaganda
+1102641766614880258,6,0,False,lean right,['Loaded language'],propaganda
+1576231232656257024,12,2,False,lean right,non propaganda,non propaganda
+1555199641335070721,375,66,False,right,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1544704487251746817,226,60,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1576627367799398401,81,11,False,center,['Appeal to authority'],propaganda
+1575908773520031744,6,0,False,lean right,['Loaded language'],propaganda
+1560646754479271939,4,1,False,lean right,['Loaded language'],propaganda
+1574818553114644483,0,89,False,lean right,['Doubt'],propaganda
+1107354547893219328,49,0,False,lean right,['Loaded language'],propaganda
+1106620973959254017,992,55,False,lean right,['Exaggeration or minimization'],propaganda
+1574005553508110342,1390,268,False,lean right,['Loaded language'],propaganda
+1574428088263446529,88,31,False,lean right,['Loaded language'],propaganda
+1570117777775808513,20,2,False,lean right,non propaganda,non propaganda
+1575988878338654210,27,4,False,center,['Loaded language'],propaganda
+1576249081952870400,9,5,False,lean right,"['Exaggeration or minimization', ' Appeal to authority']",propaganda
+1561711412262715392,0,135,False,lean right,['Loaded language'],propaganda
+1569665768127610882,18,7,False,lean right,"['Loaded language', ' Appeal to authority']",propaganda
+1576926464477478912,12,1,False,lean right,['Loaded language'],propaganda
+1529846555385155590,114,34,False,lean right,non propaganda,non propaganda
+1100810300222328838,5,0,False,lean right,non propaganda,non propaganda
+1576558735799029760,6,1,False,lean right,non propaganda,non propaganda
+1088856161590394881,642,102,False,lean right,['Appeal to authority'],propaganda
+1575082670089969664,43,14,False,center,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1563980738969616385,42,11,False,lean right,['Whataboutism'],propaganda
+1576671340584648707,71,7,False,lean right,['Loaded language'],propaganda
+963646361987141639,0,2163,False,lean right,non propaganda,non propaganda
+1574828591484997652,0,34,False,lean right,['Loaded language'],propaganda
+1573445858334593037,35,10,False,lean right,"['Loaded language', ' Flag-waving']",propaganda
+1576580307276517385,78,21,False,center,['Loaded language'],propaganda
+1527689556803342336,320,123,False,lean right,non propaganda,non propaganda
+993627759988658178,0,4,False,lean right,['Appeal to authority'],propaganda
+1576768395097284611,28,4,False,lean right,non propaganda,non propaganda
+1529194658479460358,64,27,False,lean right,non propaganda,non propaganda
+1576833803296948225,39,7,False,lean right,['Loaded language'],propaganda
+1571084089876160513,0,0,False,center,non propaganda,non propaganda
+1576932109654040576,5,3,False,lean right,"['Exaggeration or minimization', ' Appeal to authority']",propaganda
+1527757495191670784,115,37,False,lean right,non propaganda,non propaganda
+1571733425609998336,1,1,False,center,non propaganda,non propaganda
+1576549532078608385,81,7,False,lean right,['Exaggeration or minimization'],propaganda
+1105482332172103681,22,2,False,lean right,non propaganda,non propaganda
+1575463153541971971,6,2,False,center,non propaganda,non propaganda
+1576960375870062598,77,17,False,lean right,non propaganda,non propaganda
+1087711479443451905,76,20,False,lean right,['Loaded language'],propaganda
+1576336359941603328,0,44,False,lean right,['Loaded language'],propaganda
+1575128435831209986,17,2,False,center,"['Loaded language', ' Name calling or labeling']",propaganda
+1575469394368643075,0,654,False,lean right,non propaganda,non propaganda
+1105775084260806656,147,13,False,lean right,non propaganda,non propaganda
+1103666110434590720,4,0,False,lean right,non propaganda,non propaganda
+1100813461930590209,97,5,False,lean right,"['Red herring', ' Loaded language']",propaganda
+1100819595651358723,41,9,False,lean right,non propaganda,non propaganda
+1101886411140153350,36,1,False,lean right,non propaganda,non propaganda
+1100826416206266368,59,6,False,lean right,non propaganda,non propaganda
+1574998628564963328,45,4,False,center,non propaganda,non propaganda
+1100799800667267072,5,2,False,lean right,['Loaded language'],propaganda
+1101567680203710464,26,2,False,lean right,non propaganda,non propaganda
+1088880094716805121,95,10,False,lean right,['Loaded language'],propaganda
+1576582855039352834,0,0,False,center,non propaganda,non propaganda
+1102780655543484416,88,8,False,lean right,"['Obfuscation', ' intentional vagueness', ' confusion']",propaganda
+1099878540982603776,55,1,False,lean right,['Loaded language'],propaganda
+1102639878242746368,7,0,False,lean right,non propaganda,non propaganda
+1106625010792321024,6,0,False,lean right,non propaganda,non propaganda
+1574818117049634821,281,72,False,lean right,non propaganda,non propaganda
+1575246495238000651,41,12,False,center,non propaganda,non propaganda
+1459201815594033159,10,4,False,lean right,non propaganda,non propaganda
+1501540125360201735,5,4,False,lean right,non propaganda,non propaganda
+1573167932665958400,11,2,False,center,non propaganda,non propaganda
+1571902192461701120,1,2,False,center,['Loaded language'],propaganda
+996555746958565376,0,501,False,lean right,non propaganda,non propaganda
+997248668473278464,0,82,False,lean right,non propaganda,non propaganda
+1572068160328679424,2,0,False,center,non propaganda,non propaganda
+997900011131297792,0,120,False,lean right,non propaganda,non propaganda
+997901428470493189,0,23,False,lean right,non propaganda,non propaganda
+1526574546672881665,74,15,False,lean right,non propaganda,non propaganda
+1526654856701919234,84,26,False,lean right,non propaganda,non propaganda
+1575189205126463488,52,13,False,center,"['Obfuscation', ' intentional vagueness', ' confusion', ' Causal oversimplification']",propaganda
+1573407886491131904,0,191,False,lean right,non propaganda,non propaganda
+1573462657230901250,287,84,False,lean right,non propaganda,non propaganda
+1574574680706617345,1,1,False,center,['Appeal to authority'],propaganda
+1576066910449553410,22,4,False,center,non propaganda,non propaganda
+1576146183126392832,31,7,False,center,['Loaded language'],propaganda
+1576142433607454721,50,22,False,center,"['Appeal to authority', ' Exaggeration or minimization']",propaganda
+1575935282591006720,12,6,False,center,['Exaggeration or minimization'],propaganda
+1575927709208805377,52,17,False,center,['Exaggeration or minimization'],propaganda
+1576221674202095618,50,9,False,center,non propaganda,non propaganda
+1576380199226179584,29,12,False,center,"['Appeal to authority', ' Exaggeration or minimization']",propaganda
+1576319821221969924,19,4,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1576297161712668672,58,15,False,center,non propaganda,non propaganda
+1569378039351451655,0,1,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1575595952110698501,21,6,False,center,non propaganda,non propaganda
+1569410835537076226,0,0,False,center,non propaganda,non propaganda
+1575618935004749824,61,8,False,center,non propaganda,non propaganda
+1570014561612304384,3,1,False,center,non propaganda,non propaganda
+1575563571353747456,27,3,False,center,non propaganda,non propaganda
+1573620802267877376,0,0,False,center,non propaganda,non propaganda
+1576719948705046533,35,6,False,center,['Exaggeration or minimization'],propaganda
+1570633672209874944,0,0,False,center,['Appeal to authority'],propaganda
+1571839245718798339,2,3,False,center,['Appeal to fear/prejudice'],propaganda
+1575141237287428098,30,7,False,center,['Loaded language'],propaganda
+1570392079653654529,2,1,False,center,['Appeal to fear/prejudice'],propaganda
+1575810244969635841,24,6,False,center,non propaganda,non propaganda
+1575503189956169729,61,10,False,center,['Loaded language'],propaganda
+1576316107107045378,18,7,False,center,"['Bandwagon', ' Loaded language']",propaganda
+1569984392969261057,1,1,False,center,non propaganda,non propaganda
+1576720567515979785,22,6,False,center,"['Appeal to authority', ' Loaded language']",propaganda
+1569516379182694402,2,1,False,center,non propaganda,non propaganda
+1574194624238948356,1,0,False,center,['Loaded language'],propaganda
+1575374913870913539,0,1,False,center,['Appeal to authority'],propaganda
+1573983188820664320,1,0,False,center,non propaganda,non propaganda
+1573910210200084481,0,0,False,center,non propaganda,non propaganda
+1575175564960350219,40,10,False,center,non propaganda,non propaganda
+1573032234436681729,0,0,False,center,non propaganda,non propaganda
+1572503551695372288,0,0,False,center,['Appeal to fear/prejudice'],propaganda
+1572231983421440002,1,2,False,center,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1571660383991087105,0,0,False,center,non propaganda,non propaganda
+1571297971047698433,1,0,False,center,['Loaded language'],propaganda
+1575204015620636672,77,15,False,center,non propaganda,non propaganda
+1576254085904433162,181,24,False,center,non propaganda,non propaganda
+1576202823292813317,27,10,False,center,['Bandwagon'],propaganda
+1576595428203794438,56,9,False,center,non propaganda,non propaganda
+1570044776963096578,0,1,False,center,non propaganda,non propaganda
+1576714391956774912,14,2,False,center,non propaganda,non propaganda
+1569559129068343296,2,0,False,center,non propaganda,non propaganda
+1576470824109969409,321,59,False,center,['Loaded language'],propaganda
+1576181486037917696,53,14,False,center,non propaganda,non propaganda
+1576591605225725955,62,7,False,center,['Appeal to authority'],propaganda
+1575561053072752652,25,6,False,center,non propaganda,non propaganda
+1572307373015928834,0,0,False,center,non propaganda,non propaganda
+1575671792856875019,35,15,False,center,['Exaggeration or Minimization'],propaganda
+1576952508504850433,14,2,False,center,['Exaggeration or Minimization'],propaganda
+1576960420518182913,10,7,False,center,['Appeal to authority'],propaganda
+1576836987771813888,26,7,False,center,['Exaggeration or Minimization'],propaganda
+1573801997396058112,1,2,False,center,['Loaded language'],propaganda
+1575270402703728641,13,8,False,center,"['Appeal to fear/prejudice', ' Loaded language', ' Name calling or labeling']",propaganda
+1576255749646344192,30,6,False,center,non propaganda,non propaganda
+1576070658122973187,85,17,False,center,['Loaded language'],propaganda
+1576955631046639617,9,3,False,center,['Loaded language'],propaganda
+1576089610786148352,20,6,False,center,non propaganda,non propaganda
+1576916254513926145,42,13,False,center,non propaganda,non propaganda
+1576955741730230272,10,4,False,center,non propaganda,non propaganda
+1576289617606746112,69,15,False,center,non propaganda,non propaganda
+1576051799634616321,16,5,False,center,['Appeal to authority'],propaganda
+1576123524263170050,35,17,False,center,non propaganda,non propaganda
+1573472419754418182,2,0,False,center,non propaganda,non propaganda
+1574151800097329157,6,2,False,center,non propaganda,non propaganda
+1576717381644480512,23,6,False,center,"['Loaded language', ' Exaggeration or Minimization']",propaganda
+1576459498688053255,23,8,False,center,non propaganda,non propaganda
+1575956163341991953,17,9,False,center,"['Appeal to fear/prejudice', ' Loaded language', ' Name calling or labeling']",propaganda
+1575147426037604355,36,17,False,center,"['Appeal to fear/prejudice', ' Loaded language', ' Name calling or labeling']",propaganda
+1574940203831246848,28,7,False,center,['Loaded language'],propaganda
+1576908691231723521,38,7,False,center,non propaganda,non propaganda
+1569576690103291904,3,2,False,center,non propaganda,non propaganda
+1569966803345874945,2,0,False,center,non propaganda,non propaganda
+1575213678277939200,64,24,False,center,non propaganda,non propaganda
+1573439834420662294,0,2,False,center,non propaganda,non propaganda
+1575191165607067664,32,13,False,center,non propaganda,non propaganda
+1573635910305988611,2,1,False,center,non propaganda,non propaganda
+1575196150638034957,24,7,False,center,non propaganda,non propaganda
+1575188770693021696,88,30,False,center,"['Obfuscation', ' intentional vagueness', ' confusion']",propaganda
+1575043904315039745,35,6,False,center,non propaganda,non propaganda
+1574933170834882561,25,7,False,center,non propaganda,non propaganda
+1576523662206844928,372,41,False,center,['Loaded language'],propaganda
+1575021242821771264,25,8,False,center,['Exaggeration or Minimization'],propaganda
+1504678133697441796,58,6,False,right,['Loaded language'],propaganda
+1571491055903866882,82,27,False,right,['Exaggeration or minimization'],propaganda
+1554252849525186560,24,2,False,right,"['Loaded language', '\nStraw man']",propaganda
+1571857674068955136,22,5,False,right,['Name calling or labeling'],propaganda
+1106647941278769152,1,0,False,lean right,['Loaded language'],propaganda
+1253384118387302401,107,36,False,left,"['Exaggeration or minimization', ' Name calling or labeling']",propaganda
+1105577902895177728,0,0,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1104126979660546048,25,5,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1572829704352141315,6,4,False,lean left,['Loaded language'],propaganda
+1542495991710056448,64,25,False,right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1566863501393551360,93,2,False,left,['Loaded language'],propaganda
+1104121489975111680,17,5,False,lean right,non propaganda,non propaganda
+1572677601608732672,1,3,False,lean left,['Loaded language'],propaganda
+1521316122057973762,98,30,False,left,"['Loaded language', '\nAppeal to fear/prejudice']",propaganda
+1102720393348038657,65,7,False,lean right,"['Exaggeration or minimization', '\nName calling or labeling', '\nRed Herring']",propaganda
+1473690962912329738,2237,1490,False,left,"['Exaggeration or minimization', ' Loaded language\nStraw man']",propaganda
+1572482075470753793,17,11,False,lean left,['Loaded language'],propaganda
+1575300595392679937,0,0,False,left,['Exaggeration or minimization'],propaganda
+1573379938191044609,71,37,False,right,['Loaded language'],propaganda
+1199452978882764800,5,3,False,lean left,['Loaded language'],propaganda
+1565454141446451201,138,34,False,right,"['Loaded language', '\nName calling or labeling', '\nReductio ad Hitlerum']",propaganda
+1575546280507543581,6,3,False,lean right,['Exaggeration or minimization'],propaganda
+1565085953802309632,53,0,False,right,['Exaggeration or minimization'],propaganda
+1549122011535970306,1,0,False,lean left,['Loaded language'],propaganda
+1535075169416658945,46,10,False,left,non propaganda,non propaganda
+1568312861373435910,6,0,False,left,['Exaggeration or minimization'],propaganda
+1553874931913576449,33,1,False,left,non propaganda,non propaganda
+1546912260865642505,74,8,False,left,"['Exaggeration or minimization', ' Loaded language', '\nFlag waving']",propaganda
+1549126943601213442,269,38,False,lean left,['Loaded language'],propaganda
+1533859065864105985,2,0,False,right,"['Loaded language', '\nName calling or labeling', ' Exaggeration or minimization']",propaganda
+1555379645163470848,1,0,False,left,['Exaggeration or minimization'],propaganda
+1556672533096710146,114,32,False,right,"['Straw man', '\nName calling or labeling', ' Loaded language', ' Doubt']",propaganda
+1576446834180067328,33,10,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1571363432976515072,301,91,False,right,"['Whataboutism', ' Loaded language', ' Slogans']",propaganda
+1554152227182460929,73,22,False,left,['Loaded language'],propaganda
+1566501278858981376,101,19,False,right,"['Name calling or labeling', ' Loaded language']",propaganda
+1558293154507509760,178,32,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1575930664867725325,58,17,False,lean right,"['Appeal to authority', ' Loaded language']",propaganda
+1543963886558355465,0,83,False,right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1508368682753396744,0,2725,False,left,non propaganda,non propaganda
+1560646508940238849,48,0,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1346907451057172480,0,49469,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1576135674910150656,5,2,False,lean left,"['Flag waving', ' Loaded language']",propaganda
+1513483319773650952,4450,481,False,lean left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1568308035457810432,28,10,False,right,"['Loaded langauge', ' Exaggeration or minimization']",propaganda
+1557746534678134786,90,52,False,right,['Loaded language'],propaganda
+1506022664669843458,0,0,False,lean left,"['Loaded language', '\nAppeal to fear/prejudice', '\nFlag waving']",propaganda
+1478758616538693635,4,3,False,lean left,['Loaded language'],propaganda
+1575953502026735618,32,19,False,center,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1566033589724225536,248,19,False,left,['Name calling or labeling'],propaganda
+1561802149985755136,557,62,False,right,"['Name calling or labeling', ' Causal oversimplification']",propaganda
+1558824317017808899,0,359,False,left,['Loaded language'],propaganda
+1574365676105523200,7,5,False,lean left,['Loaded language'],propaganda
+1575520825020747776,24,3,False,left,['Loaded language'],propaganda
+1108134498301022209,5,1,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1575850380092739584,22,2,False,lean right,['Loaded language'],propaganda
+1576097144569733120,0,1,False,center,non propaganda,non propaganda
+1371690885834973184,0,11,False,right,non propaganda,non propaganda
+1570537294251294721,24,9,False,right,['Loaded language'],propaganda
+1541832906955431942,27,11,False,lean left,non propaganda,non propaganda
+1541832949443723265,172,66,False,left,['Appeal to fear/prejudice'],propaganda
+1524191419706970113,135,48,False,lean left,['Loaded language'],propaganda
+1107254984079523840,29,1,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1521949015352528898,274,75,False,left,['Loaded language'],propaganda
+1565492525145632768,22628,2773,False,right,['Exaggeration or minimization'],propaganda
+1246813789087043586,0,3,False,lean left,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1405157860477177865,13,0,False,right,['Exaggeration or minimization'],propaganda
+1576485901659766784,41,18,False,center,"['Appeal to fear/prejudice', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1576945338916737024,10,1,False,lean right,['Loaded language'],propaganda
+1540863342297976832,62,4,False,right,"['Exaggeration or minimization', '\nAppeal to fear/prejudice', ' Loaded language', ' Repetition']",propaganda
+1557419838846521344,29,5,False,left,"['Doubt', '\nLoaded language']",propaganda
+734939536376102912,0,0,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1570814987379040257,2,0,False,center,['Exaggeration or minimization'],propaganda
+1560674581299724288,80,27,False,left,['Loaded language'],propaganda
+1576954903955660803,28,7,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1570858065842290690,0,1,False,center,['Exaggeration or minimization'],propaganda
+1547565722812891136,271,90,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1536787766914301953,127,19,False,lean left,['Straw man'],propaganda
+1570890573711564801,0,0,False,center,['Exaggeration or minimization'],propaganda
+1560690830465290246,0,497,False,right,['Loaded language'],propaganda
+1549154494419980290,262,91,False,lean left,"['Exaggeration or minimization', ' Loaded language', ' Appeal to fear/prejudice']",propaganda
+1574587427431268357,3,2,False,center,non propaganda,non propaganda
+1528729384546451456,0,140,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1574504867124715521,3,0,False,left,['Exaggeration or minimization'],propaganda
+1422035150712590337,0,134,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1573321412156313600,0,0,False,center,['Exaggeration or minimization'],propaganda
+1551711416780046336,1,1,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1202263737404665858,63,30,False,lean left,"['Whataboutism', ' Loaded language', ' Doubt']",propaganda
+1570221927574417411,51,0,False,left,"['Name calling or labeling', ' Exaggeration or minimization', ' Loaded language']",propaganda
+1551950111898468355,1,0,False,lean left,"['Exaggeration or minimization', '\nName calling or labeling', ' Causal oversimplification']",propaganda
+1575354955472506881,42,7,False,lean right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1527636380519735297,0,151,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1311120270640513024,14,3,False,lean left,"['Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1566298814679420928,0,9,False,right,"['Loaded language', '\nName calling or labeling']",propaganda
+1571234816695345153,139,14,False,right,['Exaggeration or minimization'],propaganda
+1571002050728665088,4,5,False,lean left,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1088894866719948800,4,0,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1576617247921278977,8,0,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1575490815413325825,20,2,False,lean right,['Loaded language'],propaganda
+1570797942356721665,1,1,False,lean left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1565737988222590976,183,38,False,left,['Appeal to fear/prejudice'],propaganda
+1566297978205192192,0,2010,False,right,"['Loaded language', '\nReductio ad Hitlerum', ' Name calling or labeling', ' Appeal to fear/prejudice']",propaganda
+1537498384956899337,1,0,False,lean left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1570482563751514113,1490,245,False,right,['Loaded language'],propaganda
+1546919997007618049,124,8,False,left,['Exaggeration or minimization'],propaganda
+1569490755005325315,123,43,False,right,"['Exaggeration or minimization', '\nFlag waving', ' Loaded language']",propaganda
+1561121632726536192,31,8,False,right,non propaganda,non propaganda
+1575272754743595010,63,23,False,right,"['Exaggeration or minimization', '\nName calling or labeling', ' Loaded language']",propaganda
+1571369331019354113,24,2,False,right,['Loaded language'],propaganda
+1564707196704886785,14,2,False,right,"['Loaded language', '\nFlag waving', ' Thought-terminating cliche', ' Exaggeration or minimization']",propaganda
+1557045786634031104,185,9,False,lean left,non propaganda,non propaganda
+1570584698564530176,52,21,False,right,['Loaded language'],propaganda
+1351511512976945154,7,0,False,lean left,['Loaded language'],propaganda
+1570829960335556609,3,0,False,lean left,['Loaded language'],propaganda
+1575877160522448899,9,1,False,lean right,['Loaded language'],propaganda
+1471539176550055951,0,0,False,lean left,['Loaded language'],propaganda
+1281573726908284928,0,253,False,lean left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1572308086597234689,10,8,False,lean left,['Loaded language'],propaganda
+1573386944318513154,4,0,False,lean left,"['Loaded language', ' Repetition', ' Doubt']",propaganda
+1537869570958053377,2,3,False,lean left,"['Loaded language', ' Name calling or labeling', ' Appeal to fear/prejudice', ' Exaggeration or minimization']",propaganda
+1346956676067418113,581,76,False,left,"['Doubt', ' Exaggeration or minimization', '\nStraw man', ' Loaded language']",propaganda
+1566848822524780544,0,558,False,right,"['Name calling or labeling', '\nBlack-and-white Fallacy', ' Dictatorship ']",propaganda
+1575104292616372226,17,6,False,center,non propaganda,non propaganda
+1576279877694595073,5,0,False,lean right,['Doubt'],propaganda
+1561668603048599554,114,12,False,left,['Name calling or labeling'],propaganda
+1414067209660420099,10,4,False,right,['Name calling or labeling'],propaganda
+1484634815622176779,13,5,False,lean left,non propaganda,non propaganda
+1514152627487002624,1222,242,False,lean left,['Name calling or labeling'],propaganda
+1527766904919756801,132,18,False,lean right,['Exaggeration or minimization'],propaganda
+1514315323096375312,70,20,False,left,non propaganda,non propaganda
+1547622175955308544,18,8,False,lean right,['Appeal to fear/prejudice'],propaganda
+1572349243456888832,5791,583,False,lean left,['Loaded language'],propaganda
+1532732338056089605,0,19,False,right,"['Appeal to fear/prejudice', '\nAppeal to authority\n']",propaganda
+1566856399702867968,44,6,False,right,non propaganda,non propaganda
+1575512553995870208,16,7,False,lean right,non propaganda,non propaganda
+1539004341733957641,30,4,False,right,"['Appeal to fear/prejudice', '\nExaggeration or minimization']",propaganda
+1572344800728256516,0,0,False,lean right,['Name calling or labeling'],propaganda
+1569477646391873536,458,29,False,left,['Loaded language'],propaganda
+1552286075682422784,2,3,False,lean left,['Doubt'],propaganda
+1570505687100432385,22,7,False,right,"['Bandwagon', '\nName calling or labeling', '\nAppeal to fear/prejudice', '\nExaggeration or minimization']",propaganda
+1347068032036843521,0,113,False,right,['Loaded language'],propaganda
+697563058399506433,9,13,False,left,non propaganda,non propaganda
+1573358293187280896,2253,306,False,lean left,"['Name calling or labeling', ' Doubt']",propaganda
+1570685058473775110,5,5,False,lean left,"['Appeal to authority', '\nExaggeration or minimization', ' Loaded language']",propaganda
+1530210597132029954,0,10,False,left,"['Appeal to fear/prejudice', '\nExaggeration or minimization']",propaganda
+1569851862328934400,0,8908,False,right,['Doubt'],propaganda
+1565736787271729161,0,9254,False,left,non propaganda,non propaganda
+1570437756647514113,1,0,False,lean left,"['Exaggeration or minimization', '\nCausal oversimplification', ' Loaded language']",propaganda
+1571489091832942592,7,3,False,lean left,non propaganda,non propaganda
+1392642569436155911,0,5,False,right,non propaganda,non propaganda
+1393279091776782337,0,9,False,right,non propaganda,non propaganda
+1360340866473353218,0,10,False,right,non propaganda,non propaganda
+1570458448692908032,9,1,False,lean left,['Loaded language'],propaganda
+1088270072395780097,24,3,False,lean right,['Name calling or labeling'],propaganda
+1496138470787592208,78,16,False,left,non propaganda,non propaganda
+1108099266822766593,2,0,False,lean right,['Name calling or labeling'],propaganda
+1503706239993323520,0,4,False,lean right,non propaganda,non propaganda
+1515731785770016781,180,9,False,lean left,['Loaded language'],propaganda
+1565531224864686081,442,49,False,left,['Loaded language'],propaganda
+1107598591625961472,449,51,False,lean right,"['Name calling or labeling', ' Loaded language']",propaganda
+1100822284560990209,106,32,False,lean right,['Name calling or labeling'],propaganda
+1574670987123113984,0,65,False,right,"['Name calling or labeling', ' Loaded language']",propaganda
+1576945346340691968,131,8,False,lean right,"['Appeal to fear/prejudice', ' Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1572363564723343362,605,192,False,lean right,"['Exaggeration or minimization', '\nAppeal to fear/prejudice', '\nName calling or labeling']",propaganda
+1569398344841043970,40,1,False,right,non propaganda,non propaganda
+1100778911548563456,293,24,False,lean right,"['Exaggeration or minimization', ' \nLoaded language']",propaganda
+1564090006607732737,269,39,False,left,"['Doubt', ' Loaded language']",propaganda
+1574988540202606593,30,13,False,center,['Flag waving'],propaganda
+1287743724718624768,80,12,False,lean left,non propaganda,non propaganda
+1242508644790480897,3,3,False,lean left,"['Appeal to fear/prejudice', '\nAppeal to authority', '\nName calling or labeling']",propaganda
+1561027282533339137,0,62,False,left,non propaganda,non propaganda
+1530193014840348672,529,94,False,lean left,['Loaded language'],propaganda
+1573092799259766785,0,80,False,left,non propaganda,non propaganda
+1546934205589979138,43,9,False,left,"['Exaggeration or minimization', ' \nLoaded language', ' Appeal to fear/prejudice']",propaganda
+1557056773915295745,2478,881,False,left,['Appeal to fear/prejudice'],propaganda
+1544757493229883395,0,20,False,right,"['Exaggeration or minimization', ' Bandwagon']",propaganda
+1092539325093462022,1,1,False,lean right,non propaganda,non propaganda
+1508532183941660683,1301,375,False,lean left,"['Name calling or labeling', '\nStraw man']",propaganda
+1563025018602135555,0,50,False,right,['Name calling or labeling'],propaganda
+1536783192337833986,27,3,False,right,['Name calling or labeling'],propaganda
+1575100683094790144,0,1,False,center,['Name calling or labeling'],propaganda
+1405582878965178372,67,6,False,right,"['Causal oversimplification', '\nLoaded language\nStraw man']",propaganda
+1574107538974351360,160,26,False,right,"['Name calling or labeling', '\nStraw man']",propaganda
+1569821700543610881,0,46,False,right,"['Doubt', ' Loaded language', ' Exaggeration or minimization']",propaganda
+1570748536270245888,1,2,False,lean left,"['Name calling or labeling', '\nExaggeration or minimization', '\nLoaded language']",propaganda
+1458070491370074117,14,0,False,left,non propaganda,non propaganda
+1571847973440749569,0,1006,False,right,"['Exaggeration or minimization', '\nStraw man']",propaganda
+1366800151566770178,8,5,False,lean left,"['Doubt', '\nStraw man']",propaganda
+1544707205563387905,4759,477,False,lean left,['Loaded language'],propaganda
+1576238739587682305,0,0,False,lean right,"['Exaggeration or minimization', '\nLoaded language', '\nName calling or labeling']",propaganda
+1571151347390763009,369,48,False,left,"['Exaggeration or minimization', ' Straw man', ' Doubt']",propaganda
+1539308687386243078,51,10,False,left,non propaganda,non propaganda
+1531675387251642369,46,7,False,lean right,non propaganda,non propaganda
+1567982508641492992,227,19,False,right,"['Name calling or labeling', '\nStraw man']",propaganda
+706849726759473152,0,0,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1567961317142560770,32,7,False,lean right,['Loaded language'],propaganda
+1569714030155284493,39,9,False,right,['Appeal to fear/prejudice'],propaganda
+1526281619815944193,2,0,False,lean left,"['Loaded language', '\nFlag waving ']",propaganda
+1514297730495131652,424,93,False,lean left,"['Exaggeration or minimization', '\nStraw man', ' Doubt']",propaganda
+1551929301628588032,0,0,False,lean left,"['Loaded language', '\nFlag waving ']",propaganda
+1542207653174284290,18,1,False,right,['Exaggeration or minimization'],propaganda
+1548052633935458314,1,0,False,lean left,"['Name calling or labeling', '\nExaggeration or minimization', '\nLoaded language', '\nReductio ad Hitlerum', ' Appeal to fear/prejudice']",propaganda
+1572587741237641219,6,5,False,lean left,['Loaded language'],propaganda
+1563566637567320064,386,70,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice', '\nFlag waving']",propaganda
+1560298284459360262,200,32,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice', '\nLoaded language', ' Appeal to authority']",propaganda
+1567287310626222080,0,280,False,right,"['Name calling or labeling', ' Doubt', ' Exaggeration or minimization']",propaganda
+1301513237985402881,194,100,False,lean left,"['Exaggeration or minimization', '\nStraw man']",propaganda
+1570457986992345089,0,6855,False,left,['Exaggeration or minimization'],propaganda
+1375145874398060548,246,35,False,left,"['Name calling or labeling', ' Exaggeration or minimization', ' Loaded language']",propaganda
+1575868642763632642,0,85,False,lean right,"['Name calling or labeling', '\nBlack-and-white fallacy', ' dictatorship', ' Loaded language']",propaganda
+1243541719246872577,3,1,False,lean left,non propaganda,non propaganda
+1549567146753425408,334,61,False,lean left,non propaganda,non propaganda
+1573067789031686146,0,43,False,right,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1273380655074816000,44,18,False,lean left,['Exaggeration or minimization'],propaganda
+1563560989903429632,0,0,False,lean left,['Loaded language'],propaganda
+1521595631508377604,27684,3027,False,left,['Loaded language'],propaganda
+1575170450728325120,77,9,False,left,"['Whataboutism', ' Loaded language']",propaganda
+1572805849482989568,0,0,False,center,['Loaded language'],propaganda
+1573766725044158464,20,5,False,lean right,['Loaded language'],propaganda
+1249806825794555905,0,0,False,lean left,"['Appeal to fear/prejudice', '\nLoaded language', ' Appeal to authority']",propaganda
+1466495384029736969,371,97,False,left,"['Whataboutism', ' Exaggeration or minimization']",propaganda
+1575900965206720512,6,6,False,lean right,['Loaded language'],propaganda
+1521801432357392387,2,2,False,lean left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1554991767870914560,105,13,False,lean left,"['Doubt', ' Exaggeration or minimization']",propaganda
+1571258470065897472,0,2,False,right,['Exaggeration or minimization'],propaganda
+1576782039080206336,18,3,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1575539363299135494,18,0,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1566841477740855298,41,0,False,right,['Loaded language'],propaganda
+1530680529640620032,1287,172,False,left,"['Doubt', '\nStraw man']",propaganda
+1540374890880020480,7,3,False,right,"['Appeal to fear/prejudice', '\nLoaded language']",propaganda
+1550946465501118469,0,2,False,right,"['Exaggeration or minimization', '\nName calling or labeling']",propaganda
+1554486764844228612,82,31,False,left,"['Causal oversimplification', ' Exaggeration or minimization']",propaganda
+1541842527178858497,149,19,False,left,['Name calling or labeling'],propaganda
+1566844625121337346,10,5,False,right,non propaganda,non propaganda
+1101569147643854848,2,0,False,lean right,non propaganda,non propaganda
+1560744846003945474,0,0,False,lean right,['Straw man'],propaganda
+1542288644211367947,839,117,False,lean left,"['Straw man', '\nCausal oversimplification']",propaganda
+1569369424871800835,0,17,False,right,"['Straw man', '\nExaggeration or minimization', ' Loaded language']",propaganda
+988120660667969537,0,937,False,lean right,['Exaggeration or minimization'],propaganda
+1575121175461695488,20,8,False,lean right,"['Straw man', '\nCausal oversimplification', '\nName calling or labeling']",propaganda
+778735457437835265,14,18,False,left,['Causal oversimplification'],propaganda
+1541850357814419457,80,8,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1526705476876247041,456,43,False,lean left,non propaganda,non propaganda
+1535031096366321691,17,1,False,lean left,non propaganda,non propaganda
+1575854263275864064,34,5,False,lean right,['Exaggeration or minimization'],propaganda
+1557016545049591808,83,40,False,right,non propaganda,non propaganda
+1358978598963666945,4,0,False,left,['Straw man'],propaganda
+1108361903338897409,58,1,False,lean right,non propaganda,non propaganda
+1087980061259636737,0,0,False,lean right,"['Loaded language', ' Appeal to authority', ' Red Herring', ' Straw man']",propaganda
+1238580238642221057,100,54,False,left,"['Straw man', '\nAppeal to fear/prejudice']",propaganda
+1456992277864267787,69,8,False,left,non propaganda,non propaganda
+1571956052975058944,22,6,False,lean right,"['Appeal to fear/prejudice', ' Appeal to authority']",propaganda
+1574857682766467082,159,45,False,left,non propaganda,non propaganda
+1571187949743603721,12,0,False,lean right,['Name calling or labeling'],propaganda
+1454967231973056520,90,2,False,right,non propaganda,non propaganda
+1533904629964197889,3246,353,False,lean left,"['Straw man', '\nLoaded language', ' Doubt']",propaganda
+1562898612392464384,565,51,False,left,['Exaggeration or minimization'],propaganda
+1572265906557820932,0,0,False,lean right,['Doubt'],propaganda
+1504766852966330375,1030,105,False,lean left,['Loaded language'],propaganda
+1553282617390284800,1616,41,False,lean left,non propaganda,non propaganda
+1536767036961214464,8,0,False,right,"['Whataboutism', ' Loaded language']",propaganda
+1528608809194856454,44,3,False,right,"['Loaded language', '\nDoubt']",propaganda
+1566986698176995328,0,37,False,right,['Name calling or labeling'],propaganda
+1565066362963333124,0,205,False,right,['Exaggeration or minimization'],propaganda
+1559193571529482245,37,6,False,left,['Loaded language'],propaganda
+1471199552795463681,8736,2755,False,left,"['Exaggeration or minimization', ' Repetition']",propaganda
+1509615235027673100,0,0,False,lean left,non propaganda,non propaganda
+1555027668256563200,6,0,False,left,['Exaggeration or minimization'],propaganda
+1108129003406274561,70,4,False,lean right,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1562883668431216643,0,69,False,right,['Exaggeration or minimization'],propaganda
+1571365315854102529,258,101,False,right,"['Name calling or labeling', '\nAppeal to fear/prejudice']",propaganda
+1546944364072534016,57,18,False,left,non propaganda,non propaganda
+1099879925572665344,2,0,False,lean right,['Exaggeration or minimization'],propaganda
+1572607000927674372,2,2,False,lean left,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1567573760391225345,49,0,False,left,"['Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1099865848494346240,1004,113,False,lean right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1555319005702983680,256,27,False,left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1420121821689569292,0,131,False,right,non propaganda,non propaganda
+1496149609365786629,206,35,False,left,non propaganda,non propaganda
+1530712183738445831,211,32,False,right,"['Exaggeration or minimization', '\nLoaded language', '\nStraw man', '\nName calling or labeling']",propaganda
+1102421205129269249,0,0,False,lean right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1569511175800651776,9,0,False,left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1457863631563935744,146,25,False,right,"['Loaded language', '\nCausal oversimplification', '\nSlogans', '\nAppeal to fear/prejudice']",propaganda
+1550307807647485952,818,59,False,left,['Exaggeration or minimization'],propaganda
+1568616621350219778,0,182,False,left,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1522402797173592066,237,35,False,right,"['Loaded language', '\nExaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1575220635147460608,31,4,False,lean right,['Name calling or labeling'],propaganda
+1568735047913734145,23,0,False,right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1576005164107849729,0,350,False,right,['Straw man'],propaganda
+1088207533934895104,22,1,False,lean right,"['Exaggeration or minimization', '\nStraw man', '\nName calling or labeling']",propaganda
+1105775748672036864,16,1,False,lean right,['Name calling or labeling'],propaganda
+1536346378439315458,62,10,False,right,['Straw man'],propaganda
+1559688472020938752,48,4,False,lean right,non propaganda,non propaganda
+1499203840922554368,6,0,False,left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1359226893971714049,288,53,False,lean left,['Loaded language'],propaganda
+1463263162430627840,27,2,False,right,non propaganda,non propaganda
+1555009862974980096,3342,422,False,lean left,"['Exaggeration or minimization', '\nCausal oversimplification', '\nStraw man', ' Loaded language']",propaganda
+1238170971045007367,2,0,False,lean left,['Causal oversimplification'],propaganda
+1524552102613520384,3,0,False,lean left,"['Causal oversimplification', '\nLoaded language']",propaganda
+1568858542471528451,0,55,False,right,"['Appeal to fear/prejudice', '\nName calling or labeling', ' Loaded language']",propaganda
+1575538908309426204,55,9,False,lean right,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1401984844985475072,1,0,False,right,"['Exaggeration or minimization', '\nAppeal to fear/prejudice', ' Loaded language', ' Bandwagon']",propaganda
+997812215116943361,0,452,False,lean right,"['Slogans', ' Loaded language']",propaganda
+1572611802680238080,2,4,False,center,['Appeal to authority'],propaganda
+1568847627852349440,0,140,False,right,"['Exaggeration or minimization', '\nName calling or labeling']",propaganda
+1547107845837324288,2,0,False,lean left,non propaganda,non propaganda
+1573560448040960000,0,0,False,center,['Appeal to fear/prejudice'],propaganda
+1563703277501530113,146,18,False,left,non propaganda,non propaganda
+1570354882330382336,1,1,False,lean left,['Loaded language'],propaganda
+1550576689952034816,132,26,False,lean right,"['Loaded language', ' Causal oversimplification', ' Exaggeration or minimization']",propaganda
+1530280734862319617,209,50,False,left,"['Whataboutism', '\nAppeal to fear/prejudice']",propaganda
+1575834385684774912,444,164,False,lean right,non propaganda,non propaganda
+1573443465404469254,3,2,False,lean left,non propaganda,non propaganda
+1571499190835990528,400,38,False,left,non propaganda,non propaganda
+1571346017152385024,337,51,False,left,['Exaggeration or minimization'],propaganda
+1573521371585552384,3,2,False,lean left,['Appeal to fear/prejudice'],propaganda
+1387069130365341701,91,35,False,left,['Exaggeration or minimization'],propaganda
+1487682117823832066,78,16,False,left,['Loaded language'],propaganda
+1026669399569256448,2,0,False,lean right,['Causal oversimplification'],propaganda
+1576200944613744641,44,16,False,lean right,non propaganda,non propaganda
+1559952345181601792,1,0,False,left,['Causal oversimplification'],propaganda
+1483870287846330371,5,2,False,lean left,['Appeal to fear/prejudice'],propaganda
+1462882545247399944,103,13,False,left,non propaganda,non propaganda
+1575299352947720192,32,5,False,center,non propaganda,non propaganda
+1535711704608292865,0,0,False,lean left,non propaganda,non propaganda
+1550270452177969152,3,1,False,lean left,non propaganda,non propaganda
+1572858667732537345,0,3,False,lean left,"['Exaggeration or minimization', '\nDoubt']",propaganda
+1575380630049009665,14,2,False,lean right,"['Name calling or labeling', ' Loaded language']",propaganda
+1562907052577419266,4,5,False,lean left,non propaganda,non propaganda
+1575430446145495041,32,7,False,lean right,['Loaded language'],propaganda
+1565486727820607490,57,25,False,left,['Loaded language'],propaganda
+1570055812550213633,11,4,False,left,['Exaggeration or minimization'],propaganda
+1300535909989965827,0,0,False,lean left,"['Whataboutism', '\nAppeal to fear/prejudice', '\nName calling or labeling']",propaganda
+1570937509689044993,0,112,False,right,"['Loaded language', '\nStraw man', '\nName calling or labeling']",propaganda
+1573475171318513664,4,0,False,left,"['Name calling or labeling', ' Loaded language']",propaganda
+1541842755386753026,1235,285,False,left,"['Loaded language', '\nAppeal to authority']",propaganda
+1541837481745825798,2493,323,False,left,non propaganda,non propaganda
+1571987835065958402,31,28,False,lean left,non propaganda,non propaganda
+1530641173014003714,334,76,False,right,"['Causal oversimplification', '\nDoubt']",propaganda
+1576647099185233921,61,23,False,lean right,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1576626119557644289,43,15,False,lean right,non propaganda,non propaganda
+1549868799255805952,44,7,False,right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1417911265704435713,1,0,False,lean left,['Doubt'],propaganda
+1117890089185472512,597,233,False,left,['Loaded language'],propaganda
+1508367265477111812,3,0,False,left,non propaganda,non propaganda
+1483542000641220609,1199,361,False,left,['Flag-waving'],propaganda
+1570835663083433985,3,0,False,lean left,"['Loaded language', '\nAppeal to fear/prejudice', ' Repetition']",propaganda
+1537483764523495425,35,9,False,left,"['Causal oversimplification', '\nStraw man']",propaganda
+1329561551876091905,9,4,False,lean left,['Loaded language'],propaganda
+1572938251496980480,0,0,False,lean right,"['Loaded language', '\nName calling or labeling']",propaganda
+1552017039572738048,5,0,False,lean left,"['Flag-waving', '\nAppeal to fear/prejudice', ' Loaded language']",propaganda
+1537516645127798786,81,16,False,left,non propaganda,non propaganda
+1558121482710122501,19,10,False,lean left,non propaganda,non propaganda
+1558068849890803713,19,7,False,left,['Exaggeration or minimization'],propaganda
+1573032004463071232,3,0,False,lean right,['Loaded language'],propaganda
+1565691499345575937,40,6,False,lean right,['Exaggeration or minimization'],propaganda
+1557407865203302400,32,8,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1359929619747643407,466,73,False,left,['Doubt'],propaganda
+1529506215205683201,0,5,False,right,"['Name calling or labeling', ' Loaded language']",propaganda
+1527095891412275200,0,4,False,right,['Name calling or labeling'],propaganda
+1557482982209978370,12,3,False,right,"['Loaded language', ' Repetition']",propaganda
+1556649085846917121,15,2,False,right,['Name calling or labeling'],propaganda
+1532392535942959106,37,2,False,left,"['Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1554979882450436097,106,3,False,left,['Exaggeration or minimization'],propaganda
+1270750272487292934,5,2,False,lean left,"['Loaded language', '\nAppeal to fear/prejudice']",propaganda
+1516880686174674944,274,6,False,lean left,['Loaded language'],propaganda
+1540376187964477440,6,1,False,lean left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1575223776744472576,3,0,False,right,non propaganda,non propaganda
+1572349442648326146,2831,290,False,lean left,"['Causal oversimplification', ' Loaded language']",propaganda
+1572933935201681409,0,0,False,lean right,non propaganda,non propaganda
+1485256099351736328,8,0,False,lean left,non propaganda,non propaganda
+1554575373756669954,74,1,False,left,['Exaggeration or minimization'],propaganda
+1516215613999439880,3,0,False,lean left,['Exaggeration or minimization'],propaganda
+1554580549020401666,2,0,False,left,['Exaggeration or minimization'],propaganda
+1524810615822467076,1013,233,False,lean left,"['Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1541836156907802626,35,14,False,left,non propaganda,non propaganda
+1567913380480176134,68,19,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1541867133105209346,0,6297,False,left,['Exaggeration or minimization'],propaganda
+1572566877100183552,75,18,False,right,"['Name calling or labeling', ' Exaggeration or minimization']",propaganda
+1523411621011288065,5571,1770,False,left,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1527263166605975552,7,7,False,lean left,"['Name calling or labeling', ' Loaded language', ' Appeal to authority']",propaganda
+1476224981952602116,75,15,False,right,"['Causal oversimplification', ' Name calling or labeling', ' Doubt']",propaganda
+1562594729052626945,0,71,False,right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1565839222816268290,0,2094,False,right,"['Reductio ad Hitlerum', ' Appeal to fear/prejudice']",propaganda
+1572258959867756544,0,0,False,lean right,['Appeal to fear/prejudice'],propaganda
+1561790990205292549,0,0,False,lean right,non propaganda,non propaganda
+1552412221581434880,81,0,False,left,non propaganda,non propaganda
+1567178699375517698,11,0,False,lean right,['Name calling or labeling'],propaganda
+1573348300744450048,89,48,False,left,"['Loaded language', '\nAppeal to fear/prejudice']",propaganda
+1251553568395595781,0,0,False,lean left,non propaganda,non propaganda
+1572370966017200128,115,1,False,left,non propaganda,non propaganda
+1558327768152145924,3,0,False,right,['Doubt'],propaganda
+1570490410467987456,2,2,False,lean left,non propaganda,non propaganda
+1523314017707921408,646,221,False,left,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1383044227895070726,89,13,False,left,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1564989626321870858,2,0,False,left,"['Causal oversimplification', '\nAppeal to fear/prejudice', ' Loaded language']",propaganda
+1576770910207414277,101,22,False,right,"['Causal oversimplification', ' Loaded language']",propaganda
+1436775154831536132,1109,149,False,left,['Loaded language'],propaganda
+1538729873002438656,15,0,False,right,['Loaded language'],propaganda
+1574929365099593729,20,11,False,lean left,"['Appeal to fear/prejudice', ' Appeal to authority', ' Loaded language']",propaganda
+1571901489802784768,22,9,False,lean right,['Appeal to fear/prejudice'],propaganda
+1106349606655401984,1336,107,False,lean right,['Exaggeration or minimization'],propaganda
+1529262351517630466,11,1,False,right,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1562883413816020993,0,78,False,left,['Exaggeration or minimization'],propaganda
+1575310646899486721,59,21,False,lean right,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1421281430403833861,186,25,False,right,non propaganda,non propaganda
+1550281700017684480,11,7,False,lean left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1576123315848085505,40,11,False,lean right,['Exaggeration or minimization'],propaganda
+1554956744199405568,442,123,False,lean left,['Loaded language'],propaganda
+1570907380346662912,58,18,False,right,"['Causal oversimplification', ' Exaggeration or minimization', ' Loaded language']",propaganda
+1575842426295504896,0,5,False,left,['Loaded language'],propaganda
+1570810749945278465,20,2,False,left,"['Causal oversimplification', '\nExaggeration or minimization', ' Loaded language']",propaganda
+1430939003050659842,14,7,False,right,['Loaded language'],propaganda
+1566976965197832192,45,6,False,right,"['Loaded language', ' Name calling or labeling']",propaganda
+1532761561131098113,25,3,False,right,"['Black-and-white fallacy', ' dictatorship', ' Causal oversimplification']",propaganda
+1535832375443308544,89,3,False,left,['Doubt'],propaganda
+1548041554933084161,2,0,False,lean left,"['Name calling or labeling', ' Loaded language']",propaganda
+1576276967669710848,0,22,False,right,['Exaggeration or minimization'],propaganda
+1521890913592778753,2,2,False,lean left,non propaganda,non propaganda
+1536307912057966594,31,11,False,right,"['Exaggeration or minimization', '\nName calling or labeling']",propaganda
+1573530261442142208,1,1,False,center,['Appeal to fear/prejudice'],propaganda
+1107267396232974337,958,318,False,lean right,"['Loaded language', ' Bandwagon']",propaganda
+1570176544936697857,53,24,False,right,['Loaded language'],propaganda
+1520689687731576834,2697,271,False,lean left,non propaganda,non propaganda
+1518677961393721344,210,46,False,right,"['Red Herring', '\nName calling or labeling', ' Loaded language']",propaganda
+1570592796016529418,15,0,False,right,['Loaded language'],propaganda
+1535395303955865601,77,14,False,left,['Causal oversimplification'],propaganda
+1530411567824703488,21,3,False,right,"['Causal oversimplification', '\nLoaded language', '\nAppeal to fear/prejudice', ' Loaded language']",propaganda
+1497275310722764800,83,15,False,right,"['Appeal to fear/prejudice', ' Appeal to authority']",propaganda
+1570496362424442880,359,139,False,right,"['Whataboutism', ' Appeal to fear/prejudice', ' Loaded language']",propaganda
+1564701097809387520,50,10,False,right,"['Loaded language', ' Repetition', ' Name calling or labeling']",propaganda
+1572779015366385664,114,32,False,right,"['Straw man', '\nLoaded language']",propaganda
+1537869881080786944,1,1,False,lean left,"['Appeal to fear/prejudice', '\nName calling or labeling']",propaganda
+1027927477732167680,0,0,False,lean right,['Exaggeration or minimization'],propaganda
+1569873603843194881,25,8,False,right,"['Exaggeration or minimization', ' Name calling or labeling']",propaganda
+1570033700582354946,538,118,False,left,"['Straw man', '\nCausal oversimplification', '\nExaggeration or minimization']",propaganda
+1557405944073670657,21,4,False,left,"['Causal oversimplification', '\nLoaded language']",propaganda
+1526670474230505472,1,0,False,lean left,non propaganda,non propaganda
+1395755571048075264,49,13,False,right,"['Whataboutism', '\nName calling or labeling']",propaganda
+1537593122821230592,0,17,False,left,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1571292892303396864,356,37,False,left,"['Straw man', '\nName calling or labeling']",propaganda
+1576024218218766336,0,0,False,center,"['Appeal to fear/prejudice', ' Loaded language']",propaganda
+1574761469358514177,241,92,False,right,"['Causal oversimplification', ' Loaded language']",propaganda
+1567155888493830145,14,2,False,lean right,"['Exaggeration or minimization', ' Loaded language']",propaganda
+1473386675845881867,234,43,False,left,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1398785517223923719,53,5,False,right,"['Straw man', ' Loaded language']",propaganda
+1552015066903584768,2,0,False,right,non propaganda,non propaganda
+1546965392828076040,15,5,False,right,non propaganda,non propaganda
+1572664217819291649,24,2,False,left,"['Straw man', ' Obfuscation', ' intentional vagueness', ' confusion']",propaganda
+1571891308884824068,219,83,False,right,"['Exaggeration or minimization', '\nName calling or labeling']",propaganda
+1394620725714210818,1,0,False,lean left,non propaganda,non propaganda
+1574412137107423232,52,8,False,left,['Loaded language'],propaganda
+1107035872296357892,0,0,False,lean right,non propaganda,non propaganda
+1442888650463723523,0,1,False,lean left,"['Doubt', '\nExaggeration or minimization']",propaganda
+1572592670622752768,171,26,False,left,non propaganda,non propaganda
+1476314297106149387,548,64,False,left,non propaganda,non propaganda
+1571884980787347456,143,36,False,right,non propaganda,non propaganda
+1456979938725203973,10,1,False,lean left,['Loaded language'],propaganda
+1517253272557568006,3494,1470,False,left,['Loaded language'],propaganda
+1463577473019482117,66,24,False,lean left,non propaganda,non propaganda
+1565158883139649539,267,19,False,left,['Causal oversimplification'],propaganda
+1570243469603487744,0,787,False,right,['Loaded language'],propaganda
+1484291672112615428,2517,914,False,left,non propaganda,non propaganda
+1486780638556524546,5438,1508,False,left,non propaganda,non propaganda
+1296273599762923520,195,10,False,left,non propaganda,non propaganda
+1506020497305219073,7,1,False,lean left,"['Doubt', '\nLoaded language', '\nStraw man']",propaganda
+1569065211512094720,129,59,False,right,['Doubt'],propaganda
+1106559442315890689,2,0,False,lean right,"['Slogan', '\nFlag waving']",propaganda
+1189971714425397248,1,0,False,lean left,non propaganda,non propaganda
+1567575488557715459,238,6,False,left,non propaganda,non propaganda
+1098320422926499841,2,0,False,lean right,non propaganda,non propaganda
+1469086680506327042,115,13,False,left,non propaganda,non propaganda
+1572309753459789824,113,21,False,right,['Loaded language'],propaganda
+1506709641664868363,1,0,False,lean left,['Loaded language'],propaganda
+1572559076500078592,45,1,False,right,['Doubt'],propaganda
+1501642209115914251,101,32,False,lean left,"['Loaded language', '\nRed herring']",propaganda
+1576672293715165184,23,9,False,lean left,['Loaded language'],propaganda
+1463578255198408717,15,7,False,lean left,non propaganda,non propaganda
+1570855582902652928,14,2,False,right,non propaganda,non propaganda
+1107618187775016960,25,0,False,lean right,non propaganda,non propaganda
+1459251274256424966,8,6,False,lean left,non propaganda,non propaganda
+1461786341570752521,2,0,False,lean left,"['Flag waving', '\nAppeal to authority']",propaganda
+1556681364577083394,3,0,False,left,non propaganda,non propaganda
+1556058115757449216,0,4497,False,left,non propaganda,non propaganda
+1483598490701815811,3,0,False,lean left,non propaganda,non propaganda
+1530228190844702720,1,2,False,lean left,"['Loaded language', '\nCausal oversimplification', ' Thought-terminating cliche']",propaganda
+1537047651174305795,1,1,False,lean left,['Doubt'],propaganda
+1546950303664279552,7,2,False,lean left,non propaganda,non propaganda
+1574475258136072212,0,1253,False,right,"['Loaded language', '\nDoubt']",propaganda
+1550476108570689537,1,0,False,lean left,"['Loaded language', '\nAppeal to authority']",propaganda
+1569319938883735552,112,35,False,right,"['Causal oversimplification', ' Name calling or labeling', ' Doubt']",propaganda
+1195383585898979328,20,7,False,lean left,non propaganda,non propaganda
+1387485158064988164,0,0,False,lean left,non propaganda,non propaganda
+1556253311099015170,4,0,False,left,non propaganda,non propaganda
+1542873330130231297,0,33,False,right,"['Doubt', '\nLoaded language']",propaganda
+1346878252317614081,46,26,False,lean left,"['Appeal to authority', '\nFlag waving']",propaganda
+1571431354486644737,3,0,False,center,"['Loaded language', '\nAppeal to authority']",propaganda
+1574322058519093250,220,59,False,right,['Loaded language'],propaganda
+1571373499788267520,2,0,False,center,['Loaded language'],propaganda
+1573370786290753537,4,0,False,right,non propaganda,non propaganda
+1575944040129798145,964,338,False,lean right,"['Loaded language', ' Exaggeration or minimization']",propaganda
+1574504310574288896,15,0,False,left,non propaganda,non propaganda
+1576018199392309249,0,75,False,lean right,['Loaded language'],propaganda
+1571252702323130370,0,0,False,center,"['Doubt', '\nAppeal to authority']",propaganda
+1276247004990050304,1,1,False,lean left,non propaganda,non propaganda
+1538304685706293248,18,7,False,right,"['Causal oversimplification', '\nStraw man']",propaganda
+1538253179065970688,19,1,False,right,"['Loaded language', '\nName calling or labeling']",propaganda
+1570182155388567554,4,0,False,right,['Doubt'],propaganda
+1574058942426120193,6,0,False,left,"['Causal oversimplification', '\nDoubt']",propaganda
+1538981205739184129,1,0,False,right,['Causal oversimplification'],propaganda
+1233871637973434368,0,0,False,lean left,"['Loaded language', ' Appeal to fear/prejudice']",propaganda
+1571824059377242113,1,0,False,center,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1426284342750416898,1,1,False,lean left,"['Doubt', '\nLoaded language']",propaganda
+1243516671136010240,4,3,False,lean left,['Name calling or labeling'],propaganda
+1541101065118121986,9,0,False,right,non propaganda,non propaganda
+1529262147473223681,47,12,False,right,['Loaded language'],propaganda
+1559219026890465280,240,36,False,left,non propaganda,non propaganda
+1253280951968436224,4,4,False,lean left,non propaganda,non propaganda
+1536817757697806337,2,1,False,lean right,['Doubt'],propaganda
+1446549057569230859,0,0,False,lean left,non propaganda,non propaganda
+1576631604986142720,19,0,False,right,non propaganda,non propaganda
+1565101894527328258,7,0,False,left,non propaganda,non propaganda
+1573418971520458758,0,3,False,left,"['Causal oversimplification', '\nDoubt']",propaganda
+1567577141902016512,27,16,False,left,non propaganda,non propaganda
+1575216747132485632,0,39,False,right,['Loaded language'],propaganda
+1572585092614332422,0,1127,False,lean right,['Loaded language'],propaganda
+1571899990951301127,0,0,False,center,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1574049481028427777,1,0,False,left,non propaganda,non propaganda
+1540035599360565248,57,4,False,right,['Loaded language'],propaganda
+1528441253439864832,3,0,False,right,non propaganda,non propaganda
+1570084599937605632,36,5,False,left,non propaganda,non propaganda
+1575642679173468162,0,0,False,left,non propaganda,non propaganda
+1102245077047537664,170,21,False,lean right,non propaganda,non propaganda
+1526820729177526272,80,3,False,lean left,non propaganda,non propaganda
+1102638893449596929,12,0,False,lean right,['Name calling or labeling'],propaganda
+1102640375993434114,4,0,False,lean right,['Loaded language'],propaganda
+1540374979338207232,5,1,False,right,['Loaded language'],propaganda
+1546564255201239040,2237,633,False,left,"['Doubt', ' Exaggeration or minimization']",propaganda
+1573192901076525056,118,28,False,right,"['Straw man', '\nDoubt']",propaganda
+1456727055467487235,3,0,False,lean left,non propaganda,non propaganda
+1573086718206439424,21,2,False,right,['Loaded language'],propaganda
+1103662311951216640,6,0,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1573083890226692098,0,221,False,right,"['Loaded language', '\nStraw man', '\nExaggeration or minimization', ' Appeal to authority']",propaganda
+1103667623080931329,44,6,False,lean right,"['Loaded language', '\nName calling or labeling', '\nExaggeration or minimization']",propaganda
+1103668276259966977,3,0,False,lean right,"['Exaggeration or minimization', '\nStraw man']",propaganda
+1575312764960231424,374,17,False,left,['Name calling or labeling'],propaganda
+1539438044151005186,0,955,False,left,['Loaded language'],propaganda
+1554244039083450372,306,12,False,left,non propaganda,non propaganda
+1531485848058925056,118,10,False,right,['Loaded language'],propaganda
+1101546610369224705,2,0,False,lean right,non propaganda,non propaganda
+1101325906881245190,4,0,False,lean right,non propaganda,non propaganda
+1570001335931801602,69,35,False,right,"['Doubt', '\nAppeal to fear/prejudice']",propaganda
+1567511940620079104,0,455,False,right,"['Doubt', '\nLoaded language']",propaganda
+1088787732606976001,24,1,False,lean right,non propaganda,non propaganda
+1088887737627877378,104,18,False,lean right,"['Doubt', '\nLoaded language']",propaganda
+1565105475204562944,0,4,False,right,"['Loaded language', '\nName calling or labeling']",propaganda
+1564725406153981954,1,1,False,right,"['Causal oversimplification', '\nLoaded language', ' Name calling or labeling']",propaganda
+1352366515845263364,8,2,False,lean left,"['Appeal to authority', '\nDoubt']",propaganda
+1531402563077443584,635,11,False,lean left,non propaganda,non propaganda
+1450821635733344257,4,0,False,lean left,non propaganda,non propaganda
+1099887856330424320,2913,237,False,lean right,['Exaggeration or minimization'],propaganda
+1100795200056819713,17,1,False,lean right,non propaganda,non propaganda
+1539672891595309061,8,2,False,right,non propaganda,non propaganda
+1100804021953146881,212,36,False,lean right,"['Name calling or labeling', '\nExaggeration or minimization']",propaganda
+1366796723553763329,11,1,False,lean left,['Appeal to authority'],propaganda
+1100885388909006848,60,1,False,lean right,['Loaded language'],propaganda
+1099887268188307457,16,0,False,lean right,['Exaggeration or minimization'],propaganda
+1569426069962227713,0,1,False,center,non propaganda,non propaganda
+1466635007829495809,914,23,False,left,non propaganda,non propaganda
+1306967969323528195,0,118,False,left,['Bandwagon'],propaganda
+1571877949086879753,38,14,False,lean left,"['Exaggeration or minimization', ' Appeal to fear/prejudice']",propaganda
+1575257800116158466,74,44,False,lean right,"['Loaded language', '\nAppeal to fear/prejudice']",propaganda
+1551980885871820800,0,1,False,lean left,"['Loaded language', '\nFlag waving', '\nName calling or labeling']",propaganda
+1540338555687419906,171,36,False,right,"['Loaded language', '\nFlag waving']",propaganda
+1575865555860746246,98,14,False,lean right,"['Doubt', '\nLoaded language']",propaganda
+1562117735315918848,2,1,False,left,non propaganda,non propaganda
+1552017742861049857,5,0,False,lean left,non propaganda,non propaganda
+1552385763228123141,4,1,False,lean left,['Loaded language'],propaganda
+1533962973902954496,33,5,False,right,non propaganda,non propaganda
+1463578288501280772,461,60,False,left,non propaganda,non propaganda
+1575990125653381120,69,21,False,lean right,"['Doubt', '\nLoaded language']",propaganda
+1463577968358342657,1232,168,False,left,non propaganda,non propaganda
+1463577580666249221,1836,232,False,left,non propaganda,non propaganda
+1522016093870727169,0,171,False,right,non propaganda,non propaganda
+1516803924933632005,61,12,False,left,non propaganda,non propaganda
+1559177118768144384,131,32,False,left,['Doubt'],propaganda
+1575197402818134063,22,13,False,lean right,non propaganda,non propaganda
+818666517378244611,147,117,False,left,['Doubt'],propaganda
+1550274811980615680,10,2,False,lean left,['Causal oversimplification'],propaganda
+1557110527473733638,23,11,False,right,"['Causal oversimplification', '\nDoubt', ' Exaggeration or minimization']",propaganda
+1475556357789175816,18,9,False,left,"['Loaded language', '\nName calling or labeling', '\nExaggeration or minimization']",propaganda
+1572521340120305670,5,3,False,lean left,non propaganda,non propaganda
+1540380765493542912,0,76,False,lean left,['Loaded language'],propaganda
+1575320427236413442,0,13003,False,left,non propaganda,non propaganda
+1572438285838061569,11,2,False,lean left,non propaganda,non propaganda
+1548053292978040840,2,0,False,lean left,"['Name calling or labeling', ' Appeal to authority']",propaganda
+1057147132308807680,3,0,False,left,non propaganda,non propaganda
+1572248146876723203,1,4,False,lean left,non propaganda,non propaganda
+1573370826614837249,46,29,False,right,['Loaded language'],propaganda
+1535635381525393410,129,4,False,left,non propaganda,non propaganda
+1540347514481770502,144,44,False,left,non propaganda,non propaganda
+1566062152137334784,0,8,False,right,"['Doubt', '\nName calling or labeling']",propaganda
+1541836878885928960,74,37,False,left,non propaganda,non propaganda
+1491817930681729025,127,84,False,left,"['Doubt', '\nLoaded language']",propaganda
+1541839516876652545,2006,371,False,left,non propaganda,non propaganda
+1571906286559657992,3,3,False,lean left,['Doubt'],propaganda
+1560011231603425288,6,0,False,right,non propaganda,non propaganda
+1571880838668713985,3,2,False,lean left,"['Flag waving', '\nLoaded language']",propaganda
+1576284562463903746,91,43,False,lean right,non propaganda,non propaganda
+1565065949778251787,1,0,False,lean left,['Name calling or labeling'],propaganda
+1550282117975777282,0,217,False,left,non propaganda,non propaganda
+1531742274920534019,8207,1301,False,lean left,['Straw man'],propaganda
+1567290610641682434,0,39,False,right,['Exaggeration or minimization'],propaganda
+1490726554741227522,18,1,False,right,non propaganda,non propaganda
+1384615255699951624,1283,191,False,left,non propaganda,non propaganda
+1384591738040471552,236,42,False,left,non propaganda,non propaganda
+1569492942301151235,8,4,False,lean left,non propaganda,non propaganda
+1569446332737126402,5,1,False,lean left,['Loaded language'],propaganda
+1473077056992854032,46,3,False,right,"['Black-and-white fallacy', ' dictatorship']",propaganda
+1532381322274119680,18,10,False,lean left,non propaganda,non propaganda
+1569224630866419714,0,1,False,lean left,['Exaggeration or minimization'],propaganda
+1461759899868835847,138,12,False,right,non propaganda,non propaganda
+1458095533201973258,61,16,False,right,['Loaded language'],propaganda
+1556163028252508160,227,36,False,left,"['Causal oversimplification', ' Name calling or labeling']",propaganda
+1557220880903798785,176,88,False,left,non propaganda,non propaganda
+1435676618631090190,118,11,False,right,['Doubt'],propaganda
+1457811840608743436,63,17,False,right,"['Doubt', '\nLoaded language']",propaganda
+1568480043004723200,7,2,False,lean left,non propaganda,non propaganda
+1575906040159539200,9,2,False,right,non propaganda,non propaganda
+1492957806982533125,134,19,False,right,"['Loaded language', '\nExaggeration or minimization']",propaganda
+695381235426676736,0,0,False,left,non propaganda,non propaganda
+1527263044346191877,220,17,False,left,"['Loaded language', '\nName calling or labeling', ' Exaggeration or minimization']",propaganda
+1565413431305506816,5,0,False,lean left,['Name calling or labeling'],propaganda
+1565734630149574656,1,0,False,lean left,['Loaded language'],propaganda
+1574437807602520070,1857,612,False,right,['Straw man'],propaganda
+1558146057191694336,60,5,False,left,['Doubt'],propaganda
+1574814086105370624,261,75,False,right,non propaganda,non propaganda
+791371535739154433,0,0,False,left,non propaganda,non propaganda
+1500943957445984257,56,6,False,right,"['Obfuscation', ' intentional vagueness', ' confusion', '\nCausal oversimplification', '\nDoubt', ' Slogans']",propaganda
+1570176555006967809,13,2,False,lean left,non propaganda,non propaganda
+1539673256780783619,2,1,False,lean left,"['Straw man', '\nWhataboutism']",propaganda
+1552362878648336384,114,36,False,left,non propaganda,non propaganda
+1570005613152804865,7,2,False,lean left,"['Loaded language', '\nFlag waving', ' Appeal to authority']",propaganda
+1569463113384357888,332,44,False,right,non propaganda,non propaganda
+1569993193583972352,2,1,False,lean left,['Exaggeration or minimization'],propaganda
+1394374178468474883,184,31,False,right,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1394378544982200324,82,5,False,right,"['Loaded language', '\nDoubt']",propaganda
+1522947712076947456,102,3,False,left,['Loaded language'],propaganda
+697286838155919361,0,0,False,left,['Loaded language'],propaganda
+1524840626730192922,23,5,False,left,"['Name calling or labeling', ' Loaded language']",propaganda
+1521521487051689987,0,7139,False,left,"['Bandwagon', '\nBlack-and-white fallacy', ' dictatorship']",propaganda
+1469485537702690819,0,52,False,left,non propaganda,non propaganda
+1537877667394965504,2,1,False,lean left,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1526525178225774592,3,0,False,left,['Loaded language'],propaganda
+1461481875357249539,8349,4276,False,left,"['Causal oversimplification', '\nDoubt', '\nAppeal to fear/prejudice']",propaganda
+1560319784583106562,105,8,False,left,"['Loaded language', '\nName calling or labeling']",propaganda
+1529181615351635971,121,38,False,lean right,['Loaded language'],propaganda
+1529186463635603459,70,18,False,lean right,non propaganda,non propaganda
+1352764414278197248,408,12,False,left,non propaganda,non propaganda
+1466099818460188677,10,0,False,right,"['Causal oversimplification', ' Doubt']",propaganda
+1453063000986771460,7,0,False,right,non propaganda,non propaganda
+1573723780018495492,445,118,False,left,['Doubt'],propaganda
+1427812715892854791,47,6,False,right,"['Loaded language', '\nExaggeration or minimization', '\nFlag waving']",propaganda
+1574781949956194304,2,1,False,lean left,['Loaded language'],propaganda
+1360690483689881600,557,29,False,left,non propaganda,non propaganda
+1360690584357376009,152,6,False,left,non propaganda,non propaganda
+1360690613285494784,215,4,False,left,non propaganda,non propaganda
+1530233271530967043,71,14,False,lean right,non propaganda,non propaganda
+1530233845802573824,109,39,False,lean right,non propaganda,non propaganda
+1557154709051416577,124,19,False,left,['Loaded language'],propaganda
+1570512457696964608,45,4,False,left,non propaganda,non propaganda
+1525179467022446596,3,1,False,lean left,['Causal oversimplification'],propaganda
+1562216380816146433,0,31,False,left,non propaganda,non propaganda
+1552264859856896001,67,3,False,left,"['Straw man', '\nLoaded language']",propaganda
+1575931344965730313,7,1,False,lean left,"['Loaded language', '\nName calling or labeling']",propaganda
+1463580312588464129,237,22,False,left,non propaganda,non propaganda
+1463578349670912019,101,16,False,left,non propaganda,non propaganda
+1463577950671052801,313,40,False,left,non propaganda,non propaganda
+1575902803846959104,0,4,False,lean left,non propaganda,non propaganda
+1314179789905891330,349,155,False,left,['Doubt'],propaganda
+1565306998790529025,175,23,False,right,"['Loaded language', '\nName calling or labeling']",propaganda
+1473744999863013380,35,5,False,left,non propaganda,non propaganda
+1560258110123610112,152,61,False,right,"['Loaded language', '\nAppeal to authority']",propaganda
+1462841001656164358,31,4,False,left,['Loaded language'],propaganda
+1522328883831447554,4,1,False,lean left,"['Loaded language', ' Doubt']",propaganda
+1564283772031361026,95,15,False,right,"['Causal oversimplification', '\nLoaded language', '\nAppeal to fear/prejudice', ' Exaggeration or minimization']",propaganda
+1543007183641518080,170,29,False,right,"['Loaded language', '\nStraw man']",propaganda
+1569446813471752195,0,6574,False,right,['Loaded language'],propaganda
+1531661621638176770,71,40,False,lean right,non propaganda,non propaganda
+1531668200642985985,55,25,False,lean right,non propaganda,non propaganda
+1550531036437549057,32,1,False,lean right,['Flag waving'],propaganda
+1573277998022811648,3,1,False,lean left,"['Exaggeration or minimization', '\nLoaded language', '\nAppeal to fear/prejudice']",propaganda
+1550574173373743105,199,49,False,lean right,"['Straw man', '\nDoubt', '\nFlag waving']",propaganda
+1535057448926851073,1,3,False,lean left,"['Loaded language', '\nFlag waving', ' Doubt']",propaganda
+1553203502628888580,29,13,False,lean right,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1507364507080970249,8,7,False,lean left,non propaganda,non propaganda
+1573683674704396289,49,15,False,lean right,non propaganda,non propaganda
+1537870176070291456,1,1,False,lean left,"['Doubt', '\nLoaded language']",propaganda
+1493985202359746564,14,7,False,lean left,['Name calling or labeling'],propaganda
+1399493087970217985,0,21,False,right,['Appeal to fear/prejudice'],propaganda
+1573976535916285958,5,4,False,lean left,non propaganda,non propaganda
+1558298769413873664,0,92,False,right,['Loaded language'],propaganda
+1549770076185890816,107,29,False,lean right,['Appeal to authority'],propaganda
+1561756642139688968,2,1,False,lean left,non propaganda,non propaganda
+1491451847906889737,3,2,False,lean left,non propaganda,non propaganda
+1550160650265104385,63,10,False,lean right,"['Causal oversimplification', '\nDoubt']",propaganda
+1550164121949290497,37,3,False,lean right,"['Doubt', ' Causal Oversimplification']",propaganda
+1532099659199565826,3,1,False,lean left,['Appeal to authority'],propaganda
+1489690648521412608,19,8,False,lean left,non propaganda,non propaganda
+1575665646981058565,111,14,False,lean right,non propaganda,non propaganda
+1575898099440005123,1,0,False,lean right,['Loaded language'],propaganda
+1562463168173322241,0,0,False,lean right,['Doubt'],propaganda
+1576750371749482503,32,4,False,lean right,non propaganda,non propaganda
+1548291882257592328,0,20,False,right,"['Causal oversimplification', '\nName calling or labeling', ' Exaggeration or minimization']",propaganda
+1560386128858988544,2857,721,False,lean left,['Doubt'],propaganda
+1539774156543238144,19,1,False,lean left,['Loaded language'],propaganda
+994945005126111235,0,2,False,lean right,['Loaded language'],propaganda
+1572260845077372928,32,9,False,lean right,"['Straw man', '\nDoubt']",propaganda
+1575553127121649675,26,13,False,lean right,['Loaded language'],propaganda
+1575850626587807745,11,4,False,lean right,['Loaded language'],propaganda
+1573297531697643520,0,0,False,lean right,['Loaded language'],propaganda
+1576180475432882176,28,2,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1576236447069540354,0,0,False,lean right,['Loaded language'],propaganda
+1541842669139263490,29,24,False,lean left,non propaganda,non propaganda
+1572648096810541057,10,0,False,lean right,['Loaded language'],propaganda
+1562484539070775298,4,0,False,lean right,"['Loaded language', '\nName calling or labeling', ' Doubt']",propaganda
+1575582774999687170,55,26,False,lean right,['Loaded language'],propaganda
+1557448721650139137,0,0,False,lean right,non propaganda,non propaganda
+1575874180901638145,19,3,False,lean right,['Loaded language'],propaganda
+1533095417595969536,14,0,False,right,"['Doubt', '\nLoaded language']",propaganda
+1537807392439775236,0,17,False,lean left,non propaganda,non propaganda
+1561138275691249664,4865,595,False,lean left,"['Doubt', '\nName calling or labeling']",propaganda
+1575821839645003779,69,14,False,lean right,"['Loaded language', '\nName calling or labeling', '\nExaggeration or minimization']",propaganda
+1576523402965573632,2,0,False,lean right,non propaganda,non propaganda
+1575297265450852353,0,1,False,center,non propaganda,non propaganda
+1576339613978861568,9,3,False,lean right,non propaganda,non propaganda
+1573502396369616906,20,0,False,right,['Loaded language'],propaganda
+1488324788036718594,1,0,False,lean left,non propaganda,non propaganda
+1572322430051561473,0,0,False,lean right,['Loaded language'],propaganda
+1576321556417871873,3,0,False,lean right,"['Loaded language', '\nExaggeration or minimization']",propaganda
+1576321857649020928,2,0,False,lean right,['Loaded language'],propaganda
+1574375876480929794,2,1,False,center,['Appeal to fear/prejudice'],propaganda
+1558096782487330817,38,4,False,lean right,non propaganda,non propaganda
+1576275515513659393,11,5,False,lean right,['Loaded language'],propaganda
+967541922884718592,0,7,False,lean right,non propaganda,non propaganda
+1575508347922661378,47,5,False,lean right,non propaganda,non propaganda
+1574801681895882753,0,0,False,lean right,"['Doubt', '\nLoaded language', ' Name calling or labeling']",propaganda
+1572941074632704000,6,0,False,lean right,['Loaded language'],propaganda
+1546528089743785984,0,0,False,right,non propaganda,non propaganda
+1560627854722973696,7,1,False,lean right,"['Doubt', '\nLoaded language']",propaganda
+1574804028566945794,0,0,False,lean right,['Loaded language'],propaganda
+1572935032846811136,0,0,False,lean right,['Name calling or labeling'],propaganda
+1574602424693792769,0,0,False,center,['Appeal to fear/prejudice'],propaganda
+1574796517722005504,1,0,False,lean right,['Loaded language'],propaganda
+1575861167305773056,12,2,False,lean right,['Loaded language'],propaganda
+1557815544383930369,3,0,False,lean left,['Loaded language'],propaganda
+1572938467411398658,0,0,False,lean right,['Loaded language'],propaganda
+1303143893534412800,0,0,False,lean left,non propaganda,non propaganda
+1576176384048766977,14,5,False,lean right,non propaganda,non propaganda
+1560744977109377024,0,0,False,lean right,"['Loaded language', '\nName calling or labeling']",propaganda
+1569003484011192323,63,9,False,right,['Loaded language'],propaganda
+1561478431736582144,6,2,False,lean right,"['Doubt', '\nName calling or labeling', '\nLoaded language']",propaganda
+1559952516200144896,8,7,False,right,non propaganda,non propaganda
+1574154422162231299,0,0,False,lean right,['Loaded language'],propaganda
+1544639638723239936,840,100,False,lean left,"['Causal oversimplification', '\nStraw man']",propaganda
+1576242250480115713,0,0,False,lean right,"['Loaded language', '\nName calling or labeling']",propaganda
+1575571211060273153,7,3,False,lean right,['Loaded language'],propaganda
+1576080581124915203,7,3,False,lean right,non propaganda,non propaganda
+1574184166664585217,0,0,False,lean right,['Loaded language'],propaganda
+1576257035208986624,83,17,False,lean right,['Exaggeration or minimization'],propaganda
+1572704372253167616,1,0,False,lean right,non propaganda,non propaganda
+1575114284144947200,1,0,False,lean right,['Loaded language'],propaganda
+1574795126727217161,47,5,False,lean right,['Loaded language'],propaganda
+1563035554333474816,53,2,False,right,"['Straw man', '\nLoaded language', ' Exaggeration or minimization']",propaganda
+1575871553941684224,16,12,False,center,non propaganda,non propaganda
+1228694412617797634,0,0,False,lean left,non propaganda,non propaganda
+1575516361396199424,1,0,False,lean right,"['Loaded language', '\nDoubt']",propaganda
+1575994007649484800,0,2,False,center,non propaganda,non propaganda
+1528689110692544513,11,8,False,lean left,['Loaded language'],propaganda
+1576406678840516609,17,5,False,lean right,['Loaded language'],propaganda
+1575631890542911488,0,0,False,center,non propaganda,non propaganda
+1576585489628422144,21,7,False,lean right,['Loaded language'],propaganda
+1571842563916677124,0,0,False,lean right,"['Doubt', '\nName calling or labeling']",propaganda
+1543261660542115840,9,1,False,right,non propaganda,non propaganda
+1535018094682427431,11846,2371,False,lean left,"['Causal oversimplification', '\nLoaded language']",propaganda
+1575464680155484162,12,1,False,lean right,['Loaded language'],propaganda
+1549131486149967873,4,0,False,lean left,['Loaded language'],propaganda
+1557435615318253571,4,1,False,lean right,"['Loaded language', '\nName calling or labeling']",propaganda
+1516321529738444800,2791,291,False,lean left,['Doubt'],propaganda
+1574051767209394176,1,0,False,lean right,['Loaded language'],propaganda
+1550911446212558848,0,0,False,right,['Loaded language'],propaganda
+1574051011324518404,2,0,False,lean right,['Loaded language'],propaganda
+1571640693478621190,0,0,False,lean right,"['Name calling or labeling', ' Causal oversimplification']",propaganda
+1576541569397805057,4,2,False,lean right,non propaganda,non propaganda
+1575457826230657024,8,0,False,lean right,['Loaded language'],propaganda
+1566141258057351170,346,56,False,lean left,"['Loaded language', ' Name calling or labeling']",propaganda
+1425491624180785155,0,0,False,lean left,non propaganda,non propaganda
+1574750212333117442,0,0,False,lean right,['Loaded language'],propaganda
+1571840636898230274,0,0,False,lean right,"['Exaggeration or minimization', ' Thought-terminating cliche']",propaganda
+1362027166700097541,9,9,False,lean right,['Appeal to fear/prejudice'],propaganda
+1572345207764709376,12,1,False,lean right,['Loaded language'],propaganda
+1575707096812847106,1,2,False,center,['Exaggeration or minimization'],propaganda
+1544704196468940801,0,192,False,right,"['Loaded language', '\nName calling or labeling', '\nExaggeration or minimization']",propaganda
+1550389988436725763,3866,455,False,lean left,['Appeal to fear/prejudice'],propaganda
+1575961649814585362,1,1,False,center,"['Exaggeration or minimization', ' Appeal to fear/prejudice']",propaganda
+1516496355241439238,920,237,False,lean left,['Loaded language'],propaganda
+1526310635578982403,247,5,False,lean left,non propaganda,non propaganda
+1549844399068151816,0,0,False,right,non propaganda,non propaganda
+1573423220405194752,12,0,False,lean right,"['Doubt', '\nLoaded language']",propaganda
+1554943855279353856,832,147,False,lean left,['Loaded language'],propaganda
+1575878936281710594,32,14,False,lean right,['Loaded language'],propaganda
+1575524011454365697,42,22,False,lean right,['Loaded language'],propaganda
+1557433247830884358,0,0,False,lean right,"['Loaded language', '\nName calling or labeling']",propaganda
+1574102281280159746,0,0,False,lean right,['Loaded language'],propaganda
+1575931326951202816,33,7,False,lean right,non propaganda,non propaganda
+1572615424550006785,0,0,False,lean right,['Loaded language'],propaganda
+1572624931677999104,0,0,False,lean right,['Loaded language'],propaganda
+1575624026042601472,46,13,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1562491360795832321,0,0,False,lean right,['Loaded language'],propaganda
+1106921770798460929,9,0,False,lean right,"['Loaded language', ' Name calling or labeling']",propaganda
+1575170249632403456,18,1,False,lean right,['Loaded language'],propaganda
+1575958543374733314,23,6,False,center,non propaganda,non propaganda
+1574932165221126151,31,5,False,center,non propaganda,non propaganda
+1575963717006671897,27,5,False,center,non propaganda,non propaganda
+1575279792022224899,36,8,False,center,non propaganda,non propaganda
+1576066964702859264,2,0,False,center,non propaganda,non propaganda
+1570845217296637953,0,1,False,center,non propaganda,non propaganda
+1576259410732662784,55,15,False,center,non propaganda,non propaganda
+1572219157617278987,1,0,False,center,non propaganda,non propaganda
+1575734790023700481,1,0,False,center,['Appeal to authority'],propaganda
+1575586507737407488,2,1,False,center,non propaganda,non propaganda
+1571703220367511552,3,2,False,center,['Appeal to fear/prejudice'],propaganda
+1575591289663672320,9,3,False,center,non propaganda,non propaganda
+1574960877001916416,24,3,False,center,['Loaded language'],propaganda
+1570827773773479936,0,1,False,center,['Appeal to fear/prejudice'],propaganda
+1575511075147206659,1,0,False,center,non propaganda,non propaganda
+1574944497045225473,24,3,False,center,non propaganda,non propaganda
+1576663399148261376,53,7,False,center,non propaganda,non propaganda
+1576941531734441985,36,19,False,center,non propaganda,non propaganda
+1575871449721704458,18,5,False,center,non propaganda,non propaganda
+1575113638456827904,37,9,False,center,non propaganda,non propaganda
+1575840454750388224,9,5,False,center,non propaganda,non propaganda
+1574544499682037764,4,1,False,center,non propaganda,non propaganda
+1576165097009041409,34,5,False,center,['Loaded language'],propaganda
+1569456040332099584,2,1,False,center,non propaganda,non propaganda
+1575251918699565073,3,1,False,center,non propaganda,non propaganda
+1570420020844322819,0,0,False,center,['Loaded language'],propaganda
+1570087691810750464,1,0,False,center,non propaganda,non propaganda
+1576041725675675648,19,8,False,center,non propaganda,non propaganda
+1576648291693076480,78,12,False,center,non propaganda,non propaganda
+1576308505673441290,21,3,False,center,non propaganda,non propaganda
+1574270124290445312,2,0,False,center,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1572926382513987586,1,1,False,center,non propaganda,non propaganda
+1570422347466772481,2,0,False,center,non propaganda,non propaganda
+1570374506371321861,0,1,False,center,non propaganda,non propaganda
+1575504085712707589,32,10,False,center,non propaganda,non propaganda
+1575291786079227904,27,6,False,center,non propaganda,non propaganda
+1569921510478848000,0,0,False,center,non propaganda,non propaganda
+1570029670845890561,0,0,False,center,non propaganda,non propaganda
+1575522070158462980,15,1,False,center,non propaganda,non propaganda
+1574378343960649729,0,0,False,center,['Appeal to fear/prejudice'],propaganda
+1570558307978321920,0,1,False,center,non propaganda,non propaganda
+1576368917660016640,53,10,False,center,non propaganda,non propaganda
+1572775488770244611,10,3,False,center,non propaganda,non propaganda
+1575795159362568194,22,13,False,center,"['Appeal to fear/prejudice', ' Exaggeration or minimization']",propaganda
+1575938587601797149,55,16,False,center,['Loaded language'],propaganda
+1575989418116120576,39,0,False,center,['Loaded language'],propaganda
+1575875657590095874,23,3,False,center,non propaganda,non propaganda
+1573379579758186497,6,1,False,center,non propaganda,non propaganda
+1573578016155910144,0,0,False,center,['Loaded language'],propaganda
+1575782637041582081,41,16,False,center,"['Loaded language', '\nAppeal to authority']",propaganda
+1575827971314688005,73,22,False,center,['Loaded language'],propaganda
+1571026205955989509,0,1,False,center,['Loaded language'],propaganda
+1575909021936140288,50,25,False,center,['Loaded language'],propaganda
+1575953875772784647,17,11,False,center,non propaganda,non propaganda
+1576874789364502528,48,10,False,center,non propaganda,non propaganda
+1572533729993674752,1,3,False,center,non propaganda,non propaganda
+1572566441781518337,0,4,False,center,non propaganda,non propaganda
+1575449230176575498,22,7,False,center,['Appeal to authority'],propaganda
+1574136701080985600,5,2,False,center,non propaganda,non propaganda
+1576859659327229952,33,10,False,center,['Exaggeration or minimization'],propaganda
+1573502682010107905,0,3,False,center,non propaganda,non propaganda
+1573409636157464576,2,1,False,center,['Loaded language'],propaganda
+1573470006972645407,1,0,False,center,non propaganda,non propaganda
+1572790431301206018,1,2,False,center,non propaganda,non propaganda
+1575402606565924866,0,0,False,center,['Doubt'],propaganda
+1569529037780930562,2,1,False,center,non propaganda,non propaganda
+1569591783130120192,0,0,False,center,non propaganda,non propaganda
+1575145707891314689,21,8,False,center,non propaganda,non propaganda
+1569833393499652096,1,1,False,center,non propaganda,non propaganda
+1576247766912831490,25,15,False,center,non propaganda,non propaganda
+1575124037449179137,70,11,False,center,non propaganda,non propaganda
+1569362973847691266,1,0,False,center,non propaganda,non propaganda
+1574635033738072064,2,2,False,center,non propaganda,non propaganda
+1571537108543709187,3,1,False,center,non propaganda,non propaganda
+1575508427727638528,1,2,False,center,non propaganda,non propaganda
+1575979162506039305,2,1,False,center,"['Loaded language', '\nAppeal to fear/prejudice']",propaganda
+1570860282573950983,3,2,False,center,['Loaded language'],propaganda
+1574954561638391810,21,6,False,center,non propaganda,non propaganda
+1575857330016714752,37,10,False,center,non propaganda,non propaganda
+1576327368809103363,23,5,False,center,['Appeal to fear/prejudice'],propaganda
+1574770950238781447,0,0,False,center,['Loaded language'],propaganda
+1576301010997415936,32,5,False,center,"['Appeal to fear/prejudice', '\nLoaded language', ' Name calling or labeling']",propaganda
+1572158751984984064,0,1,False,center,non propaganda,non propaganda
+1572639503474368512,2,0,False,center,non propaganda,non propaganda
+1575991668028882951,1,0,False,center,"['Appeal to fear/prejudice', '\nLoaded language']",propaganda
+1574955823159283712,80,23,False,center,"['Exaggeration or minimization', '\nLoaded language']",propaganda
+1572126002578427904,2,1,False,center,non propaganda,non propaganda
+1572053046418456576,5,1,False,center,non propaganda,non propaganda
+1575861909676490752,61,17,False,center,non propaganda,non propaganda
+1576082000678723588,41,12,False,center,non propaganda,non propaganda
+1575920299664719875,35,7,False,center,['Exaggeration or minimization'],propaganda
+1576055564509003776,80,16,False,center,non propaganda,non propaganda
+1576236771754516480,53,20,False,center,non propaganda,non propaganda
+1575284391013654528,1,5,False,center,non propaganda,non propaganda
+1575115703824355330,36,16,False,center,"['Appeal to fear/prejudice', '\nLoaded language']",propaganda
+1576304719596818434,180,30,False,center,['Bandwagon'],propaganda
+1575646633953566727,38,8,False,center,non propaganda,non propaganda
+1571854292532842497,2,0,False,center,non propaganda,non propaganda
+1575921049572720652,228,37,False,center,non propaganda,non propaganda
+1575118220960448514,3,0,False,center,"['Appeal to authority', '\nLoaded language']",propaganda
+1575907664067969025,10,4,False,center,non propaganda,non propaganda
+1575027631145222146,3,0,False,center,"['Appeal to authority', '\nLoaded language']",propaganda
+1575098543416696832,36,5,False,center,non propaganda,non propaganda
+1570709165084901376,1,1,False,center,['Loaded language'],propaganda
+1576955216456556545,10,2,False,center,['Exaggeration or minimization'],propaganda
+1575455395153338372,24,8,False,center,['Loaded language'],propaganda
+1575614251691122697,0,1,False,center,"['Exaggeration or minimization', '\nAppeal to fear/prejudice']",propaganda
+1574967253237436417,2,1,False,center,non propaganda,non propaganda
+1569906417359851520,0,1,False,center,non propaganda,non propaganda
+1576308519233527808,2,2,False,center,non propaganda,non propaganda
+1571569793571880960,2,1,False,center,non propaganda,non propaganda
+1576168836373659649,58,10,False,center,non propaganda,non propaganda
+1571945175047356417,1,0,False,center,non propaganda,non propaganda
+1576009005771677697,31,5,False,center,non propaganda,non propaganda
