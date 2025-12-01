@@ -1,0 +1,22 @@
+[project]
+name = "semantic-web-project"
+version = "0.1.0"
+description = "Persuasion-Aware MUSE: Semantic Web Project for misinformation detection"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "rdflib>=7.0.0",
+    "sparqlwrapper>=2.0.0",
+    "spacy>=3.8.0,<4.0.0",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "openai>=1.0.0",
+    "pandas>=2.1.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
