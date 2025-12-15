@@ -1,12 +1,63 @@
 [
   {
-    "@id": "http://example.org/claim#falcon_6_3",
+    "@id": "http://example.org/entity#Kyrie",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "Kyrie"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_3_2",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "The world goes on fine when sports are here why stop what works"
+        "@value": "Contracts don't mean a damn thing anymore. haven't in years."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#years"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#AdHominem"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_3_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "a rich ass owner who doesn't care will hold on to something that doesn't generate profits."
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
@@ -22,24 +73,132 @@
     ],
     "http://example.org/persuasion#usesTechnique": [
       {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#AdHominem"
       }
     ]
   },
   {
-    "@id": "http://example.org/post#falcon_11",
+    "@id": "http://example.org/claim#falcon_4_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "It's been what.2, 3 weeks and what has happened?"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#3_weeks"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#Exaggeration"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_14_3",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "It's just the cancel mentality of always wanting to combat others"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_2_3",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "They became rich before being a part of the NBA."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#NBA"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_8",
     "@type": [
       "http://example.org/persuasion#Post"
     ],
     "http://example.org/persuasion#containsClaim": [
       {
-        "@id": "http://example.org/claim#falcon_11_1"
+        "@id": "http://example.org/claim#falcon_8_1"
       },
       {
-        "@id": "http://example.org/claim#falcon_11_3"
+        "@id": "http://example.org/claim#falcon_8_3"
       },
       {
-        "@id": "http://example.org/claim#falcon_11_2"
+        "@id": "http://example.org/claim#falcon_8_2"
       }
     ],
     "http://example.org/persuasion#platform": [
@@ -49,17 +208,318 @@
     ],
     "http://example.org/persuasion#postId": [
       {
-        "@value": "falcon_11"
+        "@value": "falcon_8"
       }
     ],
     "http://example.org/persuasion#textContent": [
       {
-        "@value": "[user1779]: . nahhh we need them in the streets right NOW😂the nba team owners should support that decision and fund protesting instead of games if playing or not playing the games won't affect them. why not not play the games and focus on something bigger?"
+        "@value": "[user1779]: . exactly. boycotting will stop a portion of the media from getting distracted and just going for views. all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again. if ppl with a platform sway from the matter, others will join"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
         "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_5",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_5_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_5_3"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_5_2"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_5"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user1779]: . this shit's not gonna be easy😂nothin major is supposed to happen in 2, 3 weeks. if sports comes back, nothing major WILL happen. they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore."
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_1_2",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.8"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#Kyrie"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/entity#George_Floyd",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "George Floyd"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Person"
+      }
+    ],
+    "http://example.org/persuasion#linkedToWikidata": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q5539328"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_2_2",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "NBA owners will use this boycott as an excuse to tear up the contract for next season too."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.8"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#next_season"
+      },
+      {
+        "@id": "http://example.org/entity#NBA"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#HastyGeneralization"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#FearAppeal"
+      },
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_4_2",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Protests overshadowed by everything other than sports, which haven't been allowed."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_10",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_10_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_10_1"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_10"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user104337]: . We got some crab-mentality going on here, in the hood. The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this. I GUARANTEE YOU ! They will rejoin protests in these city streets after the NBA Playoffs are completed."
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_2_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "You can't hurt somebody that never cared about you in the 1st place."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#1st"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#AppealToRidicule"
+      },
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_7_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "the media just talks about whatever profits them"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#HastyGeneralization"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
       }
     ]
   },
@@ -91,19 +551,13 @@
     ]
   },
   {
-    "@id": "http://example.org/post#falcon_8",
+    "@id": "http://example.org/post#falcon_13",
     "@type": [
       "http://example.org/persuasion#Post"
     ],
     "http://example.org/persuasion#containsClaim": [
       {
-        "@id": "http://example.org/claim#falcon_8_1"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_8_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_8_3"
+        "@id": "http://example.org/claim#falcon_13_1"
       }
     ],
     "http://example.org/persuasion#platform": [
@@ -113,12 +567,12 @@
     ],
     "http://example.org/persuasion#postId": [
       {
-        "@value": "falcon_8"
+        "@value": "falcon_13"
       }
     ],
     "http://example.org/persuasion#textContent": [
       {
-        "@value": "[user1779]: . exactly. boycotting will stop a portion of the media from getting distracted and just going for views. all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again. if ppl with a platform sway from the matter, others will join"
+        "@value": "[user104337]: . Why would a NBA owner lend financial support to employees (THIS IS A JOB, NOT A HOBBY) that refuse to come back to work ? NBA owners will trim their budget = fire their minimum wage employees, thanks to the players."
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
@@ -128,13 +582,75 @@
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_14_1",
+    "@id": "http://example.org/entity#$$$",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "$$$"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Other"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_0_3",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "don't let black people play basketball because they will take away from our message about police brutality"
+        "@value": "These owners don't care if you boycott, helps them tear up your contract for next season."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#next_season"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#FearAppeal"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#Exaggeration"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_6_3",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "The world goes on fine when sports are here"
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
@@ -150,41 +666,7 @@
     ],
     "http://example.org/persuasion#usesTechnique": [
       {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_4_2",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "Protests overshadowed by everything other than sports, which haven't been allowed."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
+        "@id": "http://example.org/persuasion#HastyGeneralization"
       }
     ]
   },
@@ -216,13 +698,71 @@
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_6_1",
+    "@id": "http://example.org/entity#Supermax",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "Supermax"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Organization"
+      }
+    ],
+    "http://example.org/persuasion#linkedToWikidata": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q7643958"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_4",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_4_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_4_3"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_4_1"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_4"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user47446]: . It's been what.2, 3 weeks and what has happened? Protests overshadowed by everything other than sports, which haven't been allowed. Why ask players to sacrifice their paycheck now also? Not all of them have Supermax deals"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_8_3",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "Companies across the world are already trying to profit off the black dollar by promoting black lives matter."
+        "@value": "if ppl with a platform sway from the matter, others will join"
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
@@ -238,34 +778,55 @@
     ],
     "http://example.org/persuasion#usesTechnique": [
       {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
+        "@id": "http://example.org/persuasion#FalseDilemma"
       }
     ]
   },
   {
-    "@id": "http://example.org/entity#3_weeks",
+    "@id": "http://example.org/post#falcon_6",
     "@type": [
-      "http://example.org/persuasion#Entity"
+      "http://example.org/persuasion#Post"
     ],
-    "http://example.org/persuasion#entityName": [
+    "http://example.org/persuasion#containsClaim": [
       {
-        "@value": "3 weeks"
+        "@id": "http://example.org/claim#falcon_6_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_6_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_6_3"
       }
     ],
-    "http://example.org/persuasion#entityType": [
+    "http://example.org/persuasion#platform": [
       {
-        "@value": "Date"
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_6"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user47446]: . Companies across the world are already trying to profit off the black dollar by promoting black lives matter. Everyone on social media and in the world agrees we need change. What do we need to do? Let's do it. The world goes on fine when sports are here why stop what works"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
       }
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_10_1",
+    "@id": "http://example.org/claim#falcon_14_2",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this."
+        "@value": "the shit doesn't correlate"
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
@@ -277,11 +838,6 @@
     "http://example.org/persuasion#hasVerificationStatus": [
       {
         "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#Milwaukee_Bucks"
       }
     ],
     "http://example.org/persuasion#usesTechnique": [
@@ -291,44 +847,176 @@
     ]
   },
   {
-    "@id": "http://example.org/entity#1st",
+    "@id": "http://example.org/entity#the_beginning_of_the_season",
     "@type": [
       "http://example.org/persuasion#Entity"
     ],
     "http://example.org/persuasion#entityName": [
       {
-        "@value": "1st"
+        "@value": "the beginning of the season"
       }
     ],
     "http://example.org/persuasion#entityType": [
       {
-        "@value": "Other"
-      }
-    ],
-    "http://example.org/persuasion#linkedToWikidata": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q956209"
+        "@value": "Date"
       }
     ]
   },
   {
-    "@id": "http://example.org/entity#1",
+    "@id": "http://example.org/post#falcon_14",
     "@type": [
-      "http://example.org/persuasion#Entity"
+      "http://example.org/persuasion#Post"
     ],
-    "http://example.org/persuasion#entityName": [
+    "http://example.org/persuasion#containsClaim": [
       {
-        "@value": "1"
+        "@id": "http://example.org/claim#falcon_14_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_14_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_14_3"
       }
     ],
-    "http://example.org/persuasion#entityType": [
+    "http://example.org/persuasion#platform": [
       {
-        "@value": "Other"
+        "@value": "Twitter"
       }
     ],
-    "http://example.org/persuasion#linkedToWikidata": [
+    "http://example.org/persuasion#postId": [
       {
-        "@id": "http://www.wikidata.org/entity/Q27721"
+        "@value": "falcon_14"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user47446]: . My priorities are Americans working together not fighting over petty shit like \"don't let black people play basketball because they will take away from our message about police brutality\" the shit doesn't correlate. It's just the cancel mentality of always wanting 2 combat others"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_0_2",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "We are not a race of quitters, we find ways to affect change from the inside-out."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_13_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.8"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.65"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#NBA"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#FearAppeal"
+      },
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_0_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Nobody is against fighting police brutality."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
       }
     ]
   },
@@ -365,57 +1053,50 @@
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_0_1",
+    "@id": "http://example.org/post#falcon_9",
     "@type": [
-      "http://example.org/persuasion#Claim"
+      "http://example.org/persuasion#Post"
     ],
-    "http://example.org/persuasion#claimText": [
+    "http://example.org/persuasion#containsClaim": [
       {
-        "@value": "Nobody is against fighting police brutality."
+        "@id": "http://example.org/claim#falcon_9_1"
       }
     ],
-    "http://example.org/persuasion#confidenceScore": [
+    "http://example.org/persuasion#platform": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
+        "@value": "Twitter"
       }
     ],
-    "http://example.org/persuasion#hasVerificationStatus": [
+    "http://example.org/persuasion#postId": [
       {
-        "@id": "http://example.org/persuasion#Unverified"
+        "@value": "falcon_9"
       }
     ],
-    "http://example.org/persuasion#usesTechnique": [
+    "http://example.org/persuasion#textContent": [
       {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      },
+        "@value": "[user47446]: . Why must we always be combative? If you know others think something is bad and you can work together why not do it? No one could have watched that George Floyd video and felt any difference. We need to band together not create division for views for your cause"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
+        "@id": "http://example.org/agent#MUSE_Pipeline"
       }
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_4_3",
+    "@id": "http://example.org/claim#falcon_6_1",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "Not all of them have Supermax deals"
+        "@value": "Companies across the world are already trying to profit off the black dollar by promoting black lives matter."
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
+        "@value": "1.0"
       }
     ],
     "http://example.org/persuasion#hasVerificationStatus": [
@@ -423,17 +1104,9 @@
         "@id": "http://example.org/persuasion#Unverified"
       }
     ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#Supermax"
-      }
-    ],
     "http://example.org/persuasion#usesTechnique": [
       {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
+        "@id": "http://example.org/persuasion#HastyGeneralization"
       }
     ]
   },
@@ -469,29 +1142,72 @@
     ]
   },
   {
-    "@id": "http://example.org/entity#NBA",
+    "@id": "http://example.org/entity#1",
     "@type": [
       "http://example.org/persuasion#Entity"
     ],
     "http://example.org/persuasion#entityName": [
       {
-        "@value": "NBA"
+        "@value": "1"
       }
     ],
     "http://example.org/persuasion#entityType": [
       {
-        "@value": "Organization"
+        "@value": "Other"
+      }
+    ],
+    "http://example.org/persuasion#linkedToWikidata": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q27721"
       }
     ]
   },
   {
-    "@id": "http://example.org/post#falcon_9",
+    "@id": "http://example.org/claim#falcon_5_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "nothin major is supposed to happen in 2, 3 weeks."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#2,_3_weeks"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_0",
     "@type": [
       "http://example.org/persuasion#Post"
     ],
     "http://example.org/persuasion#containsClaim": [
       {
-        "@id": "http://example.org/claim#falcon_9_1"
+        "@id": "http://example.org/claim#falcon_0_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_0_3"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_0_2"
       }
     ],
     "http://example.org/persuasion#platform": [
@@ -501,17 +1217,310 @@
     ],
     "http://example.org/persuasion#postId": [
       {
-        "@value": "falcon_9"
+        "@value": "falcon_0"
       }
     ],
     "http://example.org/persuasion#textContent": [
       {
-        "@value": "[user47446]: . Why must we always be combative? If you know others think something is bad and you can work together why not do it? No one could have watched that George Floyd video and felt any difference. We need to band together not create division for views for your cause"
+        "@value": "[user104337]: . Kyrie Irving just doesn't get it. Nobody is against fighting police brutality. We are not a race of quitters, we find ways to affect change from the inside-out. These owners don't care if you boycott, helps them tear up your contract for next season."
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
         "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_5_3",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#the_beginning_of_the_season"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_1",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_1_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_1_2"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_1"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user79987]: . Totally disagree here. You hit these owners (and more importantly advertisers) right where it hurts. The only thing they care about is $$$. Period. Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others. He is completely on point imo."
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/entity#Milwaukee_Bucks",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "Milwaukee Bucks"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Organization"
+      }
+    ],
+    "http://example.org/persuasion#linkedToWikidata": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q169637"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_12_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \""
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#Trump"
+      },
+      {
+        "@id": "http://example.org/entity#1"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#HastyGeneralization"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_6_2",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Everyone on social media and in the world agrees we need change."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#HastyGeneralization"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_3",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_3_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_3_1"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_3"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user79987]: . The unintelligent thing to do would be to go on living like nothing happened. If you have leverage use it. See how quickly a rich ass owner who doesn't care will hold on to something that doesn't generate profits. Contracts don't mean a damn thing anymore.haven't in years."
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/entity#1st",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "1st"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Other"
+      }
+    ],
+    "http://example.org/persuasion#linkedToWikidata": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q956209"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_10_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#Milwaukee_Bucks"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_14_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "don't let black people play basketball because they will take away from our message about police brutality"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_8_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "boycotting will stop a portion of the media from getting distracted and just going for views."
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "1.0"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
       }
     ]
   },
@@ -548,13 +1557,29 @@
     ]
   },
   {
-    "@id": "http://example.org/post#falcon_13",
+    "@id": "http://example.org/entity#years",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "years"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/post#falcon_7",
     "@type": [
       "http://example.org/persuasion#Post"
     ],
     "http://example.org/persuasion#containsClaim": [
       {
-        "@id": "http://example.org/claim#falcon_13_1"
+        "@id": "http://example.org/claim#falcon_7_1"
       }
     ],
     "http://example.org/persuasion#platform": [
@@ -564,12 +1589,12 @@
     ],
     "http://example.org/persuasion#postId": [
       {
-        "@value": "falcon_13"
+        "@value": "falcon_7"
       }
     ],
     "http://example.org/persuasion#textContent": [
       {
-        "@value": "[user104337]: . Why would a NBA owner lend financial support to employees (THIS IS A JOB, NOT A HOBBY) that refuse to come back to work ? NBA owners will trim their budget = fire their minimum wage employees, thanks to the players."
+        "@value": "[user47446]: . Plus how do you know they'll do this? Cuz the media just talks about whatever profits them huh exactly"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
@@ -579,13 +1604,125 @@
     ]
   },
   {
-    "@id": "http://example.org/entity#Milwaukee_Bucks",
+    "@id": "http://example.org/entity#2,_3_weeks",
     "@type": [
       "http://example.org/persuasion#Entity"
     ],
     "http://example.org/persuasion#entityName": [
       {
-        "@value": "Milwaukee Bucks"
+        "@value": "2, 3 weeks"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_4_3",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "Not all of them have Supermax deals"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.7"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#Supermax"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      },
+      {
+        "@id": "http://example.org/persuasion#FalseDilemma"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_1_1",
+    "@type": [
+      "http://example.org/persuasion#Claim"
+    ],
+    "http://example.org/persuasion#claimText": [
+      {
+        "@value": "The only thing they care about is $$$"
+      }
+    ],
+    "http://example.org/persuasion#confidenceScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.75"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.6"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#float",
+        "@value": "0.9"
+      }
+    ],
+    "http://example.org/persuasion#hasVerificationStatus": [
+      {
+        "@id": "http://example.org/persuasion#Unverified"
+      }
+    ],
+    "http://example.org/persuasion#targetsEntity": [
+      {
+        "@id": "http://example.org/entity#$$$"
+      }
+    ],
+    "http://example.org/persuasion#usesTechnique": [
+      {
+        "@id": "http://example.org/persuasion#Scapegoating"
+      },
+      {
+        "@id": "http://example.org/persuasion#HastyGeneralization"
+      },
+      {
+        "@id": "http://example.org/persuasion#LoadedLanguage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/agent#MUSE_Pipeline",
+    "@type": [
+      "http://example.org/persuasion#LLMAgent"
+    ],
+    "http://example.org/persuasion#modelName": [
+      {
+        "@value": "google/gemini-2.5-flash-lite"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/entity#Trump",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "Trump"
       }
     ],
     "http://example.org/persuasion#entityType": [
@@ -595,18 +1732,34 @@
     ],
     "http://example.org/persuasion#linkedToWikidata": [
       {
-        "@id": "http://www.wikidata.org/entity/Q169637"
+        "@id": "http://www.wikidata.org/entity/Q2643970"
       }
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_6_2",
+    "@id": "http://example.org/entity#NBA",
+    "@type": [
+      "http://example.org/persuasion#Entity"
+    ],
+    "http://example.org/persuasion#entityName": [
+      {
+        "@value": "NBA"
+      }
+    ],
+    "http://example.org/persuasion#entityType": [
+      {
+        "@value": "Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/claim#falcon_11_1",
     "@type": [
       "http://example.org/persuasion#Claim"
     ],
     "http://example.org/persuasion#claimText": [
       {
-        "@value": "Everyone on social media and in the world agrees we need change."
+        "@value": "the nba team owners should support that decision and fund protesting instead of games"
       }
     ],
     "http://example.org/persuasion#confidenceScore": [
@@ -622,150 +1775,23 @@
     ],
     "http://example.org/persuasion#usesTechnique": [
       {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_7_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "the media just talks about whatever profits them"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
-      },
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_0_3",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "These owners don't care if you boycott, helps them tear up your contract for next season."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#next_season"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
         "@id": "http://example.org/persuasion#FalseDilemma"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#FearAppeal"
       }
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_2_2",
+    "@id": "http://example.org/entity#3_weeks",
     "@type": [
-      "http://example.org/persuasion#Claim"
+      "http://example.org/persuasion#Entity"
     ],
-    "http://example.org/persuasion#claimText": [
+    "http://example.org/persuasion#entityName": [
       {
-        "@value": "NBA owners will use this boycott as an excuse to tear up the contract for next season too."
+        "@value": "3 weeks"
       }
     ],
-    "http://example.org/persuasion#confidenceScore": [
+    "http://example.org/persuasion#entityType": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.8"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#NBA"
-      },
-      {
-        "@id": "http://example.org/entity#next_season"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FearAppeal"
-      },
-      {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
-      },
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
+        "@value": "Date"
       }
     ]
   },
@@ -834,6 +1860,43 @@
     ]
   },
   {
+    "@id": "http://example.org/post#falcon_11",
+    "@type": [
+      "http://example.org/persuasion#Post"
+    ],
+    "http://example.org/persuasion#containsClaim": [
+      {
+        "@id": "http://example.org/claim#falcon_11_1"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_11_2"
+      },
+      {
+        "@id": "http://example.org/claim#falcon_11_3"
+      }
+    ],
+    "http://example.org/persuasion#platform": [
+      {
+        "@value": "Twitter"
+      }
+    ],
+    "http://example.org/persuasion#postId": [
+      {
+        "@value": "falcon_11"
+      }
+    ],
+    "http://example.org/persuasion#textContent": [
+      {
+        "@value": "[user1779]: . nahhh we need them in the streets right NOW😂the nba team owners should support that decision and fund protesting instead of games if playing or not playing the games won't affect them. why not not play the games and focus on something bigger?"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "http://example.org/agent#MUSE_Pipeline"
+      }
+    ]
+  },
+  {
     "@id": "http://example.org/claim#falcon_11_2",
     "@type": [
       "http://example.org/persuasion#Claim"
@@ -861,886 +1924,6 @@
     ]
   },
   {
-    "@id": "http://example.org/claim#falcon_2_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "You can't hurt somebody that never cared about you in the 1st place."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.65"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#1st"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#AppealToRidicule"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#$$$",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "$$$"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Other"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_0",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_0_1"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_0_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_0_3"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_0"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user104337]: . Kyrie Irving just doesn't get it. Nobody is against fighting police brutality. We are not a race of quitters, we find ways to affect change from the inside-out. These owners don't care if you boycott, helps them tear up your contract for next season."
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_1_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "The only thing they care about is $$$"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#$$$"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
-      },
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_4_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "It's been what.2, 3 weeks and what has happened?"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#3_weeks"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#Exaggeration"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_3_2",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "Contracts don't mean a damn thing anymore. haven't in years."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#years"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#AdHominem"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_0_2",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "We are not a race of quitters, we find ways to affect change from the inside-out."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.75"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_13_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.8"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#NBA"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      },
-      {
-        "@id": "http://example.org/persuasion#FearAppeal"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#2",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "2"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Other"
-      }
-    ],
-    "http://example.org/persuasion#linkedToWikidata": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q19647"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_10",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_10_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_10_1"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_10"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user104337]: . We got some crab-mentality going on here, in the hood. The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this. I GUARANTEE YOU ! They will rejoin protests in these city streets after the NBA Playoffs are completed."
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#Trump",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "Trump"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Organization"
-      }
-    ],
-    "http://example.org/persuasion#linkedToWikidata": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q2643970"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_4",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_4_1"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_4_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_4_3"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_4"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user47446]: . It's been what.2, 3 weeks and what has happened? Protests overshadowed by everything other than sports, which haven't been allowed. Why ask players to sacrifice their paycheck now also? Not all of them have Supermax deals"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_12_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \""
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#Trump"
-      },
-      {
-        "@id": "http://example.org/entity#1"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#HastyGeneralization"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#2,_3_weeks",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "2, 3 weeks"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Date"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_8_3",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "if ppl with a platform sway from the matter, others will join"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_14",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_14_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_14_1"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_14_3"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_14"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user47446]: . My priorities are Americans working together not fighting over petty shit like \"don't let black people play basketball because they will take away from our message about police brutality\" the shit doesn't correlate. It's just the cancel mentality of always wanting 2 combat others"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_5_3",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#the_beginning_of_the_season"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_1_2",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.9"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#Kyrie"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#the_beginning_of_the_season",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "the beginning of the season"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Date"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#George_Floyd",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "George Floyd"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Person"
-      }
-    ],
-    "http://example.org/persuasion#linkedToWikidata": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q5539328"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#Kyrie",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "Kyrie"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Person"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_6",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_6_3"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_6_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_6_1"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_6"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user47446]: . Companies across the world are already trying to profit off the black dollar by promoting black lives matter. Everyone on social media and in the world agrees we need change. What do we need to do? Let's do it. The world goes on fine when sports are here why stop what works"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#Supermax",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "Supermax"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Organization"
-      }
-    ],
-    "http://example.org/persuasion#linkedToWikidata": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q7643958"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_7",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_7_1"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_7"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user47446]: . Plus how do you know they'll do this? Cuz the media just talks about whatever profits them huh exactly"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_3",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_3_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_3_1"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_3"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user79987]: . The unintelligent thing to do would be to go on living like nothing happened. If you have leverage use it. See how quickly a rich ass owner who doesn't care will hold on to something that doesn't generate profits. Contracts don't mean a damn thing anymore.haven't in years."
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/entity#years",
-    "@type": [
-      "http://example.org/persuasion#Entity"
-    ],
-    "http://example.org/persuasion#entityName": [
-      {
-        "@value": "years"
-      }
-    ],
-    "http://example.org/persuasion#entityType": [
-      {
-        "@value": "Date"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_1",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_1_1"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_1_2"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_1"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user79987]: . Totally disagree here. You hit these owners (and more importantly advertisers) right where it hurts. The only thing they care about is $$$. Period. Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others. He is completely on point imo."
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_2_3",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "They became rich before being a part of the NBA."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.7"
-      },
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "0.6"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#NBA"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#Scapegoating"
-      },
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
     "@id": "http://example.org/entity#next_season",
     "@type": [
       "http://example.org/persuasion#Entity"
@@ -1753,229 +1936,6 @@
     "http://example.org/persuasion#entityType": [
       {
         "@value": "Date"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/post#falcon_5",
-    "@type": [
-      "http://example.org/persuasion#Post"
-    ],
-    "http://example.org/persuasion#containsClaim": [
-      {
-        "@id": "http://example.org/claim#falcon_5_3"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_5_2"
-      },
-      {
-        "@id": "http://example.org/claim#falcon_5_1"
-      }
-    ],
-    "http://example.org/persuasion#platform": [
-      {
-        "@value": "Twitter"
-      }
-    ],
-    "http://example.org/persuasion#postId": [
-      {
-        "@value": "falcon_5"
-      }
-    ],
-    "http://example.org/persuasion#textContent": [
-      {
-        "@value": "[user1779]: . this shit's not gonna be easy😂nothin major is supposed to happen in 2, 3 weeks. if sports comes back, nothing major WILL happen. they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore."
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "http://example.org/agent#MUSE_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_14_2",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "the shit doesn't correlate"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/agent#MUSE_Pipeline",
-    "@type": [
-      "http://example.org/persuasion#LLMAgent"
-    ],
-    "http://example.org/persuasion#modelName": [
-      {
-        "@value": "google/gemini-2.5-flash-lite"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_5_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "nothin major is supposed to happen in 2, 3 weeks."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#2,_3_weeks"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_3_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "a rich ass owner who doesn't care will hold on to something that doesn't generate profits."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
-      },
-      {
-        "@id": "http://example.org/persuasion#AdHominem"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_11_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "the nba team owners should support that decision and fund protesting instead of games"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_8_1",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "boycotting will stop a portion of the media from getting distracted and just going for views."
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#FalseDilemma"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/claim#falcon_14_3",
-    "@type": [
-      "http://example.org/persuasion#Claim"
-    ],
-    "http://example.org/persuasion#claimText": [
-      {
-        "@value": "It's just the cancel mentality of always wanting 2 combat others"
-      }
-    ],
-    "http://example.org/persuasion#confidenceScore": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#float",
-        "@value": "1.0"
-      }
-    ],
-    "http://example.org/persuasion#hasVerificationStatus": [
-      {
-        "@id": "http://example.org/persuasion#Unverified"
-      }
-    ],
-    "http://example.org/persuasion#targetsEntity": [
-      {
-        "@id": "http://example.org/entity#2"
-      }
-    ],
-    "http://example.org/persuasion#usesTechnique": [
-      {
-        "@id": "http://example.org/persuasion#LoadedLanguage"
       }
     ]
   }

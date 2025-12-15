@@ -144,12 +144,12 @@
 
 <http://example.org/claim#falcon_0_3> a ns1:Claim ;
     ns1:claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
+    ns1:confidenceScore "0.7"^^xsd:float,
         "0.75"^^xsd:float,
         "0.9"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#next_season> ;
-    ns1:usesTechnique ns1:FalseDilemma,
+    ns1:usesTechnique ns1:Exaggeration,
         ns1:FearAppeal,
         ns1:LoadedLanguage .
 
@@ -196,7 +196,7 @@
 
 <http://example.org/claim#falcon_13_1> a ns1:Claim ;
     ns1:claimText "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
+    ns1:confidenceScore "0.65"^^xsd:float,
         "0.7"^^xsd:float,
         "0.8"^^xsd:float,
         "0.9"^^xsd:float ;
@@ -220,10 +220,9 @@
     ns1:usesTechnique ns1:LoadedLanguage .
 
 <http://example.org/claim#falcon_14_3> a ns1:Claim ;
-    ns1:claimText "It's just the cancel mentality of always wanting 2 combat others" ;
+    ns1:claimText "It's just the cancel mentality of always wanting to combat others" ;
     ns1:confidenceScore "1.0"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#2> ;
     ns1:usesTechnique ns1:LoadedLanguage .
 
 <http://example.org/claim#falcon_1_1> a ns1:Claim ;
@@ -240,23 +239,19 @@
 <http://example.org/claim#falcon_1_2> a ns1:Claim ;
     ns1:claimText "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others." ;
     ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float,
-        "0.9"^^xsd:float ;
+        "0.8"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#Kyrie> ;
     ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
+        ns1:LoadedLanguage .
 
 <http://example.org/claim#falcon_2_1> a ns1:Claim ;
     ns1:claimText "You can't hurt somebody that never cared about you in the 1st place." ;
     ns1:confidenceScore "0.6"^^xsd:float,
-        "0.65"^^xsd:float,
         "0.7"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#1st> ;
     ns1:usesTechnique ns1:AppealToRidicule,
-        ns1:LoadedLanguage,
         ns1:Scapegoating .
 
 <http://example.org/claim#falcon_2_2> a ns1:Claim ;
@@ -356,7 +351,7 @@
     ns1:usesTechnique ns1:HastyGeneralization .
 
 <http://example.org/claim#falcon_6_3> a ns1:Claim ;
-    ns1:claimText "The world goes on fine when sports are here why stop what works" ;
+    ns1:claimText "The world goes on fine when sports are here" ;
     ns1:confidenceScore "1.0"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:usesTechnique ns1:HastyGeneralization .
@@ -409,11 +404,6 @@
     ns1:entityName "1st" ;
     ns1:entityType "Other" ;
     ns1:linkedToWikidata <http://www.wikidata.org/entity/Q956209> .
-
-<http://example.org/entity#2> a ns1:Entity ;
-    ns1:entityName "2" ;
-    ns1:entityType "Other" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q19647> .
 
 <http://example.org/entity#2,_3_weeks> a ns1:Entity ;
     ns1:entityName "2, 3 weeks" ;
