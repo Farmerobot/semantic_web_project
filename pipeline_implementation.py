@@ -50,8 +50,7 @@ MODEL_NAME = "google/gemini-2.5-flash-lite"
 
 class Config:
     """Pipeline configuration"""
-    INPUT_FILE = "data/input/processed/falcon_processed.json"  # Use preprocessed FALCON
-    SAMPLE_INPUT = "data/input/posts.json"  # Original sample posts
+    INPUT_FILE = "data/input/processed/falcon_processed.json"  # Preprocessed FALCON dataset
     OUTPUT_DIR = "data/output"
     ONTOLOGY_FILE = "persuasion_ontology.ttl"
     LLM_MODEL = MODEL_NAME
@@ -572,24 +571,6 @@ def load_posts_from_falcon(input_file: str, max_posts: int = None) -> List[Post]
     return posts
 
 
-def load_posts_from_sample(input_file: str) -> List[Post]:
-    """Load posts from original sample JSON file."""
-    with open(input_file, 'r', encoding='utf-8') as f:
-        posts_data = json.load(f)
-    
-    return [
-        Post(
-            post_id=p.get("post_id", f"post_{i}"),
-            text=p.get("text", ""),
-            platform=p.get("platform", "Twitter"),
-            author=p.get("author", "unknown"),
-            timestamp=p.get("timestamp", ""),
-            metadata=p.get("metadata", {})
-        )
-        for i, p in enumerate(posts_data)
-    ]
-
-
 def main_pipeline(use_falcon: bool = True, max_posts: int = None):
     """Main pipeline orchestration."""
     logger.info("Starting Persuasion-Aware MUSE Pipeline")
@@ -599,14 +580,11 @@ def main_pipeline(use_falcon: bool = True, max_posts: int = None):
     nlp = get_nlp()
     
     # Load input posts
-    if use_falcon and Path(Config.INPUT_FILE).exists():
+    if Path(Config.INPUT_FILE).exists():
         posts = load_posts_from_falcon(Config.INPUT_FILE, max_posts or Config.MAX_POSTS)
         logger.info(f"Loaded {len(posts)} posts from FALCON dataset")
-    elif Path(Config.SAMPLE_INPUT).exists():
-        posts = load_posts_from_sample(Config.SAMPLE_INPUT)
-        logger.info(f"Loaded {len(posts)} posts from sample file")
     else:
-        logger.error("No input data found")
+        logger.error("No input data found. Run notebook 03_data_preprocessing.ipynb first.")
         return None
     
     # Initialize master graph

@@ -1,7 +1,7 @@
 # Persuasion-Aware MUSE: Technical Report (Draft)
 
 **Project:** Semantic Web Methods for Detecting Persuasion Techniques in Social Media  
-**Authors:** [Team Name]  
+**Authors:** Mateusz Idziejczak, Mateusz Stawicki  
 **Date:** December 2025  
 **Repository:** https://github.com/Farmerobot/semantic_web_project
 

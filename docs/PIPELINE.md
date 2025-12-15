@@ -454,7 +454,7 @@ END FUNCTION
 FUNCTION main_pipeline():
     // Configuration
     CONFIG = {
-        "input_file": "data/input/posts.json",
+        "input_file": "data/input/processed/falcon_processed.json",
         "output_dir": "data/output",
         "ontology_file": "persuasion_ontology.ttl",
         "llm_model": "gpt-4",

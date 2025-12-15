@@ -27,9 +27,10 @@ This project combines:
 ```
 semantic_web/
 ├── README.md                    # This file
-├── TOOLS.md                     # Tool selection and justification
-├── PIPELINE.md                  # Pipeline pseudocode
-├── SPARQL_QUERIES.md            # Example SPARQL queries
+├── docs/
+│   ├── TOOLS.md                 # Tool selection and justification
+│   ├── PIPELINE.md              # Pipeline pseudocode
+│   └── SPARQL_QUERIES.md        # Example SPARQL queries
 ├── persuasion_ontology.ttl      # RDF ontology definition
 ├── pipeline_implementation.py   # Python pipeline implementation
 ├── pyproject.toml               # Python dependencies
@@ -39,7 +40,9 @@ semantic_web/
 │   │   ├── unprocessed/         # Raw datasets (FALCON, JMBX, MUSE)
 │   │   └── processed/           # Processed datasets
 │   └── output/
-│       └── example_annotated.ttl
+│       ├── annotated_posts.ttl      # Generated RDF (Turtle)
+│       ├── annotated_posts.json-ld  # Generated RDF (JSON-LD)
+│       └── pipeline_stats.json      # Pipeline statistics
 │
 ├── notebooks/
 │   ├── 01_tools_usage.ipynb           # Semantic web tools intro
@@ -88,7 +91,7 @@ Input Posts → Claim Extraction (LLM) → Persuasion Detection (LLM)
     → Entity Recognition & Wikidata Linking → RDF Triple Generation → Output RDF
 ```
 
-See `PIPELINE.md` for detailed pseudocode and `pipeline_implementation.py` for Python implementation.
+See `docs/PIPELINE.md` for detailed pseudocode and `pipeline_implementation.py` for Python implementation.
 
 ---
 
@@ -122,7 +125,7 @@ jupyter notebook notebooks/
 - **RDF/OWL** for ontology, **Turtle** for serialization
 - **SPARQL** for querying
 
-See `TOOLS.md` for complete tool justification.
+See `docs/TOOLS.md` for complete tool justification.
 
 ---
 

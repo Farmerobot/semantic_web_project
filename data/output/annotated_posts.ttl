@@ -37,9 +37,7 @@
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
 <http://example.org/post#falcon_12> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_12_1>,
-        <http://example.org/claim#falcon_12_2>,
-        <http://example.org/claim#falcon_12_3> ;
+    ns1:containsClaim <http://example.org/claim#falcon_12_1> ;
     ns1:platform "Twitter" ;
     ns1:postId "falcon_12" ;
     ns1:textContent "[user104337]: . We all agree that change is needed, WE DISAGREE ON THE METHOD TO AFFECT CHANGE. Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
@@ -138,22 +136,20 @@
 
 <http://example.org/claim#falcon_0_2> a ns1:Claim ;
     ns1:claimText "We are not a race of quitters, we find ways to affect change from the inside-out." ;
+    ns1:confidenceScore "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_0_3> a ns1:Claim ;
+    ns1:claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
     ns1:confidenceScore "0.6"^^xsd:float,
         "0.75"^^xsd:float,
         "0.9"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
-
-<http://example.org/claim#falcon_0_3> a ns1:Claim ;
-    ns1:claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
-    ns1:confidenceScore "0.7"^^xsd:float,
-        "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#next_season> ;
-    ns1:usesTechnique ns1:Exaggeration,
+    ns1:usesTechnique ns1:FalseDilemma,
         ns1:FearAppeal,
         ns1:LoadedLanguage .
 
@@ -190,21 +186,6 @@
     ns1:usesTechnique ns1:FalseDilemma .
 
 <http://example.org/claim#falcon_12_1> a ns1:Claim ;
-    ns1:claimText "change is needed" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:HastyGeneralization,
-        ns1:LoadedLanguage .
-
-<http://example.org/claim#falcon_12_2> a ns1:Claim ;
-    ns1:claimText "WE DISAGREE ON THE METHOD TO AFFECT CHANGE" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#METHOD> ;
-    ns1:usesTechnique ns1:HastyGeneralization,
-        ns1:LoadedLanguage .
-
-<http://example.org/claim#falcon_12_3> a ns1:Claim ;
     ns1:claimText "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
     ns1:confidenceScore "1.0"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
@@ -259,7 +240,7 @@
 <http://example.org/claim#falcon_1_2> a ns1:Claim ;
     ns1:claimText "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others." ;
     ns1:confidenceScore "0.6"^^xsd:float,
-        "0.75"^^xsd:float,
+        "0.7"^^xsd:float,
         "0.9"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#Kyrie> ;
@@ -322,7 +303,7 @@
         "0.7"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:targetsEntity <http://example.org/entity#3_weeks> ;
-    ns1:usesTechnique ns1:FalseDilemma,
+    ns1:usesTechnique ns1:Exaggeration,
         ns1:LoadedLanguage .
 
 <http://example.org/claim#falcon_4_2> a ns1:Claim ;
@@ -375,7 +356,7 @@
     ns1:usesTechnique ns1:HastyGeneralization .
 
 <http://example.org/claim#falcon_6_3> a ns1:Claim ;
-    ns1:claimText "The world goes on fine when sports are here" ;
+    ns1:claimText "The world goes on fine when sports are here why stop what works" ;
     ns1:confidenceScore "1.0"^^xsd:float ;
     ns1:hasVerificationStatus ns1:Unverified ;
     ns1:usesTechnique ns1:HastyGeneralization .
@@ -450,10 +431,6 @@
 <http://example.org/entity#Kyrie> a ns1:Entity ;
     ns1:entityName "Kyrie" ;
     ns1:entityType "Person" .
-
-<http://example.org/entity#METHOD> a ns1:Entity ;
-    ns1:entityName "METHOD" ;
-    ns1:entityType "Organization" .
 
 <http://example.org/entity#Milwaukee_Bucks> a ns1:Entity ;
     ns1:entityName "Milwaukee Bucks" ;

@@ -23,7 +23,7 @@ def get_project_root() -> Path:
 def process_falcon() -> None:
     project_root = get_project_root()
     falcon_dir = project_root / "data" / "input" / "unprocessed" / "falcon_dataset"
-    output_dir = project_root / "data" / "output" / "processed"
+    output_dir = project_root / "data" / "input" / "processed"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     output_path = output_dir / "falcon_processed.csv"
