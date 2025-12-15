@@ -190,23 +190,23 @@ For posts with FALCON ground-truth labels, we use:
 | Metric | Value |
 |--------|-------|
 | Posts processed | 15 |
-| Claims extracted | 36 |
-| Techniques detected | 64 |
-| Entities linked | 20 |
-| RDF triples generated | ~492 |
+| Claims extracted | 34 |
+| Techniques detected | 57 |
+| Entities linked | 18 |
+| RDF triples generated | 390 |
 
 ### 6.2 Technique Distribution (LLM + Ground Truth)
 
 | Technique | Count |
 |-----------|-------|
-| LoadedLanguage | 26 |
-| FalseDilemma | 14 |
-| HastyGeneralization | 9 |
-| Scapegoating | 8 |
+| LoadedLanguage | 23 |
+| FalseDilemma | 13 |
+| HastyGeneralization | 7 |
+| Scapegoating | 6 |
 | FearAppeal | 3 |
 | AdHominem | 2 |
+| Exaggeration | 2 |
 | AppealToRidicule | 1 |
-| Exaggeration | 1 |
 
 ### 6.3 Entity Linking Results
 
@@ -267,6 +267,7 @@ Compared to the original MUSE framework:
 - **Scale**: Demo limited to 15 posts; full dataset would require API budget
 - **Evaluation**: Need human evaluation of LLM-extracted claims
 - **Visualization**: Graph visualization component is separate
+- **Non-deterministic LLM outputs**: Cloud LLM APIs (OpenRouter, OpenAI, etc.) do not guarantee reproducible results even with temperature=0, due to GPU parallelism and mixture-of-experts batching. We use temperature=0.1-0.2 for simplicity and cost efficiency. For strict reproducibility, users can swap to self-hosted solutions like **vLLM** or **Ollama** with fixed random seeds.
 
 ### 7.4 Next Steps
 
@@ -300,14 +301,16 @@ semantic_web_project/
 ├── pipeline_implementation.py   # Main pipeline
 ├── persuasion_ontology.ttl      # OWL ontology
 ├── notebooks/
-│   ├── 01_tools_usage.ipynb     # RDF + Wikidata demo
+│   ├── 01_tools_usage.ipynb          # RDF + Wikidata demo
 │   ├── 02_nlp_llm_tools_intro.ipynb  # LLM + spaCy demo
-│   └── 03_data_preprocessing.ipynb   # FALCON preprocessing
+│   ├── 03_data_preprocessing.ipynb   # FALCON preprocessing
+│   └── 04_experimental_results.ipynb # Pipeline execution + results
 ├── data/
 │   ├── input/processed/         # Preprocessed FALCON
 │   └── output/                  # Generated RDF + stats
 └── reports/
-    └── technical_report.md      # This document
+    ├── presentation_milestone_4.md  # Milestone 4 results
+    └── presentation_milestone_5.md  # This document (draft report)
 ```
 
 ### B. Example SPARQL Queries
