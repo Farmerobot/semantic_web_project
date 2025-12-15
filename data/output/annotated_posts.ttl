@@ -1,0 +1,491 @@
+@prefix ns1: <http://example.org/persuasion#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/post#falcon_0> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_0_1>,
+        <http://example.org/claim#falcon_0_2>,
+        <http://example.org/claim#falcon_0_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_0" ;
+    ns1:textContent "[user104337]: . Kyrie Irving just doesn't get it. Nobody is against fighting police brutality. We are not a race of quitters, we find ways to affect change from the inside-out. These owners don't care if you boycott, helps them tear up your contract for next season." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_1> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_1_1>,
+        <http://example.org/claim#falcon_1_2> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_1" ;
+    ns1:textContent "[user79987]: . Totally disagree here. You hit these owners (and more importantly advertisers) right where it hurts. The only thing they care about is $$$. Period. Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others. He is completely on point imo." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_10> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_10_1>,
+        <http://example.org/claim#falcon_10_2> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_10" ;
+    ns1:textContent "[user104337]: . We got some crab-mentality going on here, in the hood. The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this. I GUARANTEE YOU ! They will rejoin protests in these city streets after the NBA Playoffs are completed." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_11> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_11_1>,
+        <http://example.org/claim#falcon_11_2>,
+        <http://example.org/claim#falcon_11_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_11" ;
+    ns1:textContent "[user1779]: . nahhh we need them in the streets right NOW😂the nba team owners should support that decision and fund protesting instead of games if playing or not playing the games won't affect them. why not not play the games and focus on something bigger?" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_12> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_12_1>,
+        <http://example.org/claim#falcon_12_2>,
+        <http://example.org/claim#falcon_12_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_12" ;
+    ns1:textContent "[user104337]: . We all agree that change is needed, WE DISAGREE ON THE METHOD TO AFFECT CHANGE. Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_13> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_13_1> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_13" ;
+    ns1:textContent "[user104337]: . Why would a NBA owner lend financial support to employees (THIS IS A JOB, NOT A HOBBY) that refuse to come back to work ? NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_14> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_14_1>,
+        <http://example.org/claim#falcon_14_2>,
+        <http://example.org/claim#falcon_14_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_14" ;
+    ns1:textContent "[user47446]: . My priorities are Americans working together not fighting over petty shit like \"don't let black people play basketball because they will take away from our message about police brutality\" the shit doesn't correlate. It's just the cancel mentality of always wanting 2 combat others" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_2> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_2_1>,
+        <http://example.org/claim#falcon_2_2>,
+        <http://example.org/claim#falcon_2_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_2" ;
+    ns1:textContent "[user104337]: . That's so unintelligent. You can't hurt somebody that never cared about you in the 1st place. NBA owners will use this boycott as an excuse to tear up the contract for next season too. They became rich before being a part of the NBA." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_3> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_3_1>,
+        <http://example.org/claim#falcon_3_2> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_3" ;
+    ns1:textContent "[user79987]: . The unintelligent thing to do would be to go on living like nothing happened. If you have leverage use it. See how quickly a rich ass owner who doesn't care will hold on to something that doesn't generate profits. Contracts don't mean a damn thing anymore.haven't in years." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_4> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_4_1>,
+        <http://example.org/claim#falcon_4_2>,
+        <http://example.org/claim#falcon_4_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_4" ;
+    ns1:textContent "[user47446]: . It's been what.2, 3 weeks and what has happened? Protests overshadowed by everything other than sports, which haven't been allowed. Why ask players to sacrifice their paycheck now also? Not all of them have Supermax deals" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_5> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_5_1>,
+        <http://example.org/claim#falcon_5_2>,
+        <http://example.org/claim#falcon_5_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_5" ;
+    ns1:textContent "[user1779]: . this shit's not gonna be easy😂nothin major is supposed to happen in 2, 3 weeks. if sports comes back, nothing major WILL happen. they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore." ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_6> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_6_1>,
+        <http://example.org/claim#falcon_6_2>,
+        <http://example.org/claim#falcon_6_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_6" ;
+    ns1:textContent "[user47446]: . Companies across the world are already trying to profit off the black dollar by promoting black lives matter. Everyone on social media and in the world agrees we need change. What do we need to do? Let's do it. The world goes on fine when sports are here why stop what works" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_7> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_7_1> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_7" ;
+    ns1:textContent "[user47446]: . Plus how do you know they'll do this? Cuz the media just talks about whatever profits them huh exactly" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_8> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_8_1>,
+        <http://example.org/claim#falcon_8_2>,
+        <http://example.org/claim#falcon_8_3> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_8" ;
+    ns1:textContent "[user1779]: . exactly. boycotting will stop a portion of the media from getting distracted and just going for views. all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again. if ppl with a platform sway from the matter, others will join" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/post#falcon_9> a ns1:Post ;
+    ns1:containsClaim <http://example.org/claim#falcon_9_1> ;
+    ns1:platform "Twitter" ;
+    ns1:postId "falcon_9" ;
+    ns1:textContent "[user47446]: . Why must we always be combative? If you know others think something is bad and you can work together why not do it? No one could have watched that George Floyd video and felt any difference. We need to band together not create division for views for your cause" ;
+    prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
+
+<http://example.org/claim#falcon_0_1> a ns1:Claim ;
+    ns1:claimText "Nobody is against fighting police brutality." ;
+    ns1:confidenceScore "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_0_2> a ns1:Claim ;
+    ns1:claimText "We are not a race of quitters, we find ways to affect change from the inside-out." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_0_3> a ns1:Claim ;
+    ns1:claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
+    ns1:confidenceScore "0.7"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#next_season> ;
+    ns1:usesTechnique ns1:Exaggeration,
+        ns1:FearAppeal,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_10_1> a ns1:Claim ;
+    ns1:claimText "The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#Milwaukee_Bucks> ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_10_2> a ns1:Claim ;
+    ns1:claimText "They will rejoin protests in these city streets after the NBA Playoffs are completed." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#NBA> ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_11_1> a ns1:Claim ;
+    ns1:claimText "the nba team owners should support that decision and fund protesting instead of games" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_11_2> a ns1:Claim ;
+    ns1:claimText "if playing or not playing the games won't affect them" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_11_3> a ns1:Claim ;
+    ns1:claimText "why not not play the games and focus on something bigger?" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_12_1> a ns1:Claim ;
+    ns1:claimText "change is needed" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:HastyGeneralization,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_12_2> a ns1:Claim ;
+    ns1:claimText "WE DISAGREE ON THE METHOD TO AFFECT CHANGE" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#METHOD> ;
+    ns1:usesTechnique ns1:HastyGeneralization,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_12_3> a ns1:Claim ;
+    ns1:claimText "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#1>,
+        <http://example.org/entity#Trump> ;
+    ns1:usesTechnique ns1:HastyGeneralization,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_13_1> a ns1:Claim ;
+    ns1:claimText "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float,
+        "0.8"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#NBA> ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:FearAppeal,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_14_1> a ns1:Claim ;
+    ns1:claimText "don't let black people play basketball because they will take away from our message about police brutality" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_14_2> a ns1:Claim ;
+    ns1:claimText "the shit doesn't correlate" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_14_3> a ns1:Claim ;
+    ns1:claimText "It's just the cancel mentality of always wanting 2 combat others" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#2> ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_1_1> a ns1:Claim ;
+    ns1:claimText "The only thing they care about is $$$" ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#$$$> ;
+    ns1:usesTechnique ns1:HastyGeneralization,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_1_2> a ns1:Claim ;
+    ns1:claimText "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#Kyrie> ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_2_1> a ns1:Claim ;
+    ns1:claimText "You can't hurt somebody that never cared about you in the 1st place." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.65"^^xsd:float,
+        "0.7"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#1st> ;
+    ns1:usesTechnique ns1:AppealToRidicule,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_2_2> a ns1:Claim ;
+    ns1:claimText "NBA owners will use this boycott as an excuse to tear up the contract for next season too." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.8"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#NBA>,
+        <http://example.org/entity#next_season> ;
+    ns1:usesTechnique ns1:FearAppeal,
+        ns1:HastyGeneralization,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_2_3> a ns1:Claim ;
+    ns1:claimText "They became rich before being a part of the NBA." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#NBA> ;
+    ns1:usesTechnique ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_3_1> a ns1:Claim ;
+    ns1:claimText "a rich ass owner who doesn't care will hold on to something that doesn't generate profits." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:AdHominem,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_3_2> a ns1:Claim ;
+    ns1:claimText "Contracts don't mean a damn thing anymore. haven't in years." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#years> ;
+    ns1:usesTechnique ns1:AdHominem,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_4_1> a ns1:Claim ;
+    ns1:claimText "It's been what.2, 3 weeks and what has happened?" ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#3_weeks> ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_4_2> a ns1:Claim ;
+    ns1:claimText "Protests overshadowed by everything other than sports, which haven't been allowed." ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_4_3> a ns1:Claim ;
+    ns1:claimText "Not all of them have Supermax deals" ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.7"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#Supermax> ;
+    ns1:usesTechnique ns1:FalseDilemma,
+        ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_5_1> a ns1:Claim ;
+    ns1:claimText "nothin major is supposed to happen in 2, 3 weeks." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#2,_3_weeks> ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_5_2> a ns1:Claim ;
+    ns1:claimText "if sports comes back, nothing major WILL happen." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_5_3> a ns1:Claim ;
+    ns1:claimText "they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#the_beginning_of_the_season> ;
+    ns1:usesTechnique ns1:LoadedLanguage .
+
+<http://example.org/claim#falcon_6_1> a ns1:Claim ;
+    ns1:claimText "Companies across the world are already trying to profit off the black dollar by promoting black lives matter." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:HastyGeneralization .
+
+<http://example.org/claim#falcon_6_2> a ns1:Claim ;
+    ns1:claimText "Everyone on social media and in the world agrees we need change." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:HastyGeneralization .
+
+<http://example.org/claim#falcon_6_3> a ns1:Claim ;
+    ns1:claimText "The world goes on fine when sports are here" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:HastyGeneralization .
+
+<http://example.org/claim#falcon_7_1> a ns1:Claim ;
+    ns1:claimText "the media just talks about whatever profits them" ;
+    ns1:confidenceScore "0.6"^^xsd:float,
+        "0.75"^^xsd:float,
+        "0.9"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:HastyGeneralization,
+        ns1:LoadedLanguage,
+        ns1:Scapegoating .
+
+<http://example.org/claim#falcon_8_1> a ns1:Claim ;
+    ns1:claimText "boycotting will stop a portion of the media from getting distracted and just going for views." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_8_2> a ns1:Claim ;
+    ns1:claimText "all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_8_3> a ns1:Claim ;
+    ns1:claimText "if ppl with a platform sway from the matter, others will join" ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/claim#falcon_9_1> a ns1:Claim ;
+    ns1:claimText "No one could have watched that George Floyd video and felt any difference." ;
+    ns1:confidenceScore "1.0"^^xsd:float ;
+    ns1:hasVerificationStatus ns1:Unverified ;
+    ns1:targetsEntity <http://example.org/entity#George_Floyd> ;
+    ns1:usesTechnique ns1:FalseDilemma .
+
+<http://example.org/entity#$$$> a ns1:Entity ;
+    ns1:entityName "$$$" ;
+    ns1:entityType "Other" .
+
+<http://example.org/entity#1> a ns1:Entity ;
+    ns1:entityName "1" ;
+    ns1:entityType "Other" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q27721> .
+
+<http://example.org/entity#1st> a ns1:Entity ;
+    ns1:entityName "1st" ;
+    ns1:entityType "Other" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q956209> .
+
+<http://example.org/entity#2> a ns1:Entity ;
+    ns1:entityName "2" ;
+    ns1:entityType "Other" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q19647> .
+
+<http://example.org/entity#2,_3_weeks> a ns1:Entity ;
+    ns1:entityName "2, 3 weeks" ;
+    ns1:entityType "Date" .
+
+<http://example.org/entity#3_weeks> a ns1:Entity ;
+    ns1:entityName "3 weeks" ;
+    ns1:entityType "Date" .
+
+<http://example.org/entity#George_Floyd> a ns1:Entity ;
+    ns1:entityName "George Floyd" ;
+    ns1:entityType "Person" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q5539328> .
+
+<http://example.org/entity#Kyrie> a ns1:Entity ;
+    ns1:entityName "Kyrie" ;
+    ns1:entityType "Person" .
+
+<http://example.org/entity#METHOD> a ns1:Entity ;
+    ns1:entityName "METHOD" ;
+    ns1:entityType "Organization" .
+
+<http://example.org/entity#Milwaukee_Bucks> a ns1:Entity ;
+    ns1:entityName "Milwaukee Bucks" ;
+    ns1:entityType "Organization" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q169637> .
+
+<http://example.org/entity#Supermax> a ns1:Entity ;
+    ns1:entityName "Supermax" ;
+    ns1:entityType "Organization" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q7643958> .
+
+<http://example.org/entity#Trump> a ns1:Entity ;
+    ns1:entityName "Trump" ;
+    ns1:entityType "Organization" ;
+    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q2643970> .
+
+<http://example.org/entity#the_beginning_of_the_season> a ns1:Entity ;
+    ns1:entityName "the beginning of the season" ;
+    ns1:entityType "Date" .
+
+<http://example.org/entity#years> a ns1:Entity ;
+    ns1:entityName "years" ;
+    ns1:entityType "Date" .
+
+<http://example.org/entity#next_season> a ns1:Entity ;
+    ns1:entityName "next season" ;
+    ns1:entityType "Date" .
+
+<http://example.org/entity#NBA> a ns1:Entity ;
+    ns1:entityName "NBA" ;
+    ns1:entityType "Organization" .
+
+<http://example.org/agent#MUSE_Pipeline> a ns1:LLMAgent ;
+    ns1:modelName "google/gemini-2.5-flash-lite" .
+
