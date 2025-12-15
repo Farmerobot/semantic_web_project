@@ -52,7 +52,7 @@ This document describes all tools selected for the project, including technologi
 - Querying local graphs with SPARQL
 - Loading and validating our persuasion ontology
 
-**Introductory Notebook**: `notebooks/01_semantic_web_tools_intro.ipynb`
+**Introductory Notebook**: `notebooks/01_tools_usage.ipynb`
 
 ### 2.2 SPARQLWrapper (v2.0.0)
 
@@ -69,7 +69,7 @@ This document describes all tools selected for the project, including technologi
 - Fetching entity metadata (descriptions, types, relationships)
 - Validating entity references
 
-**Introductory Notebook**: `notebooks/01_semantic_web_tools_intro.ipynb`
+**Introductory Notebook**: `notebooks/01_tools_usage.ipynb`
 
 ### 2.3 Wikidata Knowledge Base
 
