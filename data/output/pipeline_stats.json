@@ -1,16 +1,16 @@
 {
   "total_posts": 15,
-  "total_claims": 34,
-  "total_techniques": 57,
-  "total_entities": 18,
+  "total_claims": 36,
+  "total_techniques": 62,
+  "total_entities": 20,
   "technique_counts": {
-    "FalseDilemma": 13,
-    "LoadedLanguage": 23,
-    "FearAppeal": 3,
-    "Exaggeration": 2,
-    "HastyGeneralization": 7,
+    "FalseDilemma": 12,
+    "LoadedLanguage": 26,
     "Scapegoating": 6,
+    "FearAppeal": 3,
+    "Exaggeration": 5,
     "AppealToRidicule": 1,
-    "AdHominem": 2
+    "HastyGeneralization": 8,
+    "AdHominem": 1
   }
 }

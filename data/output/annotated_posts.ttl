@@ -1,458 +1,1174 @@
-@prefix ns1: <http://example.org/persuasion#> .
+@prefix : <http://example.org/persuasion#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/post#falcon_0> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_0_1>,
+: a owl:Ontology ;
+    dc:creator "Semantic Web Project" ;
+    dc:description "An ontology for modeling persuasion techniques and misinformation in social media posts" ;
+    dc:title "Persuasion-Aware Social Media Ontology" ;
+    dcterms:created "2025-01-03"^^xsd:date ;
+    owl:versionInfo "2.0" .
+
+:AppealToAuthority a owl:Class ;
+    rdfs:label "Appeal to Authority" ;
+    rdfs:comment "Citing authority figures to lend credibility without proper evidence" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:AppealToEmotion a owl:Class ;
+    rdfs:label "Appeal to Emotion" ;
+    rdfs:comment "Using emotional manipulation instead of logical argument" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:Bandwagon a owl:Class ;
+    rdfs:label "Bandwagon" ;
+    rdfs:comment "Appealing to popularity as proof of truth" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:False a owl:Class ;
+    rdfs:label "False" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A geographical place or region" ;
+    rdfs:subClassOf :Entity .
+
+:Misleading a owl:Class ;
+    rdfs:label "Misleading" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:MostlyFalse a owl:Class ;
+    rdfs:label "Mostly False" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:MostlyTrue a owl:Class ;
+    rdfs:label "Mostly True" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:True a owl:Class ;
+    rdfs:label "True" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:Whataboutism a owl:Class ;
+    rdfs:label "Whataboutism" ;
+    rdfs:comment "Deflecting criticism by pointing to others' faults" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:annotatesTechnique a owl:ObjectProperty ;
+    rdfs:label "annotates technique" ;
+    rdfs:comment "The persuasion technique detected in this annotation" ;
+    rdfs:domain :PersuasionAnnotation ;
+    rdfs:range :PersuasionTechnique .
+
+:author a owl:DatatypeProperty ;
+    rdfs:label "author" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:claimText a owl:DatatypeProperty ;
+    rdfs:label "claim text" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:string .
+
+:confidenceScore a owl:DatatypeProperty ;
+    rdfs:label "confidence score" ;
+    rdfs:comment "LLM confidence in technique detection (0-1)" ;
+    rdfs:domain :PersuasionAnnotation ;
+    rdfs:range xsd:float .
+
+:containsClaim a owl:ObjectProperty ;
+    rdfs:label "contains claim" ;
+    rdfs:domain :Post ;
+    rdfs:range :Claim .
+
+:contradicts a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "contradicts" ;
+    rdfs:comment "Indicates two claims are mutually contradictory" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Claim .
+
+:correctionText a owl:DatatypeProperty ;
+    rdfs:label "correction text" ;
+    rdfs:domain :Correction ;
+    rdfs:range xsd:string .
+
+:correctsClaim a owl:ObjectProperty ;
+    rdfs:label "corrects claim" ;
+    rdfs:domain :Correction ;
+    rdfs:range :Claim .
+
+:credibilityScore a owl:DatatypeProperty ;
+    rdfs:label "credibility score" ;
+    rdfs:comment "Assessed credibility of the source (0-1)" ;
+    rdfs:domain :Source ;
+    rdfs:range xsd:float .
+
+:entityName a owl:DatatypeProperty ;
+    rdfs:label "entity name" ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string .
+
+:evidenceSource a owl:DatatypeProperty ;
+    rdfs:label "evidence source" ;
+    rdfs:domain :Evidence ;
+    rdfs:range xsd:anyURI .
+
+:evidenceText a owl:DatatypeProperty ;
+    rdfs:label "evidence text" ;
+    rdfs:domain :Evidence ;
+    rdfs:range xsd:string .
+
+:explanation a owl:DatatypeProperty ;
+    rdfs:label "explanation" ;
+    rdfs:comment "Explanation for why the technique was detected" ;
+    rdfs:domain :PersuasionAnnotation ;
+    rdfs:range xsd:string .
+
+:fragmentEnd a owl:DatatypeProperty ;
+    rdfs:label "fragment end" ;
+    rdfs:comment "End position of claim text fragment" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:integer .
+
+:fragmentStart a owl:DatatypeProperty ;
+    rdfs:label "fragment start" ;
+    rdfs:comment "Start position of claim text fragment" ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:integer .
+
+:hasAnnotation a owl:ObjectProperty ;
+    rdfs:label "has annotation" ;
+    rdfs:comment "Links a claim to its persuasion annotation" ;
+    rdfs:domain :Claim ;
+    rdfs:range :PersuasionAnnotation .
+
+:hasCorrection a owl:ObjectProperty ;
+    rdfs:label "has correction" ;
+    rdfs:domain :Post ;
+    rdfs:range :Correction .
+
+:hasImage a owl:DatatypeProperty ;
+    rdfs:label "has image" ;
+    rdfs:comment "URI reference to an image in the post" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf :hasContent .
+
+:hasSentiment a owl:ObjectProperty ;
+    rdfs:label "has sentiment" ;
+    rdfs:comment "The emotional tone of the content" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range :Sentiment .
+
+:hasSource a owl:ObjectProperty ;
+    rdfs:label "has source" ;
+    rdfs:comment "Links content to its information source" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range :Source .
+
+:hasText a owl:DatatypeProperty ;
+    rdfs:label "has text" ;
+    rdfs:comment "The textual content of a post" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :hasContent .
+
+:hasVerificationStatus a owl:ObjectProperty ;
+    rdfs:label "has verification status" ;
+    rdfs:domain :Claim ;
+    rdfs:range :VerificationStatus .
+
+:likeCount a owl:DatatypeProperty ;
+    rdfs:label "like count" ;
+    rdfs:comment "Number of likes/favorites on the post" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer .
+
+:linkedToWikidata a owl:ObjectProperty ;
+    rdfs:label "linked to Wikidata" ;
+    rdfs:comment "Links entity to its Wikidata identifier" ;
+    rdfs:domain :Entity .
+
+:mentions a owl:ObjectProperty ;
+    rdfs:label "mentions" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range :Entity .
+
+:modelName a owl:DatatypeProperty ;
+    rdfs:label "model name" ;
+    rdfs:domain :LLMAgent ;
+    rdfs:range xsd:string .
+
+:modelVersion a owl:DatatypeProperty ;
+    rdfs:label "model version" ;
+    rdfs:domain :LLMAgent ;
+    rdfs:range xsd:string .
+
+:platform a owl:DatatypeProperty ;
+    rdfs:label "platform" ;
+    rdfs:comment "Social media platform (e.g., Twitter, Facebook)" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:postId a owl:DatatypeProperty ;
+    rdfs:label "post ID" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:string .
+
+:quotes a owl:ObjectProperty ;
+    rdfs:label "quotes" ;
+    rdfs:comment "Indicates this post quotes another post" ;
+    rdfs:domain :Post ;
+    rdfs:range :Post .
+
+:refutedBy a owl:ObjectProperty ;
+    rdfs:label "refuted by" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Evidence .
+
+:relatedTo a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "related to" ;
+    rdfs:comment "Indicates two claims are topically related" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Claim .
+
+:replyCount a owl:DatatypeProperty ;
+    rdfs:label "reply count" ;
+    rdfs:comment "Number of replies to the post" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer .
+
+:replyTo a owl:ObjectProperty ;
+    rdfs:label "reply to" ;
+    rdfs:comment "Indicates this post is a reply to another post" ;
+    rdfs:domain :Post ;
+    rdfs:range :Post .
+
+:sentimentScore a owl:DatatypeProperty ;
+    rdfs:label "sentiment score" ;
+    rdfs:comment "Numerical sentiment polarity (-1 to 1)" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range xsd:float .
+
+:shareCount a owl:DatatypeProperty ;
+    rdfs:label "share count" ;
+    rdfs:comment "Number of times the post was shared/retweeted" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer .
+
+:supportedBy a owl:ObjectProperty ;
+    rdfs:label "supported by" ;
+    rdfs:comment "Links a claim to supporting or refuting evidence" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Evidence .
+
+:targetsEntity a owl:ObjectProperty ;
+    rdfs:label "targets entity" ;
+    rdfs:comment "Identifies the entity that is the subject of manipulation" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Entity .
+
+:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp" ;
+    rdfs:range xsd:dateTime .
+
+:usesTechnique a owl:ObjectProperty ;
+    rdfs:label "uses technique" ;
+    rdfs:comment "Links a claim to the persuasion technique it employs" ;
+    rdfs:domain :Claim ;
+    rdfs:range :PersuasionTechnique .
+
+:wasGeneratedBy a owl:ObjectProperty ;
+    rdfs:label "was generated by" ;
+    rdfs:comment "Links data to the process/agent that generated it" ;
+    owl:equivalentProperty prov:wasGeneratedBy .
+
+:wikidataId a owl:DatatypeProperty ;
+    rdfs:label "Wikidata ID" ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string .
+
+<http://example.org/post#falcon_0> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_0_1>,
         <http://example.org/claim#falcon_0_2>,
         <http://example.org/claim#falcon_0_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_0" ;
-    ns1:textContent "[user104337]: . Kyrie Irving just doesn't get it. Nobody is against fighting police brutality. We are not a race of quitters, we find ways to affect change from the inside-out. These owners don't care if you boycott, helps them tear up your contract for next season." ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user104337]: . Kyrie Irving just doesn't get it. Nobody is against fighting police brutality. We are not a race of quitters, we find ways to affect change from the inside-out. These owners don't care if you boycott, helps them tear up your contract for next season."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_0"^^xsd:string ;
+    :sentimentScore "0.0"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_1> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_1_1>,
-        <http://example.org/claim#falcon_1_2> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_1" ;
-    ns1:textContent "[user79987]: . Totally disagree here. You hit these owners (and more importantly advertisers) right where it hurts. The only thing they care about is $$$. Period. Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others. He is completely on point imo." ;
+<http://example.org/post#falcon_1> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_1_1>,
+        <http://example.org/claim#falcon_1_2>,
+        <http://example.org/claim#falcon_1_3> ;
+    :hasSentiment :PositiveSentiment ;
+    :hasText "[user79987]: . Totally disagree here. You hit these owners (and more importantly advertisers) right where it hurts. The only thing they care about is $$$. Period. Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others. He is completely on point imo."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_1"^^xsd:string ;
+    :sentimentScore "0.223"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_10> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_10_1>,
+<http://example.org/post#falcon_10> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_10_1>,
         <http://example.org/claim#falcon_10_2> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_10" ;
-    ns1:textContent "[user104337]: . We got some crab-mentality going on here, in the hood. The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this. I GUARANTEE YOU ! They will rejoin protests in these city streets after the NBA Playoffs are completed." ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user104337]: . We got some crab-mentality going on here, in the hood. The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this. I GUARANTEE YOU ! They will rejoin protests in these city streets after the NBA Playoffs are completed."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_10"^^xsd:string ;
+    :sentimentScore "0.0"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_11> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_11_1>,
+<http://example.org/post#falcon_11> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_11_1>,
         <http://example.org/claim#falcon_11_2>,
         <http://example.org/claim#falcon_11_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_11" ;
-    ns1:textContent "[user1779]: . nahhh we need them in the streets right NOW😂the nba team owners should support that decision and fund protesting instead of games if playing or not playing the games won't affect them. why not not play the games and focus on something bigger?" ;
+    :hasSentiment :PositiveSentiment ;
+    :hasText "[user1779]: . nahhh we need them in the streets right NOW😂the nba team owners should support that decision and fund protesting instead of games if playing or not playing the games won't affect them. why not not play the games and focus on something bigger?"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_11"^^xsd:string ;
+    :sentimentScore "0.143"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_12> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_12_1> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_12" ;
-    ns1:textContent "[user104337]: . We all agree that change is needed, WE DISAGREE ON THE METHOD TO AFFECT CHANGE. Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
+<http://example.org/post#falcon_12> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_12_1>,
+        <http://example.org/claim#falcon_12_2> ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user104337]: . We all agree that change is needed, WE DISAGREE ON THE METHOD TO AFFECT CHANGE. Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \""^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_12"^^xsd:string ;
+    :sentimentScore "-0.083"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_13> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_13_1> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_13" ;
-    ns1:textContent "[user104337]: . Why would a NBA owner lend financial support to employees (THIS IS A JOB, NOT A HOBBY) that refuse to come back to work ? NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
+<http://example.org/post#falcon_13> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_13_1> ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user104337]: . Why would a NBA owner lend financial support to employees (THIS IS A JOB, NOT A HOBBY) that refuse to come back to work ? NBA owners will trim their budget = fire their minimum wage employees, thanks to the players."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_13"^^xsd:string ;
+    :sentimentScore "0.067"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_14> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_14_1>,
+<http://example.org/post#falcon_14> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_14_1>,
         <http://example.org/claim#falcon_14_2>,
         <http://example.org/claim#falcon_14_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_14" ;
-    ns1:textContent "[user47446]: . My priorities are Americans working together not fighting over petty shit like \"don't let black people play basketball because they will take away from our message about police brutality\" the shit doesn't correlate. It's just the cancel mentality of always wanting 2 combat others" ;
+    :hasSentiment :NegativeSentiment ;
+    :hasText "[user47446]: . My priorities are Americans working together not fighting over petty shit like \"don't let black people play basketball because they will take away from our message about police brutality\" the shit doesn't correlate. It's just the cancel mentality of always wanting 2 combat others"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_14"^^xsd:string ;
+    :sentimentScore "-0.189"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_2> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_2_1>,
+<http://example.org/post#falcon_2> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_2_1>,
         <http://example.org/claim#falcon_2_2>,
         <http://example.org/claim#falcon_2_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_2" ;
-    ns1:textContent "[user104337]: . That's so unintelligent. You can't hurt somebody that never cared about you in the 1st place. NBA owners will use this boycott as an excuse to tear up the contract for next season too. They became rich before being a part of the NBA." ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user104337]: . That's so unintelligent. You can't hurt somebody that never cared about you in the 1st place. NBA owners will use this boycott as an excuse to tear up the contract for next season too. They became rich before being a part of the NBA."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_2"^^xsd:string ;
+    :sentimentScore "-0.081"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_3> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_3_1>,
-        <http://example.org/claim#falcon_3_2> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_3" ;
-    ns1:textContent "[user79987]: . The unintelligent thing to do would be to go on living like nothing happened. If you have leverage use it. See how quickly a rich ass owner who doesn't care will hold on to something that doesn't generate profits. Contracts don't mean a damn thing anymore.haven't in years." ;
+<http://example.org/post#falcon_3> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_3_1> ;
+    :hasSentiment :NegativeSentiment ;
+    :hasText "[user79987]: . The unintelligent thing to do would be to go on living like nothing happened. If you have leverage use it. See how quickly a rich ass owner who doesn't care will hold on to something that doesn't generate profits. Contracts don't mean a damn thing anymore.haven't in years."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_3"^^xsd:string ;
+    :sentimentScore "-0.196"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_4> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_4_1>,
+<http://example.org/post#falcon_4> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_4_1>,
         <http://example.org/claim#falcon_4_2>,
-        <http://example.org/claim#falcon_4_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_4" ;
-    ns1:textContent "[user47446]: . It's been what.2, 3 weeks and what has happened? Protests overshadowed by everything other than sports, which haven't been allowed. Why ask players to sacrifice their paycheck now also? Not all of them have Supermax deals" ;
+        <http://example.org/claim#falcon_4_3>,
+        <http://example.org/claim#falcon_4_4> ;
+    :hasSentiment :NegativeSentiment ;
+    :hasText "[user47446]: . It's been what.2, 3 weeks and what has happened? Protests overshadowed by everything other than sports, which haven't been allowed. Why ask players to sacrifice their paycheck now also? Not all of them have Supermax deals"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_4"^^xsd:string ;
+    :sentimentScore "-0.125"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_5> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_5_1>,
+<http://example.org/post#falcon_5> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_5_1>,
         <http://example.org/claim#falcon_5_2>,
         <http://example.org/claim#falcon_5_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_5" ;
-    ns1:textContent "[user1779]: . this shit's not gonna be easy😂nothin major is supposed to happen in 2, 3 weeks. if sports comes back, nothing major WILL happen. they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore." ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user1779]: . this shit's not gonna be easy😂nothin major is supposed to happen in 2, 3 weeks. if sports comes back, nothing major WILL happen. they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore."^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_5"^^xsd:string ;
+    :sentimentScore "-0.019"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_6> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_6_1>,
+<http://example.org/post#falcon_6> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_6_1>,
         <http://example.org/claim#falcon_6_2>,
         <http://example.org/claim#falcon_6_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_6" ;
-    ns1:textContent "[user47446]: . Companies across the world are already trying to profit off the black dollar by promoting black lives matter. Everyone on social media and in the world agrees we need change. What do we need to do? Let's do it. The world goes on fine when sports are here why stop what works" ;
+    :hasSentiment :NeutralSentiment ;
+    :hasText "[user47446]: . Companies across the world are already trying to profit off the black dollar by promoting black lives matter. Everyone on social media and in the world agrees we need change. What do we need to do? Let's do it. The world goes on fine when sports are here why stop what works"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_6"^^xsd:string ;
+    :sentimentScore "0.029"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_7> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_7_1> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_7" ;
-    ns1:textContent "[user47446]: . Plus how do you know they'll do this? Cuz the media just talks about whatever profits them huh exactly" ;
+<http://example.org/post#falcon_7> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_7_1> ;
+    :hasSentiment :PositiveSentiment ;
+    :hasText "[user47446]: . Plus how do you know they'll do this? Cuz the media just talks about whatever profits them huh exactly"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_7"^^xsd:string ;
+    :sentimentScore "0.25"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_8> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_8_1>,
+<http://example.org/post#falcon_8> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_8_1>,
         <http://example.org/claim#falcon_8_2>,
         <http://example.org/claim#falcon_8_3> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_8" ;
-    ns1:textContent "[user1779]: . exactly. boycotting will stop a portion of the media from getting distracted and just going for views. all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again. if ppl with a platform sway from the matter, others will join" ;
+    :hasSentiment :PositiveSentiment ;
+    :hasText "[user1779]: . exactly. boycotting will stop a portion of the media from getting distracted and just going for views. all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again. if ppl with a platform sway from the matter, others will join"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_8"^^xsd:string ;
+    :sentimentScore "0.375"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/post#falcon_9> a ns1:Post ;
-    ns1:containsClaim <http://example.org/claim#falcon_9_1> ;
-    ns1:platform "Twitter" ;
-    ns1:postId "falcon_9" ;
-    ns1:textContent "[user47446]: . Why must we always be combative? If you know others think something is bad and you can work together why not do it? No one could have watched that George Floyd video and felt any difference. We need to band together not create division for views for your cause" ;
+<http://example.org/post#falcon_9> a :Post ;
+    :containsClaim <http://example.org/claim#falcon_9_1> ;
+    :hasSentiment :NegativeSentiment ;
+    :hasText "[user47446]: . Why must we always be combative? If you know others think something is bad and you can work together why not do it? No one could have watched that George Floyd video and felt any difference. We need to band together not create division for views for your cause"^^xsd:string ;
+    :platform "Twitter"^^xsd:string ;
+    :postId "falcon_9"^^xsd:string ;
+    :sentimentScore "-0.7"^^xsd:float ;
     prov:wasGeneratedBy <http://example.org/agent#MUSE_Pipeline> .
 
-<http://example.org/claim#falcon_0_1> a ns1:Claim ;
-    ns1:claimText "Nobody is against fighting police brutality." ;
-    ns1:confidenceScore "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_0_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The claim 'Nobody is against fighting police brutality' presents a false dilemma by implying that the only way to fight police brutality is through 'affecting change from the inside-out.' It dismisses or ignores other potential methods of protest or advocacy, such as boycotts, as ineffective or undesirable without providing evidence for this assertion. It sets up a binary where one must either agree with the speaker's preferred method or be implicitly against fighting police brutality."^^xsd:string .
 
-<http://example.org/claim#falcon_0_2> a ns1:Claim ;
-    ns1:claimText "We are not a race of quitters, we find ways to affect change from the inside-out." ;
-    ns1:confidenceScore "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_0_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.75"^^xsd:float ;
+    :explanation "The phrase 'race of quitters' is emotionally charged and used to evoke a sense of pride and determination, framing the speaker's preferred method of change as the only honorable or strong approach. This language aims to persuade by appealing to identity and emotion rather than logic."^^xsd:string .
 
-<http://example.org/claim#falcon_0_3> a ns1:Claim ;
-    ns1:claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
-    ns1:confidenceScore "0.7"^^xsd:float,
-        "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#next_season> ;
-    ns1:usesTechnique ns1:Exaggeration,
-        ns1:FearAppeal,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_0_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The phrase 'race of quitters' is emotionally charged and designed to evoke a strong negative reaction, implying that not fighting back or choosing a different method of protest is equivalent to giving up. This is contrasted with the positive framing of 'finding ways to affect change from the inside-out'."^^xsd:string .
 
-<http://example.org/claim#falcon_10_1> a ns1:Claim ;
-    ns1:claimText "The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#Milwaukee_Bucks> ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_0_2_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "While not explicitly naming a single scapegoat, the claim implicitly blames 'these owners' for potentially exploiting boycotts to terminate contracts, thus framing them as an obstacle to change and a reason why the proposed method of protest (boycotting) is ineffective or even detrimental. This shifts blame away from the effectiveness of the protest itself and onto the actions of the owners."^^xsd:string .
 
-<http://example.org/claim#falcon_10_2> a ns1:Claim ;
-    ns1:claimText "They will rejoin protests in these city streets after the NBA Playoffs are completed." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#NBA> ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_0_2_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The claim presents a dichotomy: either you are a 'race of quitters' (implying ineffective or passive action) or you 'find ways to affect change from the inside-out'. This suggests that boycotting is a form of quitting and that the 'inside-out' approach is the only viable or effective alternative, potentially ignoring other forms of protest or activism."^^xsd:string .
 
-<http://example.org/claim#falcon_11_1> a ns1:Claim ;
-    ns1:claimText "the nba team owners should support that decision and fund protesting instead of games" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_0_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FearAppeal ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The claim suggests that a boycott will lead to negative consequences for the individual, specifically the tearing up of their contract for the next season. This evokes fear of financial repercussions and loss of livelihood."^^xsd:string .
 
-<http://example.org/claim#falcon_11_2> a ns1:Claim ;
-    ns1:claimText "if playing or not playing the games won't affect them" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_0_3_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.75"^^xsd:float ;
+    :explanation "The phrase 'tear up your contract' is emotionally charged and implies a malicious or dismissive action by the owners, aiming to evoke a negative emotional response towards them."^^xsd:string .
 
-<http://example.org/claim#falcon_11_3> a ns1:Claim ;
-    ns1:claimText "why not not play the games and focus on something bigger?" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_0_3_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :Exaggeration ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "While owners might have contractual leverage, the absolute statement that a boycott *helps them* tear up a contract for *next season* could be an exaggeration. The actual consequences of a boycott are complex and might not directly or solely lead to contract termination."^^xsd:string .
 
-<http://example.org/claim#falcon_12_1> a ns1:Claim ;
-    ns1:claimText "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#1>,
-        <http://example.org/entity#Trump> ;
-    ns1:usesTechnique ns1:HastyGeneralization,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_10_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_13_1> a ns1:Claim ;
-    ns1:claimText "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
-    ns1:confidenceScore "0.65"^^xsd:float,
-        "0.7"^^xsd:float,
-        "0.8"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#NBA> ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:FearAppeal,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_10_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_14_1> a ns1:Claim ;
-    ns1:claimText "don't let black people play basketball because they will take away from our message about police brutality" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_11_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_14_2> a ns1:Claim ;
-    ns1:claimText "the shit doesn't correlate" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_11_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_14_3> a ns1:Claim ;
-    ns1:claimText "It's just the cancel mentality of always wanting to combat others" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_11_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_1_1> a ns1:Claim ;
-    ns1:claimText "The only thing they care about is $$$" ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#$$$> ;
-    ns1:usesTechnique ns1:HastyGeneralization,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_12_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_1_2> a ns1:Claim ;
-    ns1:claimText "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.8"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#Kyrie> ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_12_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_2_1> a ns1:Claim ;
-    ns1:claimText "You can't hurt somebody that never cared about you in the 1st place." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#1st> ;
-    ns1:usesTechnique ns1:AppealToRidicule,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_12_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_2_2> a ns1:Claim ;
-    ns1:claimText "NBA owners will use this boycott as an excuse to tear up the contract for next season too." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float,
-        "0.75"^^xsd:float,
-        "0.8"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#NBA>,
-        <http://example.org/entity#next_season> ;
-    ns1:usesTechnique ns1:FearAppeal,
-        ns1:HastyGeneralization,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_12_2_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_2_3> a ns1:Claim ;
-    ns1:claimText "They became rich before being a part of the NBA." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#NBA> ;
-    ns1:usesTechnique ns1:LoadedLanguage,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_13_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The claim directly blames the players ('thanks to the players') for the potential firing of minimum wage employees. This unfairly assigns responsibility for a complex financial decision to a single group, deflecting from other potential factors or the owners' own choices."^^xsd:string .
 
-<http://example.org/claim#falcon_3_1> a ns1:Claim ;
-    ns1:claimText "a rich ass owner who doesn't care will hold on to something that doesn't generate profits." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:AdHominem,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_13_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.8"^^xsd:float ;
+    :explanation "The phrase 'trim their budget = fire their minimum wage employees' uses emotionally charged language. 'Fire' is a strong word that evokes negative emotions, and linking it directly to 'minimum wage employees' aims to create sympathy and outrage against the players."^^xsd:string .
 
-<http://example.org/claim#falcon_3_2> a ns1:Claim ;
-    ns1:claimText "Contracts don't mean a damn thing anymore. haven't in years." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#years> ;
-    ns1:usesTechnique ns1:AdHominem,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_13_1_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The post presents a simplified 'either/or' scenario: either players return to work, or minimum wage employees will be fired. This ignores other potential solutions or financial strategies that NBA owners might employ, such as seeking government aid, negotiating different contracts, or absorbing some of the costs."^^xsd:string .
 
-<http://example.org/claim#falcon_4_1> a ns1:Claim ;
-    ns1:claimText "It's been what.2, 3 weeks and what has happened?" ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#3_weeks> ;
-    ns1:usesTechnique ns1:Exaggeration,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_13_1_tech_3> a :PersuasionAnnotation ;
+    :annotatesTechnique :FearAppeal ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The statement implies a negative consequence (job loss for minimum wage employees) that could be avoided if the players act differently. This can instill fear in readers who are concerned about the welfare of these employees, pressuring them to agree with the premise."^^xsd:string .
 
-<http://example.org/claim#falcon_4_2> a ns1:Claim ;
-    ns1:claimText "Protests overshadowed by everything other than sports, which haven't been allowed." ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_14_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_4_3> a ns1:Claim ;
-    ns1:claimText "Not all of them have Supermax deals" ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.7"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#Supermax> ;
-    ns1:usesTechnique ns1:FalseDilemma,
-        ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_14_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_5_1> a ns1:Claim ;
-    ns1:claimText "nothin major is supposed to happen in 2, 3 weeks." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#2,_3_weeks> ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_14_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/claim#falcon_5_2> a ns1:Claim ;
-    ns1:claimText "if sports comes back, nothing major WILL happen." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_1_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The phrase 'the only thing they care about is $$$' uses emotionally charged language ('only thing', '$$$') to evoke a strong negative sentiment towards the target group (owners and advertisers) without providing specific evidence of their motivations. The use of 'period' further emphasizes this absolute and emotionally driven assertion."^^xsd:string .
 
-<http://example.org/claim#falcon_5_3> a ns1:Claim ;
-    ns1:claimText "they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#the_beginning_of_the_season> ;
-    ns1:usesTechnique ns1:LoadedLanguage .
+<http://example.org/annotation#falcon_1_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Exaggeration ;
+    :confidenceScore "0.75"^^xsd:float ;
+    :explanation "The claim 'The only thing they care about is $$$' is an exaggeration. It presents a single motivation (money) as the sole driver for a group of people (owners and advertisers), ignoring the possibility of other motivations such as brand reputation, player relationships, or ethical considerations."^^xsd:string .
 
-<http://example.org/claim#falcon_6_1> a ns1:Claim ;
-    ns1:claimText "Companies across the world are already trying to profit off the black dollar by promoting black lives matter." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:HastyGeneralization .
+<http://example.org/annotation#falcon_1_1_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "While not explicitly blaming them for a specific problem, the post implicitly frames owners and advertisers as the sole, self-interested antagonists whose primary concern (money) is being leveraged against a perceived moral stance (BLM). This can be seen as a form of scapegoating by attributing negative motivations to a group to explain a situation."^^xsd:string .
 
-<http://example.org/claim#falcon_6_2> a ns1:Claim ;
-    ns1:claimText "Everyone on social media and in the world agrees we need change." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:HastyGeneralization .
+<http://example.org/annotation#falcon_1_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.8"^^xsd:float ;
+    :explanation "The phrase 'Some' BLM more than others' is emotionally charged and implies a selective or hypocritical approach to the Black Lives Matter movement without providing evidence. It suggests a moral failing in those who choose to play, framing their actions as less committed to the cause."^^xsd:string .
 
-<http://example.org/claim#falcon_6_3> a ns1:Claim ;
-    ns1:claimText "The world goes on fine when sports are here" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:HastyGeneralization .
+<http://example.org/annotation#falcon_1_2_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The claim presents a binary choice: either Kyrie is 'on point' for not playing, or playing sends a negative message about commitment to BLM. It implies that playing inherently compromises one's stance on BLM, ignoring the possibility that individuals can support BLM while also fulfilling professional obligations, or that there are other ways to support the movement beyond boycotting."^^xsd:string .
 
-<http://example.org/claim#falcon_7_1> a ns1:Claim ;
-    ns1:claimText "the media just talks about whatever profits them" ;
-    ns1:confidenceScore "0.6"^^xsd:float,
-        "0.75"^^xsd:float,
-        "0.9"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:HastyGeneralization,
-        ns1:LoadedLanguage,
-        ns1:Scapegoating .
+<http://example.org/annotation#falcon_1_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'completely on point' is subjective and emotionally charged, implying strong agreement without providing specific evidence to support the claim. The use of 'imo' (in my opinion) further highlights the subjective nature of the assertion."^^xsd:string .
 
-<http://example.org/claim#falcon_8_1> a ns1:Claim ;
-    ns1:claimText "boycotting will stop a portion of the media from getting distracted and just going for views." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_2_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :AppealToRidicule ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'That's so unintelligent' directly mocks the preceding statement, aiming to dismiss it through ridicule rather than engaging with its substance."^^xsd:string .
 
-<http://example.org/claim#falcon_8_2> a ns1:Claim ;
-    ns1:claimText "all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_2_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The phrase 'tear up the contract' carries a negative emotional charge, suggesting a harsh and decisive action by the NBA owners, which can evoke a sense of injustice or unfairness without providing specific evidence of this intent."^^xsd:string .
 
-<http://example.org/claim#falcon_8_3> a ns1:Claim ;
-    ns1:claimText "if ppl with a platform sway from the matter, others will join" ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_2_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FearAppeal ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The claim suggests that NBA owners will 'tear up the contract for next season,' which implies a negative and potentially financially damaging outcome for those involved in the boycott, thus invoking fear of loss."^^xsd:string .
 
-<http://example.org/claim#falcon_9_1> a ns1:Claim ;
-    ns1:claimText "No one could have watched that George Floyd video and felt any difference." ;
-    ns1:confidenceScore "1.0"^^xsd:float ;
-    ns1:hasVerificationStatus ns1:Unverified ;
-    ns1:targetsEntity <http://example.org/entity#George_Floyd> ;
-    ns1:usesTechnique ns1:FalseDilemma .
+<http://example.org/annotation#falcon_2_2_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.8"^^xsd:float ;
+    :explanation "The NBA owners are presented as the antagonists who will exploit the boycott for their own gain ('use this boycott as an excuse'). This unfairly blames them for a potential negative outcome without concrete evidence, shifting responsibility away from the boycott itself or other factors."^^xsd:string .
 
-<http://example.org/entity#$$$> a ns1:Entity ;
-    ns1:entityName "$$$" ;
-    ns1:entityType "Other" .
+<http://example.org/annotation#falcon_2_2_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.75"^^xsd:float ;
+    :explanation "The phrase 'tear up the contract' is emotionally charged and suggests a destructive and arbitrary action by the owners. The statement 'They became rich before being a part of the NBA' also carries a tone of resentment and implies that their wealth makes them inherently untrustworthy or uncaring."^^xsd:string .
 
-<http://example.org/entity#1> a ns1:Entity ;
-    ns1:entityName "1" ;
-    ns1:entityType "Other" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q27721> .
+<http://example.org/annotation#falcon_2_2_tech_3> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The claim generalizes the actions of all NBA owners based on the premise of a boycott. It assumes a unified and malicious intent from all owners without providing evidence that this is a widespread or agreed-upon strategy."^^xsd:string .
 
-<http://example.org/entity#1st> a ns1:Entity ;
-    ns1:entityName "1st" ;
-    ns1:entityType "Other" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q956209> .
+<http://example.org/annotation#falcon_2_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'so unintelligent' is emotionally charged and used to dismiss the opposing viewpoint without engaging with its substance. It aims to evoke a negative emotional response towards the idea being discussed."^^xsd:string .
 
-<http://example.org/entity#2,_3_weeks> a ns1:Entity ;
-    ns1:entityName "2, 3 weeks" ;
-    ns1:entityType "Date" .
+<http://example.org/annotation#falcon_2_3_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The claim 'NBA owners will use this boycott as an excuse to tear up the contract for next season too' unfairly blames NBA owners for potential negative outcomes, framing them as malicious actors looking for pretexts to act against players."^^xsd:string .
 
-<http://example.org/entity#3_weeks> a ns1:Entity ;
-    ns1:entityName "3 weeks" ;
-    ns1:entityType "Date" .
+<http://example.org/annotation#falcon_3_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :AdHominem ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/entity#George_Floyd> a ns1:Entity ;
-    ns1:entityName "George Floyd" ;
-    ns1:entityType "Person" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q5539328> .
+<http://example.org/annotation#falcon_3_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
 
-<http://example.org/entity#Kyrie> a ns1:Entity ;
-    ns1:entityName "Kyrie" ;
-    ns1:entityType "Person" .
+<http://example.org/annotation#falcon_4_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :Exaggeration ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'It's been what.2, 3 weeks' is a rhetorical question that downplays the passage of time, implying that not enough has happened in what the speaker perceives as a short period. This can be seen as an understatement or exaggeration depending on the actual duration and significance of events."^^xsd:string .
 
-<http://example.org/entity#Milwaukee_Bucks> a ns1:Entity ;
-    ns1:entityName "Milwaukee Bucks" ;
-    ns1:entityType "Organization" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q169637> .
+<http://example.org/annotation#falcon_4_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The word 'sacrifice' is emotionally charged and implies a significant loss or hardship, framing the request for players to forgo their paychecks in a negative and potentially unfair light."^^xsd:string .
 
-<http://example.org/entity#Supermax> a ns1:Entity ;
-    ns1:entityName "Supermax" ;
-    ns1:entityType "Organization" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q7643958> .
+<http://example.org/annotation#falcon_4_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.8"^^xsd:float ;
+    :explanation "The phrase 'overshadowed by everything other than sports' uses emotionally charged language to imply that protests are being deliberately ignored or trivialized in favor of less important matters. The inclusion of 'Supermax deals' also carries a loaded connotation, suggesting a level of wealth that might be perceived as excessive or undeserved by some audiences."^^xsd:string .
 
-<http://example.org/entity#Trump> a ns1:Entity ;
-    ns1:entityName "Trump" ;
-    ns1:entityType "Organization" ;
-    ns1:linkedToWikidata <http://www.wikidata.org/entity/Q2643970> .
+<http://example.org/annotation#falcon_4_2_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Exaggeration ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The claim that protests have been 'overshadowed by everything other than sports' is likely an exaggeration. While media coverage can shift, it's improbable that *everything* else has been overshadowed by sports, especially considering the potential significance of protests. This overstatement aims to emphasize the perceived lack of attention to the protests."^^xsd:string .
 
-<http://example.org/entity#the_beginning_of_the_season> a ns1:Entity ;
-    ns1:entityName "the beginning of the season" ;
-    ns1:entityType "Date" .
+<http://example.org/annotation#falcon_4_2_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The post presents a somewhat false dilemma by implying a direct conflict between attention to protests and attention to sports. It suggests that if sports are not being discussed, then protests must be the only other topic, and that sports are somehow preventing protests from being heard. This oversimplifies the complex media landscape and the various factors influencing public attention."^^xsd:string .
 
-<http://example.org/entity#years> a ns1:Entity ;
-    ns1:entityName "years" ;
-    ns1:entityType "Date" .
+<http://example.org/annotation#falcon_4_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'haven't been allowed' carries a negative connotation, implying an unjust restriction or suppression. The question 'Why ask players to sacrifice their paycheck now also?' uses 'sacrifice' to evoke a sense of unfair burden, and 'Supermax deals' is likely used to create a contrast that elicits sympathy for those without them."^^xsd:string .
 
-<http://example.org/entity#next_season> a ns1:Entity ;
-    ns1:entityName "next season" ;
-    ns1:entityType "Date" .
+<http://example.org/annotation#falcon_4_3_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :Exaggeration ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "While the post states sports 'haven't been allowed,' it's an exaggeration to suggest a complete prohibition. It's more likely that sports have been postponed, canceled, or significantly altered, rather than entirely disallowed. The implication of a complete ban is an overstatement for rhetorical effect."^^xsd:string .
 
-<http://example.org/entity#NBA> a ns1:Entity ;
-    ns1:entityName "NBA" ;
-    ns1:entityType "Organization" .
+<http://example.org/annotation#falcon_4_4_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.7"^^xsd:float ;
+    :explanation "The phrase 'Supermax deals' is likely intended to evoke a sense of extreme wealth and privilege, potentially creating resentment or a feeling of unfairness among those who don't have such deals. This emotionally charged language aims to sway the reader's perception of the players' financial situations."^^xsd:string .
 
-<http://example.org/agent#MUSE_Pipeline> a ns1:LLMAgent ;
-    ns1:modelName "google/gemini-2.5-flash-lite" .
+<http://example.org/annotation#falcon_4_4_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The statement 'Not all of them have Supermax deals' implies that the existence of some players with such deals is being used to justify a broader point about player sacrifices. Without knowing the proportion of players with 'Supermax deals,' this statement could be a generalization used to downplay the financial security of the majority of players."^^xsd:string .
+
+<http://example.org/annotation#falcon_5_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_5_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_5_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_6_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_6_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_6_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_7_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :LoadedLanguage ;
+    :confidenceScore "0.9"^^xsd:float ;
+    :explanation "The phrase 'just talks about whatever profits them' uses emotionally charged language ('just', 'profits them') to create a negative and dismissive impression of the media's motives without providing specific evidence."^^xsd:string .
+
+<http://example.org/annotation#falcon_7_1_tech_1> a :PersuasionAnnotation ;
+    :annotatesTechnique :HastyGeneralization ;
+    :confidenceScore "0.75"^^xsd:float ;
+    :explanation "The claim generalizes the behavior of 'the media' as a monolithic entity, implying that all media outlets and all their reporting are solely driven by profit. This is a broad conclusion drawn without specific examples or evidence to support it for the entire media landscape."^^xsd:string .
+
+<http://example.org/annotation#falcon_7_1_tech_2> a :PersuasionAnnotation ;
+    :annotatesTechnique :Scapegoating ;
+    :confidenceScore "0.6"^^xsd:float ;
+    :explanation "The media is being unfairly blamed as the sole reason for a perceived problem (implied by the context of the conversation, likely related to the content or agenda of news reporting). The focus on their profit motive serves to deflect from other potential causes or complexities."^^xsd:string .
+
+<http://example.org/annotation#falcon_8_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_8_2_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_8_3_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/annotation#falcon_9_1_tech_0> a :PersuasionAnnotation ;
+    :annotatesTechnique :FalseDilemma ;
+    :confidenceScore "1.0"^^xsd:float ;
+    :explanation "Labeled in FALCON dataset"^^xsd:string .
+
+<http://example.org/claim#falcon_0_1> a :Claim ;
+    :claimText "Nobody is against fighting police brutality." ;
+    :hasAnnotation <http://example.org/annotation#falcon_0_1_tech_0>,
+        <http://example.org/annotation#falcon_0_1_tech_1> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_0_2> a :Claim ;
+    :claimText "We are not a race of quitters, we find ways to affect change from the inside-out." ;
+    :hasAnnotation <http://example.org/annotation#falcon_0_2_tech_0>,
+        <http://example.org/annotation#falcon_0_2_tech_1>,
+        <http://example.org/annotation#falcon_0_2_tech_2> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_0_3> a :Claim ;
+    :claimText "These owners don't care if you boycott, helps them tear up your contract for next season." ;
+    :hasAnnotation <http://example.org/annotation#falcon_0_3_tech_0>,
+        <http://example.org/annotation#falcon_0_3_tech_1>,
+        <http://example.org/annotation#falcon_0_3_tech_2> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#next_season> .
+
+<http://example.org/claim#falcon_10_1> a :Claim ;
+    :claimText "The Clippers, Celtics, Lakers, and Milwaukee Bucks will not fall for this." ;
+    :hasAnnotation <http://example.org/annotation#falcon_10_1_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#Milwaukee_Bucks> .
+
+<http://example.org/claim#falcon_10_2> a :Claim ;
+    :claimText "They will rejoin protests in these city streets after the NBA Playoffs are completed." ;
+    :hasAnnotation <http://example.org/annotation#falcon_10_2_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#NBA> .
+
+<http://example.org/claim#falcon_11_1> a :Claim ;
+    :claimText "the nba team owners should support that decision and fund protesting instead of games" ;
+    :hasAnnotation <http://example.org/annotation#falcon_11_1_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_11_2> a :Claim ;
+    :claimText "if playing or not playing the games won't affect them" ;
+    :hasAnnotation <http://example.org/annotation#falcon_11_2_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_11_3> a :Claim ;
+    :claimText "why not not play the games and focus on something bigger?" ;
+    :hasAnnotation <http://example.org/annotation#falcon_11_3_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_12_1> a :Claim ;
+    :claimText "We all agree that change is needed, WE DISAGREE ON THE METHOD TO AFFECT CHANGE." ;
+    :hasAnnotation <http://example.org/annotation#falcon_12_1_tech_0>,
+        <http://example.org/annotation#falcon_12_1_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#METHOD> .
+
+<http://example.org/claim#falcon_12_2> a :Claim ;
+    :claimText "Trump will hijack this boycott saying, \" I told you black athletes can't multi-task = go to work and protest. They can only do 1 thing at a time. \"" ;
+    :hasAnnotation <http://example.org/annotation#falcon_12_2_tech_0>,
+        <http://example.org/annotation#falcon_12_2_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#1>,
+        <http://example.org/entity#Trump> .
+
+<http://example.org/claim#falcon_13_1> a :Claim ;
+    :claimText "NBA owners will trim their budget = fire their minimum wage employees, thanks to the players." ;
+    :hasAnnotation <http://example.org/annotation#falcon_13_1_tech_0>,
+        <http://example.org/annotation#falcon_13_1_tech_1>,
+        <http://example.org/annotation#falcon_13_1_tech_2>,
+        <http://example.org/annotation#falcon_13_1_tech_3> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#NBA> .
+
+<http://example.org/claim#falcon_14_1> a :Claim ;
+    :claimText "don't let black people play basketball because they will take away from our message about police brutality" ;
+    :hasAnnotation <http://example.org/annotation#falcon_14_1_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_14_2> a :Claim ;
+    :claimText "the shit doesn't correlate" ;
+    :hasAnnotation <http://example.org/annotation#falcon_14_2_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_14_3> a :Claim ;
+    :claimText "It's just the cancel mentality of always wanting 2 combat others" ;
+    :hasAnnotation <http://example.org/annotation#falcon_14_3_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#2> .
+
+<http://example.org/claim#falcon_1_1> a :Claim ;
+    :claimText "The only thing they care about is $$$" ;
+    :hasAnnotation <http://example.org/annotation#falcon_1_1_tech_0>,
+        <http://example.org/annotation#falcon_1_1_tech_1>,
+        <http://example.org/annotation#falcon_1_1_tech_2> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#$$$> .
+
+<http://example.org/claim#falcon_1_2> a :Claim ;
+    :claimText "Kyrie understands that going back & playing sends a message that \"Some\" BLM more than others." ;
+    :hasAnnotation <http://example.org/annotation#falcon_1_2_tech_0>,
+        <http://example.org/annotation#falcon_1_2_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#Kyrie> .
+
+<http://example.org/claim#falcon_1_3> a :Claim ;
+    :claimText "He is completely on point imo." ;
+    :hasAnnotation <http://example.org/annotation#falcon_1_3_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_2_1> a :Claim ;
+    :claimText "You can't hurt somebody that never cared about you in the 1st place." ;
+    :hasAnnotation <http://example.org/annotation#falcon_2_1_tech_0>,
+        <http://example.org/annotation#falcon_2_1_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#1st> .
+
+<http://example.org/claim#falcon_2_2> a :Claim ;
+    :claimText "NBA owners will use this boycott as an excuse to tear up the contract for next season too." ;
+    :hasAnnotation <http://example.org/annotation#falcon_2_2_tech_0>,
+        <http://example.org/annotation#falcon_2_2_tech_1>,
+        <http://example.org/annotation#falcon_2_2_tech_2>,
+        <http://example.org/annotation#falcon_2_2_tech_3> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#NBA>,
+        <http://example.org/entity#next_season> .
+
+<http://example.org/claim#falcon_2_3> a :Claim ;
+    :claimText "They became rich before being a part of the NBA." ;
+    :hasAnnotation <http://example.org/annotation#falcon_2_3_tech_0>,
+        <http://example.org/annotation#falcon_2_3_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#NBA> .
+
+<http://example.org/claim#falcon_3_1> a :Claim ;
+    :claimText "Contracts don't mean a damn thing anymore. haven't in years." ;
+    :hasAnnotation <http://example.org/annotation#falcon_3_1_tech_0>,
+        <http://example.org/annotation#falcon_3_1_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#years> .
+
+<http://example.org/claim#falcon_4_1> a :Claim ;
+    :claimText "It's been what.2, 3 weeks" ;
+    :hasAnnotation <http://example.org/annotation#falcon_4_1_tech_0>,
+        <http://example.org/annotation#falcon_4_1_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#3_weeks> .
+
+<http://example.org/claim#falcon_4_2> a :Claim ;
+    :claimText "Protests overshadowed by everything other than sports" ;
+    :hasAnnotation <http://example.org/annotation#falcon_4_2_tech_0>,
+        <http://example.org/annotation#falcon_4_2_tech_1>,
+        <http://example.org/annotation#falcon_4_2_tech_2> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_4_3> a :Claim ;
+    :claimText "sports, which haven't been allowed" ;
+    :hasAnnotation <http://example.org/annotation#falcon_4_3_tech_0>,
+        <http://example.org/annotation#falcon_4_3_tech_1> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_4_4> a :Claim ;
+    :claimText "Not all of them have Supermax deals" ;
+    :hasAnnotation <http://example.org/annotation#falcon_4_4_tech_0>,
+        <http://example.org/annotation#falcon_4_4_tech_1> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#Supermax> .
+
+<http://example.org/claim#falcon_5_1> a :Claim ;
+    :claimText "nothin major is supposed to happen in 2, 3 weeks." ;
+    :hasAnnotation <http://example.org/annotation#falcon_5_1_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#2,_3_weeks> .
+
+<http://example.org/claim#falcon_5_2> a :Claim ;
+    :claimText "if sports comes back, nothing major WILL happen." ;
+    :hasAnnotation <http://example.org/annotation#falcon_5_2_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_5_3> a :Claim ;
+    :claimText "they'll talk about the movement at the beginning of the season then it's all highlights and playoffs and nobody cares anymore." ;
+    :hasAnnotation <http://example.org/annotation#falcon_5_3_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#the_beginning_of_the_season> .
+
+<http://example.org/claim#falcon_6_1> a :Claim ;
+    :claimText "Companies across the world are already trying to profit off the black dollar by promoting black lives matter." ;
+    :hasAnnotation <http://example.org/annotation#falcon_6_1_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_6_2> a :Claim ;
+    :claimText "Everyone on social media and in the world agrees we need change." ;
+    :hasAnnotation <http://example.org/annotation#falcon_6_2_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_6_3> a :Claim ;
+    :claimText "The world goes on fine when sports are here why stop what works" ;
+    :hasAnnotation <http://example.org/annotation#falcon_6_3_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_7_1> a :Claim ;
+    :claimText "the media just talks about whatever profits them" ;
+    :hasAnnotation <http://example.org/annotation#falcon_7_1_tech_0>,
+        <http://example.org/annotation#falcon_7_1_tech_1>,
+        <http://example.org/annotation#falcon_7_1_tech_2> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_8_1> a :Claim ;
+    :claimText "boycotting will stop a portion of the media from getting distracted and just going for views." ;
+    :hasAnnotation <http://example.org/annotation#falcon_8_1_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_8_2> a :Claim ;
+    :claimText "all the headlines are gonna be about sports returning and blm will be nothing more than a hashtag again." ;
+    :hasAnnotation <http://example.org/annotation#falcon_8_2_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_8_3> a :Claim ;
+    :claimText "if ppl with a platform sway from the matter, others will join" ;
+    :hasAnnotation <http://example.org/annotation#falcon_8_3_tech_0> ;
+    :hasVerificationStatus :Unverified .
+
+<http://example.org/claim#falcon_9_1> a :Claim ;
+    :claimText "No one could have watched that George Floyd video and felt any difference." ;
+    :hasAnnotation <http://example.org/annotation#falcon_9_1_tech_0> ;
+    :hasVerificationStatus :Unverified ;
+    :targetsEntity <http://example.org/entity#George_Floyd> .
+
+<http://example.org/entity#$$$> a :Entity ;
+    :entityName "$$$"^^xsd:string .
+
+<http://example.org/entity#1> a :Entity ;
+    :entityName "1"^^xsd:string ;
+    :linkedToWikidata wd:Q27721 .
+
+<http://example.org/entity#1st> a :Entity ;
+    :entityName "1st"^^xsd:string ;
+    :linkedToWikidata wd:Q956209 .
+
+<http://example.org/entity#2> a :Entity ;
+    :entityName "2"^^xsd:string ;
+    :linkedToWikidata wd:Q19647 .
+
+<http://example.org/entity#2,_3_weeks> a :Event ;
+    :entityName "2, 3 weeks"^^xsd:string .
+
+<http://example.org/entity#3_weeks> a :Event ;
+    :entityName "3 weeks"^^xsd:string .
+
+<http://example.org/entity#George_Floyd> a :Person ;
+    :entityName "George Floyd"^^xsd:string ;
+    :linkedToWikidata wd:Q5539328 .
+
+<http://example.org/entity#Kyrie> a :Person ;
+    :entityName "Kyrie"^^xsd:string .
+
+<http://example.org/entity#METHOD> a :Organization ;
+    :entityName "METHOD"^^xsd:string .
+
+<http://example.org/entity#Milwaukee_Bucks> a :Organization ;
+    :entityName "Milwaukee Bucks"^^xsd:string ;
+    :linkedToWikidata wd:Q169637 .
+
+<http://example.org/entity#Supermax> a :Organization ;
+    :entityName "Supermax"^^xsd:string ;
+    :linkedToWikidata wd:Q7643958 .
+
+<http://example.org/entity#Trump> a :Organization ;
+    :entityName "Trump"^^xsd:string ;
+    :linkedToWikidata wd:Q2643970 .
+
+<http://example.org/entity#the_beginning_of_the_season> a :Event ;
+    :entityName "the beginning of the season"^^xsd:string .
+
+<http://example.org/entity#years> a :Event ;
+    :entityName "years"^^xsd:string .
+
+:AdHominem a owl:Class ;
+    rdfs:label "Ad Hominem" ;
+    rdfs:comment "Attacking the person making the argument rather than the argument itself" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:AppealToRidicule a owl:Class ;
+    rdfs:label "Appeal to Ridicule" ;
+    rdfs:comment "Mocking or ridiculing an argument to discredit it" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+<http://example.org/entity#next_season> a :Event ;
+    :entityName "next season"^^xsd:string .
+
+:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human individual mentioned in content" ;
+    rdfs:subClassOf :Entity .
+
+:Source a owl:Class ;
+    rdfs:label "Source" ;
+    rdfs:comment "An information source that can be assessed for credibility" .
+
+:hasContent a owl:DatatypeProperty ;
+    rdfs:label "has content" ;
+    rdfs:comment "Generic content property for posts (text, image references, etc.)" ;
+    rdfs:range xsd:string .
+
+:Correction a owl:Class ;
+    rdfs:label "Correction" ;
+    rdfs:comment "A structured correction of misinformation in a post" .
+
+:FearAppeal a owl:Class ;
+    rdfs:label "Fear Appeal" ;
+    rdfs:comment "Technique that uses fear to influence behavior or beliefs" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:LLMAgent a owl:Class ;
+    rdfs:label "LLM Agent" ;
+    rdfs:comment "An AI agent (e.g., GPT-4, MUSE) that performs annotation" ;
+    rdfs:subClassOf prov:Agent .
+
+<http://example.org/entity#NBA> a :Organization ;
+    :entityName "NBA"^^xsd:string .
+
+:Evidence a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Source or proof supporting or refuting a claim" .
+
+:NegativeSentiment a owl:Class ;
+    rdfs:label "Negative Sentiment" ;
+    rdfs:subClassOf :Sentiment .
+
+:PositiveSentiment a owl:Class ;
+    rdfs:label "Positive Sentiment" ;
+    rdfs:subClassOf :Sentiment .
+
+:Sentiment a owl:Class ;
+    rdfs:label "Sentiment" ;
+    rdfs:comment "Emotional tone or attitude expressed in content" .
+
+:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A notable occurrence or happening" ;
+    rdfs:subClassOf :Entity .
+
+:Exaggeration a owl:Class ;
+    rdfs:label "Exaggeration/Minimization" ;
+    rdfs:comment "Overstating or understating facts to manipulate perception" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A company, institution, or group" ;
+    rdfs:subClassOf :Entity .
+
+:InformationUnit a owl:Class ;
+    rdfs:label "Information Unit" ;
+    rdfs:comment "Abstract base class for any unit of information that can be analyzed for persuasion" .
+
+:Scapegoating a owl:Class ;
+    rdfs:label "Scapegoating" ;
+    rdfs:comment "Blaming a person or group for problems they didn't cause" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:NeutralSentiment a owl:Class ;
+    rdfs:label "Neutral Sentiment" ;
+    rdfs:subClassOf :Sentiment .
+
+:VerificationStatus a owl:Class ;
+    rdfs:label "Verification Status" ;
+    rdfs:comment "Status of claim verification" .
+
+:HastyGeneralization a owl:Class ;
+    rdfs:label "Hasty Generalization" ;
+    rdfs:comment "Drawing broad conclusions from limited examples" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:FalseDilemma a owl:Class ;
+    rdfs:label "False Dilemma" ;
+    rdfs:comment "Presenting only two options when more exist" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:Entity a owl:Class ;
+    rdfs:label "Entity" ;
+    rdfs:comment "A real-world entity (person, organization, location, etc.) mentioned in a post" .
+
+:PersuasionTechnique a owl:Class ;
+    rdfs:label "Persuasion Technique" ;
+    rdfs:comment "A strategy used to influence opinion through manipulation" .
+
+<http://example.org/agent#MUSE_Pipeline> a :LLMAgent ;
+    :modelName "google/gemini-2.5-flash-lite" .
+
+:LoadedLanguage a owl:Class ;
+    rdfs:label "Loaded Language" ;
+    rdfs:comment "Use of emotionally charged words to influence opinion" ;
+    rdfs:subClassOf :PersuasionTechnique .
+
+:Post a owl:Class ;
+    rdfs:label "Social Media Post" ;
+    rdfs:comment "A social media post that may contain claims and persuasion techniques" ;
+    rdfs:subClassOf :InformationUnit .
+
+:Unverified a owl:Class ;
+    rdfs:label "Unverified" ;
+    rdfs:subClassOf :VerificationStatus .
+
+:Claim a owl:Class ;
+    rdfs:label "Claim" ;
+    rdfs:comment "A factual assertion made in a post that can be verified" ;
+    rdfs:subClassOf :InformationUnit .
+
+:PersuasionAnnotation a owl:Class ;
+    rdfs:label "Persuasion Annotation" ;
+    rdfs:comment "An annotation linking a claim to a detected persuasion technique with confidence score" .
 

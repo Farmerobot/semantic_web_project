@@ -21,11 +21,17 @@
 # CORE CLASSES
 # ========================================
 
+:InformationUnit a owl:Class ;
+    rdfs:label "Information Unit" ;
+    rdfs:comment "Abstract base class for any unit of information that can be analyzed for persuasion" .
+
 :Post a owl:Class ;
+    rdfs:subClassOf :InformationUnit ;
     rdfs:label "Social Media Post" ;
     rdfs:comment "A social media post that may contain claims and persuasion techniques" .
 
 :Claim a owl:Class ;
+    rdfs:subClassOf :InformationUnit ;
     rdfs:label "Claim" ;
     rdfs:comment "A factual assertion made in a post that can be verified" .
 
@@ -37,9 +43,53 @@
     rdfs:label "Entity" ;
     rdfs:comment "A real-world entity (person, organization, location, etc.) mentioned in a post" .
 
+:Person a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human individual mentioned in content" .
+
+:Organization a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A company, institution, or group" .
+
+:Location a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Location" ;
+    rdfs:comment "A geographical place or region" .
+
+:Event a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Event" ;
+    rdfs:comment "A notable occurrence or happening" .
+
 :Correction a owl:Class ;
     rdfs:label "Correction" ;
     rdfs:comment "A structured correction of misinformation in a post" .
+
+:PersuasionAnnotation a owl:Class ;
+    rdfs:label "Persuasion Annotation" ;
+    rdfs:comment "An annotation linking a claim to a detected persuasion technique with confidence score" .
+
+:Source a owl:Class ;
+    rdfs:label "Source" ;
+    rdfs:comment "An information source that can be assessed for credibility" .
+
+:Sentiment a owl:Class ;
+    rdfs:label "Sentiment" ;
+    rdfs:comment "Emotional tone or attitude expressed in content" .
+
+:PositiveSentiment a owl:Class ;
+    rdfs:subClassOf :Sentiment ;
+    rdfs:label "Positive Sentiment" .
+
+:NegativeSentiment a owl:Class ;
+    rdfs:subClassOf :Sentiment ;
+    rdfs:label "Negative Sentiment" .
+
+:NeutralSentiment a owl:Class ;
+    rdfs:subClassOf :Sentiment ;
+    rdfs:label "Neutral Sentiment" .
 
 # ========================================
 # PERSUASION TECHNIQUE CLASSES
@@ -73,6 +123,41 @@
     rdfs:subClassOf :PersuasionTechnique ;
     rdfs:label "Exaggeration/Minimization" ;
     rdfs:comment "Overstating or understating facts to manipulate perception" .
+
+:AdHominem a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Ad Hominem" ;
+    rdfs:comment "Attacking the person making the argument rather than the argument itself" .
+
+:FalseDilemma a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "False Dilemma" ;
+    rdfs:comment "Presenting only two options when more exist" .
+
+:HastyGeneralization a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Hasty Generalization" ;
+    rdfs:comment "Drawing broad conclusions from limited examples" .
+
+:AppealToRidicule a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Appeal to Ridicule" ;
+    rdfs:comment "Mocking or ridiculing an argument to discredit it" .
+
+:Whataboutism a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Whataboutism" ;
+    rdfs:comment "Deflecting criticism by pointing to others' faults" .
+
+:Bandwagon a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Bandwagon" ;
+    rdfs:comment "Appealing to popularity as proof of truth" .
+
+:AppealToEmotion a owl:Class ;
+    rdfs:subClassOf :PersuasionTechnique ;
+    rdfs:label "Appeal to Emotion" ;
+    rdfs:comment "Using emotional manipulation instead of logical argument" .
 
 # ========================================
 # VERIFICATION STATUS
@@ -155,13 +240,61 @@
 
 :mentions a owl:ObjectProperty ;
     rdfs:label "mentions" ;
-    rdfs:domain :Post ;
+    rdfs:domain :InformationUnit ;
     rdfs:range :Entity .
+
+:replyTo a owl:ObjectProperty ;
+    rdfs:label "reply to" ;
+    rdfs:domain :Post ;
+    rdfs:range :Post ;
+    rdfs:comment "Indicates this post is a reply to another post" .
+
+:quotes a owl:ObjectProperty ;
+    rdfs:label "quotes" ;
+    rdfs:domain :Post ;
+    rdfs:range :Post ;
+    rdfs:comment "Indicates this post quotes another post" .
+
+:hasSource a owl:ObjectProperty ;
+    rdfs:label "has source" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range :Source ;
+    rdfs:comment "Links content to its information source" .
+
+:hasSentiment a owl:ObjectProperty ;
+    rdfs:label "has sentiment" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range :Sentiment ;
+    rdfs:comment "The emotional tone of the content" .
+
+:relatedTo a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "related to" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Claim ;
+    rdfs:comment "Indicates two claims are topically related" .
+
+:contradicts a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "contradicts" ;
+    rdfs:domain :Claim ;
+    rdfs:range :Claim ;
+    rdfs:comment "Indicates two claims are mutually contradictory" .
 
 :linkedToWikidata a owl:ObjectProperty ;
     rdfs:label "linked to Wikidata" ;
     rdfs:domain :Entity ;
     rdfs:comment "Links entity to its Wikidata identifier" .
+
+:hasAnnotation a owl:ObjectProperty ;
+    rdfs:label "has annotation" ;
+    rdfs:domain :Claim ;
+    rdfs:range :PersuasionAnnotation ;
+    rdfs:comment "Links a claim to its persuasion annotation" .
+
+:annotatesTechnique a owl:ObjectProperty ;
+    rdfs:label "annotates technique" ;
+    rdfs:domain :PersuasionAnnotation ;
+    rdfs:range :PersuasionTechnique ;
+    rdfs:comment "The persuasion technique detected in this annotation" .
 
 # ========================================
 # DATA PROPERTIES
@@ -172,10 +305,24 @@
     rdfs:domain :Post ;
     rdfs:range xsd:string .
 
-:textContent a owl:DatatypeProperty ;
-    rdfs:label "text content" ;
+:hasContent a owl:DatatypeProperty ;
+    rdfs:label "has content" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Generic content property for posts (text, image references, etc.)" .
+
+:hasText a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :hasContent ;
+    rdfs:label "has text" ;
     rdfs:domain :Post ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    rdfs:comment "The textual content of a post" .
+
+:hasImage a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :hasContent ;
+    rdfs:label "has image" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:anyURI ;
+    rdfs:comment "URI reference to an image in the post" .
 
 :claimText a owl:DatatypeProperty ;
     rdfs:label "claim text" ;
@@ -209,9 +356,15 @@
 
 :confidenceScore a owl:DatatypeProperty ;
     rdfs:label "confidence score" ;
-    rdfs:domain :Claim ;
+    rdfs:domain :PersuasionAnnotation ;
     rdfs:range xsd:float ;
     rdfs:comment "LLM confidence in technique detection (0-1)" .
+
+:explanation a owl:DatatypeProperty ;
+    rdfs:label "explanation" ;
+    rdfs:domain :PersuasionAnnotation ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Explanation for why the technique was detected" .
 
 :timestamp a owl:DatatypeProperty ;
     rdfs:label "timestamp" ;
@@ -227,6 +380,36 @@
     rdfs:domain :Post ;
     rdfs:range xsd:string ;
     rdfs:comment "Social media platform (e.g., Twitter, Facebook)" .
+
+:shareCount a owl:DatatypeProperty ;
+    rdfs:label "share count" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of times the post was shared/retweeted" .
+
+:likeCount a owl:DatatypeProperty ;
+    rdfs:label "like count" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of likes/favorites on the post" .
+
+:replyCount a owl:DatatypeProperty ;
+    rdfs:label "reply count" ;
+    rdfs:domain :Post ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of replies to the post" .
+
+:credibilityScore a owl:DatatypeProperty ;
+    rdfs:label "credibility score" ;
+    rdfs:domain :Source ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Assessed credibility of the source (0-1)" .
+
+:sentimentScore a owl:DatatypeProperty ;
+    rdfs:label "sentiment score" ;
+    rdfs:domain :InformationUnit ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Numerical sentiment polarity (-1 to 1)" .
 
 :fragmentStart a owl:DatatypeProperty ;
     rdfs:label "fragment start" ;

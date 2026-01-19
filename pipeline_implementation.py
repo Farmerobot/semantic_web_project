@@ -19,6 +19,7 @@ from pathlib import Path
 
 from rdflib import Graph, Namespace, Literal, URIRef, RDF, RDFS, XSD
 from rdflib.namespace import FOAF
+from textblob import TextBlob
 from SPARQLWrapper import SPARQLWrapper, JSON
 from dotenv import load_dotenv
 import spacy
@@ -56,7 +57,7 @@ class Config:
     LLM_MODEL = MODEL_NAME
     CONFIDENCE_THRESHOLD = 0.6
     BATCH_SIZE = 5
-    MAX_POSTS = 15  # Limit for demo run
+    MAX_POSTS = None  # Limit for demo run
 
 
 # ========================================
@@ -343,16 +344,22 @@ Return ONLY valid JSON:
 # Stage 3: Entity Recognition & Linking
 # ========================================
 
-# spaCy label to ontology type mapping
+# spaCy label to ontology type mapping (maps to ontology class names)
 LABEL_MAPPING = {
     "PERSON": "Person",
     "ORG": "Organization",
     "GPE": "Location",
     "LOC": "Location",
-    "NORP": "Group",
+    "NORP": "Organization",  # Nationalities, religious/political groups -> Organization
     "EVENT": "Event",
-    "DATE": "Date",
+    "FAC": "Location",  # Facilities -> Location
+    "DATE": "Event",  # Dates can be events
+    "WORK_OF_ART": "Entity",
+    "PRODUCT": "Entity",
 }
+
+# Valid ontology entity classes (others fall back to Entity)
+VALID_ENTITY_CLASSES = {"Person", "Organization", "Location", "Event"}
 
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 
@@ -410,7 +417,10 @@ def extract_and_link_entities(claim: Claim, post: Post, nlp) -> List[Entity]:
     for ent in doc.ents:
         if ent.text.lower() not in seen:
             seen.add(ent.text.lower())
-            entity_type = LABEL_MAPPING.get(ent.label_, "Other")
+            entity_type = LABEL_MAPPING.get(ent.label_, "Entity")
+            # Ensure we use a valid ontology class
+            if entity_type not in VALID_ENTITY_CLASSES:
+                entity_type = "Entity"
             
             # Try to find Wikidata ID
             wikidata_id = find_wikidata_entity(ent.text, entity_type)
@@ -424,6 +434,30 @@ def extract_and_link_entities(claim: Claim, post: Post, nlp) -> List[Entity]:
             entities_list.append(entity)
     
     return entities_list
+
+
+def analyze_sentiment(text: str, nlp) -> tuple:
+    """
+    Analyze sentiment of text. Returns (sentiment_class, sentiment_score).
+    sentiment_class: 'PositiveSentiment', 'NegativeSentiment', or 'NeutralSentiment'
+    sentiment_score: float between -1 and 1
+    """
+    if nlp is None:
+        return "NeutralSentiment", 0.0
+
+    # Try using TextBlob for sentiment (more accurate)
+    blob = TextBlob(text)
+    score = blob.sentiment.polarity  # -1 to 1
+    
+    if score > 0.1:
+        sentiment_class = "PositiveSentiment"
+    elif score < -0.1:
+        sentiment_class = "NegativeSentiment"
+    else:
+        sentiment_class = "NeutralSentiment"
+    
+    return sentiment_class, round(score, 3)
+
 
 
 # ========================================
@@ -455,7 +489,8 @@ def generate_rdf_triples(
     claims: List[Claim],
     techniques: List[PersuasionAnnotation],
     entities: List[Entity],
-    verifications: List[VerificationResult]
+    verifications: List[VerificationResult],
+    nlp=None
 ) -> Graph:
     """
     Generate RDF triples from annotations.
@@ -476,13 +511,19 @@ def generate_rdf_triples(
     # Create post node
     post_uri = URIRef(f"http://example.org/post#{post.post_id}")
     g.add((post_uri, RDF.type, PERSUASION.Post))
-    g.add((post_uri, PERSUASION.postId, Literal(post.post_id)))
-    g.add((post_uri, PERSUASION.textContent, Literal(post.text)))
-    g.add((post_uri, PERSUASION.platform, Literal(post.platform)))
+    g.add((post_uri, PERSUASION.postId, Literal(post.post_id, datatype=XSD.string)))
+    g.add((post_uri, PERSUASION.hasText, Literal(post.text, datatype=XSD.string)))
+    g.add((post_uri, PERSUASION.platform, Literal(post.platform, datatype=XSD.string)))
     
     if post.timestamp:
         g.add((post_uri, PERSUASION.timestamp, 
                Literal(post.timestamp, datatype=XSD.dateTime)))
+    
+    # Add sentiment analysis for post
+    sentiment_class, sentiment_score = analyze_sentiment(post.text, nlp)
+    sentiment_uri = URIRef(f"http://example.org/persuasion#{sentiment_class}")
+    g.add((post_uri, PERSUASION.hasSentiment, sentiment_uri))
+    g.add((post_uri, PERSUASION.sentimentScore, Literal(sentiment_score, datatype=XSD.float)))
     
     # Add claims
     for claim in claims:
@@ -493,21 +534,31 @@ def generate_rdf_triples(
         # Link claim to post
         g.add((post_uri, PERSUASION.containsClaim, claim_uri))
         
-        # Add persuasion techniques
+        # Add persuasion techniques via PersuasionAnnotation (reification pattern)
         claim_techniques = [t for t in techniques if t.claim_id == claim.id]
-        for technique in claim_techniques:
+        for idx, technique in enumerate(claim_techniques):
+            # Create annotation instance to link claim, technique, and confidence
+            annotation_uri = URIRef(f"http://example.org/annotation#{claim.id}_tech_{idx}")
             technique_uri = URIRef(f"http://example.org/persuasion#{technique.technique_type}")
-            g.add((claim_uri, PERSUASION.usesTechnique, technique_uri))
-            g.add((claim_uri, PERSUASION.confidenceScore, 
+            
+            g.add((annotation_uri, RDF.type, PERSUASION.PersuasionAnnotation))
+            g.add((claim_uri, PERSUASION.hasAnnotation, annotation_uri))
+            g.add((annotation_uri, PERSUASION.annotatesTechnique, technique_uri))
+            g.add((annotation_uri, PERSUASION.confidenceScore, 
                    Literal(technique.confidence, datatype=XSD.float)))
+            if technique.explanation:
+                g.add((annotation_uri, PERSUASION.explanation, 
+                       Literal(technique.explanation, datatype=XSD.string)))
         
-        # Add entities
+        # Add entities with proper subclass types
         claim_entities = [e for e in entities if e.claim_id == claim.id]
         for entity in claim_entities:
-            entity_uri = URIRef(f"http://example.org/entity#{entity.name.replace(' ', '_')}")
-            g.add((entity_uri, RDF.type, PERSUASION.Entity))
-            g.add((entity_uri, PERSUASION.entityName, Literal(entity.name)))
-            g.add((entity_uri, PERSUASION.entityType, Literal(entity.type)))
+            entity_uri = URIRef(f"http://example.org/entity#{entity.name.replace(' ', '_').replace('.', '_')}")
+            
+            # Use the specific entity subclass (Person, Organization, Location, Event) or Entity
+            entity_class = getattr(PERSUASION, entity.type, PERSUASION.Entity)
+            g.add((entity_uri, RDF.type, entity_class))
+            g.add((entity_uri, PERSUASION.entityName, Literal(entity.name, datatype=XSD.string)))
             
             if entity.wikidata_id:
                 wikidata_uri = URIRef(f"http://www.wikidata.org/entity/{entity.wikidata_id}")
@@ -587,8 +638,14 @@ def main_pipeline(use_falcon: bool = True, max_posts: int = None):
         logger.error("No input data found. Run notebook 03_data_preprocessing.ipynb first.")
         return None
     
-    # Initialize master graph
+    # Initialize master graph and import ontology
     master_graph = Graph()
+    
+    # Load ontology to include property declarations (so Protégé recognizes data properties)
+    ontology_path = Path(Config.ONTOLOGY_FILE)
+    if ontology_path.exists():
+        master_graph.parse(str(ontology_path), format="turtle")
+        logger.info(f"Loaded ontology from: {ontology_path}")
     
     # Statistics
     stats = {
@@ -637,7 +694,7 @@ def main_pipeline(use_falcon: bool = True, max_posts: int = None):
             
             # Stage 5: Generate RDF triples
             post_graph = generate_rdf_triples(
-                post, claims, all_techniques, all_entities, verifications
+                post, claims, all_techniques, all_entities, verifications, nlp
             )
             
             # Merge into master graph
@@ -669,7 +726,7 @@ def main_pipeline(use_falcon: bool = True, max_posts: int = None):
 
 if __name__ == "__main__":
     try:
-        graph, stats = main_pipeline(use_falcon=True, max_posts=15)
+        graph, stats = main_pipeline(use_falcon=True)
         log_success("Pipeline completed successfully")
         
         # Print summary
