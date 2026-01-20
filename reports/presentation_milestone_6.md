@@ -510,7 +510,7 @@ WHERE {
 
 [2] Ulasik, M., Stieglitz, S., Widjaja, T., & Giese, J. (2023). "FALCON: A Fallacy Annotated Corpus of COVID-19 Related Tweets." *arXiv preprint arXiv:2308.15816*.
 
-[3] Zhou, Y., et al. (2024). "MUSE: Machine Unlearning Six-Way Evaluation for Language Models." *arXiv preprint arXiv:2407.06460*.
+[3] Zhou, X., Sharma, Y., Peng, H., & Choi, Y. (2024). "Correcting Misinformation on Social Media with a Large Language Model." *arXiv preprint arXiv:2403.11169*.
 
 [4] W3C. (2013). "PROV-O: The PROV Ontology." *W3C Recommendation*. https://www.w3.org/TR/prov-o/
 
