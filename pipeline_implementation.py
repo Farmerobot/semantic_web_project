@@ -57,7 +57,7 @@ class Config:
     LLM_MODEL = MODEL_NAME
     CONFIDENCE_THRESHOLD = 0.6
     BATCH_SIZE = 5
-    MAX_POSTS = None  # Limit for demo run
+    MAX_POSTS = 100  # Limit for demo run
 
 
 # ========================================

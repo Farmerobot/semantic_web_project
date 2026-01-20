@@ -1,16 +1,17 @@
 {
-  "total_posts": 15,
-  "total_claims": 36,
-  "total_techniques": 62,
-  "total_entities": 20,
+  "total_posts": 100,
+  "total_claims": 247,
+  "total_techniques": 401,
+  "total_entities": 145,
   "technique_counts": {
-    "FalseDilemma": 12,
-    "LoadedLanguage": 26,
-    "Scapegoating": 6,
-    "FearAppeal": 3,
-    "Exaggeration": 5,
-    "AppealToRidicule": 1,
-    "HastyGeneralization": 8,
-    "AdHominem": 1
+    "FalseDilemma": 59,
+    "LoadedLanguage": 157,
+    "Scapegoating": 30,
+    "FearAppeal": 9,
+    "Exaggeration": 34,
+    "HastyGeneralization": 30,
+    "AppealToRidicule": 30,
+    "AdHominem": 35,
+    "AppealToAuthority": 17
   }
 }
